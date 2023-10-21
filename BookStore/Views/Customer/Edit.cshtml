@@ -1,0 +1,41 @@
+﻿@model BookStore.Models.Customer
+
+@{
+    Layout = "~/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Khách hàng";
+}
+
+<!-- Page Content  -->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Sửa khách hàng</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <form asp-controller="Customer" asp-action="Edit" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="CustomerId" />
+                            <div class="form-group">
+                                <label asp-for="Name">Tên khách hàng:</label>
+                                <input asp-for="Name" type="text" class="form-control">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Address">Địa chỉ:</label>
+                                <input asp-for="Address" type="text" class="form-control">
+                                <span asp-validation-for="Address" class="text-danger"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Lưu</button> |
+                            <a asp-action="Index">Quay lại danh sách khách hàng</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
