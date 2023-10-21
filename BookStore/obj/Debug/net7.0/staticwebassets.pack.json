@@ -1,0 +1,2069 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BookStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BookStore.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\Chart.min.css",
+      "PackagePath": "staticwebassets\\css\\Chart.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\developer.css",
+      "PackagePath": "staticwebassets\\css\\developer.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\dripicons.css",
+      "PackagePath": "staticwebassets\\css\\dripicons.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\css\\flatpickr.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\line-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\line-awesome.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\css\\owl.video.play.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\remixicon.css",
+      "PackagePath": "staticwebassets\\css\\remixicon.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\slick-theme.css",
+      "PackagePath": "staticwebassets\\css\\slick-theme.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\slick.css",
+      "PackagePath": "staticwebassets\\css\\slick.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\style-customizer.css",
+      "PackagePath": "staticwebassets\\css\\style-customizer.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\typography.css",
+      "PackagePath": "staticwebassets\\css\\typography.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\variable.css",
+      "PackagePath": "staticwebassets\\css\\variable.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\AvenirLTStd-Black.eot",
+      "PackagePath": "staticwebassets\\fonts\\AvenirLTStd-Black.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\AvenirLTStd-Book.eot",
+      "PackagePath": "staticwebassets\\fonts\\AvenirLTStd-Book.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\AvenirLTStd-Roman.eot",
+      "PackagePath": "staticwebassets\\fonts\\AvenirLTStd-Roman.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\Now-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\Now-Bold.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\Now-Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Now-Bold.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\Now-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\Now-Regular.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\Now-Regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Now-Regular.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\dripicons-v2.eot",
+      "PackagePath": "staticwebassets\\fonts\\dripicons-v2.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\dripicons-v2.svg",
+      "PackagePath": "staticwebassets\\fonts\\dripicons-v2.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\dripicons-v2.ttf",
+      "PackagePath": "staticwebassets\\fonts\\dripicons-v2.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\dripicons-v2.woff",
+      "PackagePath": "staticwebassets\\fonts\\dripicons-v2.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\la-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\remixicon.eot",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\remixicon.svg",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\remixicon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\remixicon.woff",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\remixicon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\remixicon.woff2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\fonts\\slick.eot"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\fonts\\slick.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\fonts\\slick.woff"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\main.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\main.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\bootstrap\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\bootstrap\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales-all.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales-all.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales-all.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales-all.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\af.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\af.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ar-dz.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ar-dz.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ar-kw.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ar-kw.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ar-ly.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ar-ly.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ar-ma.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ar-ma.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ar-sa.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ar-sa.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ar-tn.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ar-tn.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ar.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ar.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\bg.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\bg.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\bs.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\bs.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ca.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ca.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\cs.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\cs.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\da.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\da.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\de.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\de.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\el.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\el.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\en-au.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\en-au.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\en-gb.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\en-gb.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\en-nz.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\en-nz.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\es-us.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\es-us.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\es.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\es.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\et.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\et.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\eu.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\eu.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\fa.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\fa.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\fi.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\fi.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\fr-ca.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\fr-ca.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\fr-ch.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\fr-ch.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\fr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\fr.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\gl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\gl.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\he.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\he.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\hi.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\hi.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\hr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\hr.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\hu.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\hu.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\id.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\id.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\is.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\is.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\it.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\it.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ja.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ja.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ka.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ka.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\kk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\kk.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ko.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ko.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\lb.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\lb.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\lt.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\lt.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\lv.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\lv.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\mk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\mk.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ms.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ms.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\nb.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\nb.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\nl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\nl.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\nn.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\nn.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\pl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\pl.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\pt-br.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\pt-br.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\pt.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\pt.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ro.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ro.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\ru.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\ru.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\sk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\sk.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\sl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\sl.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\sq.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\sq.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\sr-cyrl.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\sr-cyrl.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\sr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\sr.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\sv.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\sv.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\th.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\th.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\tr.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\tr.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\uk.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\uk.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\vi.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\vi.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\zh-cn.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\locales\\zh-tw.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\locales\\zh-tw.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\main.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\main.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\core\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\core\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\main.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\main.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\daygrid\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\daygrid\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\google-calendar\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\google-calendar\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\google-calendar\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\google-calendar\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\google-calendar\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\google-calendar\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\google-calendar\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\google-calendar\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\google-calendar\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\google-calendar\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\google-calendar\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\google-calendar\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\google-calendar\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\google-calendar\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\interaction\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\interaction\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\interaction\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\interaction\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\interaction\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\interaction\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\interaction\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\interaction\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\interaction\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\interaction\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\interaction\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\interaction\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\interaction\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\interaction\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\main.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\main.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\list\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\list\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\luxon\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\luxon\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\luxon\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\luxon\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\luxon\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\luxon\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\luxon\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\luxon\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\luxon\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\luxon\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\luxon\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\luxon\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\luxon\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\luxon\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment-timezone\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment-timezone\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment-timezone\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment-timezone\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment-timezone\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment-timezone\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment-timezone\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment-timezone\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment-timezone\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment-timezone\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment-timezone\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment-timezone\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment-timezone\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment-timezone\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\moment\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\moment\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\rrule\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\rrule\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\rrule\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\rrule\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\rrule\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\rrule\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\rrule\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\rrule\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\rrule\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\rrule\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\rrule\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\rrule\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\rrule\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\rrule\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\README.md",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\main.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\main.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\main.d.ts",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\main.d.ts"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\main.esm.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\main.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\main.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\main.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\main.min.css",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\main.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\main.min.js",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\main.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\fullcalendar\\timegrid\\package.json",
+      "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\avt.jpg",
+      "PackagePath": "staticwebassets\\images\\avt.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\bg-03.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\book-dec\\.DS_Store"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\book-dec\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\book-dec\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\book-dec\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\book-dec\\04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\book-dec\\05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\book-dec\\06.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book\\book.pdf",
+      "PackagePath": "staticwebassets\\images\\book\\book.pdf"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\booking\\01.png",
+      "PackagePath": "staticwebassets\\images\\booking\\01.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\booking\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\booking\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\booking\\cart.png",
+      "PackagePath": "staticwebassets\\images\\booking\\cart.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\booking\\seat.svg",
+      "PackagePath": "staticwebassets\\images\\booking\\seat.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\browse-books\\.DS_Store"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\06.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\07.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\07.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\08.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\08.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\09.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\09.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\10.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\11.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\12.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\12.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\img01.jpg",
+      "PackagePath": "staticwebassets\\images\\browse-books\\img01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\cart\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\cart\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\cart\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\cart\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\cart\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\cart\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\cart\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\cart\\04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\cart\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\cart\\05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\checkout\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\checkout\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\checkout\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\checkout\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\checkout\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\checkout\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\error\\02.png",
+      "PackagePath": "staticwebassets\\images\\error\\02.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\error\\404.png",
+      "PackagePath": "staticwebassets\\images\\error\\404.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\error\\500.png",
+      "PackagePath": "staticwebassets\\images\\error\\500.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\06.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\07.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\07.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\08.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\08.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\favorite\\09.jpg",
+      "PackagePath": "staticwebassets\\images\\favorite\\09.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\01.png",
+      "PackagePath": "staticwebassets\\images\\icon\\01.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\02.png",
+      "PackagePath": "staticwebassets\\images\\icon\\02.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\03.png",
+      "PackagePath": "staticwebassets\\images\\icon\\03.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\04.png",
+      "PackagePath": "staticwebassets\\images\\icon\\04.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\05.png",
+      "PackagePath": "staticwebassets\\images\\icon\\05.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\06.png",
+      "PackagePath": "staticwebassets\\images\\icon\\06.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\07.png",
+      "PackagePath": "staticwebassets\\images\\icon\\07.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\08.png",
+      "PackagePath": "staticwebassets\\images\\icon\\08.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\09.png",
+      "PackagePath": "staticwebassets\\images\\icon\\09.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\10.png",
+      "PackagePath": "staticwebassets\\images\\icon\\10.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\11.png",
+      "PackagePath": "staticwebassets\\images\\icon\\11.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\12.png",
+      "PackagePath": "staticwebassets\\images\\icon\\12.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\13.png",
+      "PackagePath": "staticwebassets\\images\\icon\\13.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\expand-window.json",
+      "PackagePath": "staticwebassets\\images\\icon\\expand-window.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\icon\\open-letter.json",
+      "PackagePath": "staticwebassets\\images\\icon\\open-letter.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\login\\1.png",
+      "PackagePath": "staticwebassets\\images\\login\\1.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\login\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\login\\2.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\login\\mail.png",
+      "PackagePath": "staticwebassets\\images\\login\\mail.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\login\\sign-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\login\\sign-bg.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\.DS_Store"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\06.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\07.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\07.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\08.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\08.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\09.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\09.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\img01.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\img01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\img02.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\img02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\img03.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\img03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\img04.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\img04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\new_realeases\\img05.jpg",
+      "PackagePath": "staticwebassets\\images\\new_realeases\\img05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\07.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\07.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\08.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\08.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\09.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\09.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\10.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\100.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\100.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\11.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\12.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\12.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\13.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\13.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\14.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\14.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\15.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\15.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\16.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\16.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\17.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\17.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\18.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\18.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\19.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\19.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\20.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\20.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\21.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\21.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\22.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\22.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\23.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\23.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\24.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\24.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\25.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\25.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\26.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\26.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\27.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\27.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\28.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\28.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\42.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\42.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\42.png",
+      "PackagePath": "staticwebassets\\images\\page-img\\42.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\43.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\43.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\44.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\44.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\45.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\45.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\46.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\46.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\47.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\47.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\48.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\48.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\49.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\49.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\a1.png",
+      "PackagePath": "staticwebassets\\images\\page-img\\a1.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\a2.png",
+      "PackagePath": "staticwebassets\\images\\page-img\\a2.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\a3.png",
+      "PackagePath": "staticwebassets\\images\\page-img\\a3.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\a4.png",
+      "PackagePath": "staticwebassets\\images\\page-img\\a4.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\featured-book.png",
+      "PackagePath": "staticwebassets\\images\\page-img\\featured-book.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\img-success.png",
+      "PackagePath": "staticwebassets\\images\\page-img\\img-success.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\man.svg",
+      "PackagePath": "staticwebassets\\images\\page-img\\man.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\p1.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\p1.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\p2.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\p2.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\page-load-loader.gif",
+      "PackagePath": "staticwebassets\\images\\page-img\\page-load-loader.gif"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\profile-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\page-img\\profile-bg.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\tag_blue.svg",
+      "PackagePath": "staticwebassets\\images\\page-img\\tag_blue.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\page-img\\tag_red.svg",
+      "PackagePath": "staticwebassets\\images\\page-img\\tag_red.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\06.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\07.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\07.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\08.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\08.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\09.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\09.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\10.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\11.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\search-book\\12.jpg",
+      "PackagePath": "staticwebassets\\images\\search-book\\12.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\similar-books\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\similar-books\\.DS_Store"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\similar-books\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\similar-books\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\similar-books\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\similar-books\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\similar-books\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\similar-books\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\similar-books\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\similar-books\\04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\similar-books\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\similar-books\\05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\similar-books\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\similar-books\\06.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\04.svg",
+      "PackagePath": "staticwebassets\\images\\small\\04.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\05.svg",
+      "PackagePath": "staticwebassets\\images\\small\\05.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\07.png",
+      "PackagePath": "staticwebassets\\images\\small\\07.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\08.png",
+      "PackagePath": "staticwebassets\\images\\small\\08.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\09.png",
+      "PackagePath": "staticwebassets\\images\\small\\09.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\10.png",
+      "PackagePath": "staticwebassets\\images\\small\\10.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\11.png",
+      "PackagePath": "staticwebassets\\images\\small\\11.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\12.png",
+      "PackagePath": "staticwebassets\\images\\small\\12.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\13.png",
+      "PackagePath": "staticwebassets\\images\\small\\13.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\14.png",
+      "PackagePath": "staticwebassets\\images\\small\\14.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\data.json",
+      "PackagePath": "staticwebassets\\images\\small\\data.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\data1.json",
+      "PackagePath": "staticwebassets\\images\\small\\data1.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\data2.json",
+      "PackagePath": "staticwebassets\\images\\small\\data2.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\flag-01.png",
+      "PackagePath": "staticwebassets\\images\\small\\flag-01.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\flag-02.png",
+      "PackagePath": "staticwebassets\\images\\small\\flag-02.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\flag-03.png",
+      "PackagePath": "staticwebassets\\images\\small\\flag-03.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\flag-04.png",
+      "PackagePath": "staticwebassets\\images\\small\\flag-04.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\flag-05.png",
+      "PackagePath": "staticwebassets\\images\\small\\flag-05.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\flag-06.png",
+      "PackagePath": "staticwebassets\\images\\small\\flag-06.png"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\img-1.jpg",
+      "PackagePath": "staticwebassets\\images\\small\\img-1.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\jpg.svg",
+      "PackagePath": "staticwebassets\\images\\small\\jpg.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\match-code.json",
+      "PackagePath": "staticwebassets\\images\\small\\match-code.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\xml.svg",
+      "PackagePath": "staticwebassets\\images\\small\\xml.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\small\\zip.svg",
+      "PackagePath": "staticwebassets\\images\\small\\zip.svg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\trendy-books\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\trendy-books\\.DS_Store"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\trendy-books\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\trendy-books\\01.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\trendy-books\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\trendy-books\\02.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\trendy-books\\03.jpg",
+      "PackagePath": "staticwebassets\\images\\trendy-books\\03.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\trendy-books\\04.jpg",
+      "PackagePath": "staticwebassets\\images\\trendy-books\\04.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\trendy-books\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\trendy-books\\05.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\trendy-books\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\trendy-books\\06.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\1.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\2.jpg"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\algoliasearchLite.min.js",
+      "PackagePath": "staticwebassets\\js\\algoliasearchLite.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\animated.js",
+      "PackagePath": "staticwebassets\\js\\animated.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\apexcharts.js",
+      "PackagePath": "staticwebassets\\js\\apexcharts.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\bodymovin.js",
+      "PackagePath": "staticwebassets\\js\\bodymovin.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\chart-custom.js",
+      "PackagePath": "staticwebassets\\js\\chart-custom.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\charts.js",
+      "PackagePath": "staticwebassets\\js\\charts.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\core.js",
+      "PackagePath": "staticwebassets\\js\\core.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\countdown.min.js",
+      "PackagePath": "staticwebassets\\js\\countdown.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\flatpickr.js",
+      "PackagePath": "staticwebassets\\js\\flatpickr.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\highcharts-3d.js",
+      "PackagePath": "staticwebassets\\js\\highcharts-3d.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\highcharts-more.js",
+      "PackagePath": "staticwebassets\\js\\highcharts-more.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\highcharts.js",
+      "PackagePath": "staticwebassets\\js\\highcharts.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\instantsearch.js",
+      "PackagePath": "staticwebassets\\js\\instantsearch.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\jquery.appear.js",
+      "PackagePath": "staticwebassets\\js\\jquery.appear.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\kelly.js",
+      "PackagePath": "staticwebassets\\js\\kelly.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\lottie.js",
+      "PackagePath": "staticwebassets\\js\\lottie.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\maps.js",
+      "PackagePath": "staticwebassets\\js\\maps.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\morris.js",
+      "PackagePath": "staticwebassets\\js\\morris.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\morris.min.js",
+      "PackagePath": "staticwebassets\\js\\morris.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\raphael-min.js",
+      "PackagePath": "staticwebassets\\js\\raphael-min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\js\\select2.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\js\\slick.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\smooth-scrollbar.js",
+      "PackagePath": "staticwebassets\\js\\smooth-scrollbar.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\style-customizer.js",
+      "PackagePath": "staticwebassets\\js\\style-customizer.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\worldHigh.js",
+      "PackagePath": "staticwebassets\\js\\worldHigh.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\worldLow.js",
+      "PackagePath": "staticwebassets\\js\\worldLow.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\js\\wow.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BookStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BookStore.props",
+      "PackagePath": "build\\BookStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BookStore.props",
+      "PackagePath": "buildMultiTargeting\\BookStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BookStore.props",
+      "PackagePath": "buildTransitive\\BookStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

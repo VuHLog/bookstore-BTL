@@ -1,0 +1,167 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using BookStore.Models;
+
+namespace BookStore.Controllers
+{
+    public class ManagerController : Controller
+    {
+        private readonly BookstoreContext _context;
+
+        public ManagerController(BookstoreContext context)
+        {
+            _context = context;
+        }
+
+        // GET: Manager
+        public async Task<IActionResult> Index()
+        {
+            var bookstoreContext = _context.Managers.Include(m => m.Bookshelf);
+            return View(await bookstoreContext.ToListAsync());
+        }
+
+        // GET: Manager/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Managers == null)
+            {
+                return NotFound();
+            }
+
+            var manager = await _context.Managers
+                .Include(m => m.Bookshelf)
+                .FirstOrDefaultAsync(m => m.ManagerId == id);
+            if (manager == null)
+            {
+                return NotFound();
+            }
+
+            return View(manager);
+        }
+
+        // GET: Manager/Create
+        public IActionResult Create()
+        {
+            ViewData["BookshelfId"] = new SelectList(_context.Bookshelves, "BookshelfId", "BookshelfId");
+            return View();
+        }
+
+        // POST: Manager/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Address,Name,Salary,BookshelfId")] Manager manager)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(manager);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            ViewData["BookshelfId"] = new SelectList(_context.Bookshelves, "BookshelfId", "BookshelfId", manager.BookshelfId);
+            return View(manager);
+        }
+
+        // GET: Manager/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null || _context.Managers == null)
+            {
+                return NotFound();
+            }
+
+            var manager = await _context.Managers.FindAsync(id);
+            if (manager == null)
+            {
+                return NotFound();
+            }
+            ViewData["BookshelfId"] = new SelectList(_context.Bookshelves, "BookshelfId", "BookshelfId", manager.BookshelfId);
+            return View(manager);
+        }
+
+        // POST: Manager/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("ManagerId,Address,Name,Salary,BookshelfId")] Manager manager)
+        {
+            if (id != manager.ManagerId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(manager);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ManagerExists(manager.ManagerId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            ViewData["BookshelfId"] = new SelectList(_context.Bookshelves, "BookshelfId", "BookshelfId", manager.BookshelfId);
+            return View(manager);
+        }
+
+        // GET: Manager/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.Managers == null)
+            {
+                return NotFound();
+            }
+
+            var manager = await _context.Managers
+                .Include(m => m.Bookshelf)
+                .FirstOrDefaultAsync(m => m.ManagerId == id);
+            if (manager == null)
+            {
+                return NotFound();
+            }
+
+            return View(manager);
+        }
+
+        // POST: Manager/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            if (_context.Managers == null)
+            {
+                return Problem("Entity set 'BookstoreContext.Managers'  is null.");
+            }
+            var manager = await _context.Managers.FindAsync(id);
+            if (manager != null)
+            {
+                _context.Managers.Remove(manager);
+            }
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool ManagerExists(int id)
+        {
+          return (_context.Managers?.Any(e => e.ManagerId == id)).GetValueOrDefault();
+        }
+    }
+}
