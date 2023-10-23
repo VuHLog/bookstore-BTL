@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BookStore.Models;
+using BookStore.CustomAtrribute;
 
 namespace BookStore.Controllers
 {
@@ -19,9 +20,12 @@ namespace BookStore.Controllers
         }
 
         // GET: Manager
+        [Route("admin/manager")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Index()
         {
-            var bookstoreContext = _context.Managers.Include(m => m.Bookshelf);
+            var bookstoreContext =  _context.Managers.Include(m => m.Bookshelf);
             return View(await bookstoreContext.ToListAsync());
         }
 

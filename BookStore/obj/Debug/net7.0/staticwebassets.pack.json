@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\css\\line-awesome.min.css"
     },
     {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\login\\style.css",
+      "PackagePath": "staticwebassets\\css\\login\\style.css"
+    },
+    {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\css\\magnific-popup.css",
       "PackagePath": "staticwebassets\\css\\magnific-popup.css"
     },
@@ -957,6 +961,10 @@
       "PackagePath": "staticwebassets\\fullcalendar\\timegrid\\package.json"
     },
     {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\LoginPage\\login.jpg",
+      "PackagePath": "staticwebassets\\images\\LoginPage\\login.jpg"
+    },
+    {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\avt.jpg",
       "PackagePath": "staticwebassets\\images\\avt.jpg"
     },
@@ -1761,6 +1769,10 @@
       "PackagePath": "staticwebassets\\js\\lottie.js"
     },
     {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\maps.js",
       "PackagePath": "staticwebassets\\js\\maps.js"
     },
@@ -1775,6 +1787,10 @@
     {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\popper.js",
+      "PackagePath": "staticwebassets\\js\\popper.js"
     },
     {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\popper.min.js",

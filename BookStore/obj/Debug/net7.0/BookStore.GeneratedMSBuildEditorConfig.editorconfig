@@ -96,12 +96,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/SignIn/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbkluXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/wwwroot/js/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxqc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Shared/_Layout.cshtml]

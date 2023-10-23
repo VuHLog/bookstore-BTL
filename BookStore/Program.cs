@@ -1,4 +1,5 @@
-﻿using BookStore.Models;
+﻿using BookStore.Middleware;
+using BookStore.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,10 +24,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseMiddleware<RoleMiddleware>(); // dua vao pipeline RoleMiddleware
 
 app.UseAuthorization();
 

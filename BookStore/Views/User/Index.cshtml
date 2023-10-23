@@ -1,21 +1,21 @@
-﻿@model IEnumerable<BookStore.Models.Book>
+﻿@model IEnumerable<BookStore.Models.User>
 
 @{
     Layout = "~/Views/Shared/Admin/MainLayout.cshtml";
-    ViewBag.breadcrumb = "Sách";
+    ViewBag.breadcrumb = "Người dùng";
 }
 
 <div id="content-page" class="content-page">
-    <div class="container-fluid" id="contentTest">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="iq-card">
                     <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                            <h4 class="card-title">Danh sách sách</h4>
+                            <h4 class="card-title">Danh sách người dùng</h4>
                         </div>
                         <div class="iq-card-header-toolbar d-flex align-items-center">
-                            <a href="/Book/Create" class="btn btn-primary">Thêm sách</a>
+                            <a href="/User/Create" class="btn btn-primary">Thêm người dùng</a>
                         </div>
                     </div>
                     <div class="iq-card-body">
@@ -24,12 +24,12 @@
                                 <thead>
                                     <tr>
                                         <th style="width: 3%;">STT</th>
+                                        <th style="width: 12%;">Họ</th>
                                         <th style="width: 12%;">Tên</th>
-                                        <th style="width: 15%;">Giá</th>
-                                        <th style="width: 10%;">Ngày phát hành</th>
-                                        <th style="width: 3%;">Số lượng</th>
-                                        <th style="width: 15%;">Tác giả</th>
-                                        <th style="width: 15%;">Loại sách</th>
+                                        <th style="width: 15%;">Email</th>
+                                        <th style="width: 15%;">Tài khoản</th>
+                                        <th style="width: 15%;">Mật khẩu</th>
+                                        <th style="width: 15%;">Enabled</th>
                                         <th style="width: 15%;">Hoạt động</th>
                                     </tr>
                                 </thead>
@@ -37,20 +37,20 @@
                                     @{
                                         int i = 0;
                                     }
-                                    @foreach (var book in Model)
+                                    @foreach (var user in Model)
                                     {
                                         <tr>
                                             <td>@(++i)</td>
-                                            <td>@book.Name</td>
-                                            <td>@book.Cost</td>
-                                            <td>@book.Date</td>
-                                            <td>@book.Number</td>
-                                            <td>@book.Authors</td>
-                                            <td>@book.KindOfBookId</td>
+                                            <td>@user.Lastname</td>
+                                            <td>@user.Firstname</td>
+                                            <td>@user.Email</td>
+                                            <td>@user.Username</td>
+                                            <td>@user.Password</td>
+                                            <td>@user.Enabled</td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
-                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="/Book/Edit/@book.BookId"><i class="ri-pencil-line"></i></a>
-                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá" href="/Book/Delete/@book.BookId"><i class="ri-delete-bin-line"></i></a>
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="/User/Edit/@user.Id"><i class="ri-pencil-line"></i></a>
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá" href="/User/Delete/@user.Id"><i class="ri-delete-bin-line"></i></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -63,6 +63,4 @@
             </div>
         </div>
     </div>
-
 </div>
-
