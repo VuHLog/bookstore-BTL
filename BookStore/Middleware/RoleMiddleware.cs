@@ -29,12 +29,13 @@ namespace BookStore.Middleware
                 string? controllerName = routeData.Values["controller"]?.ToString();
                 string? actionName = routeData.Values["action"]?.ToString();
 
-                // Lấy MethodInfo của action bằng reflection
-                Type? controllerType = Type.GetType($"BookStore.Controllers.{controllerName}Controller");
-                MethodInfo? methodInfo = controllerType.GetMethod(actionName, Type.EmptyTypes);
 
-                if (methodInfo != null)
+                if (actionName != null)
                 {
+                    // Lấy MethodInfo của action bằng reflection
+                    Type? controllerType = Type.GetType($"BookStore.Controllers.{controllerName}Controller");
+                    MethodInfo? methodInfo = controllerType.GetMethod(actionName, Type.EmptyTypes);
+
                     // Lấy danh sách các thuộc tính trên phương thức
                     var roleAttributes = methodInfo.GetCustomAttributes<RoleAttribute>();
                     List<string> roleNameAttrs = new List<string>();
@@ -46,6 +47,8 @@ namespace BookStore.Middleware
                     {
                         //lay ra account trong cookie
                         var cookie = context.Request.Cookies["account"];
+
+                        //kiem tra login
                         if(cookie != null)
                         {
                             AccountDTO account = JsonConvert.DeserializeObject<AccountDTO>(cookie);
@@ -64,6 +67,7 @@ namespace BookStore.Middleware
                                       await context.Response.WriteAsync(html);
                                   }
                                 );
+                                return;
                             }
                         }
                         else
@@ -76,6 +80,7 @@ namespace BookStore.Middleware
                                   await context.Response.WriteAsync(html);
                               }
                             );
+                            return;
                         }
 
                     }

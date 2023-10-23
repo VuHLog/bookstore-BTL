@@ -67,6 +67,7 @@ namespace BookStore.Controllers
                               }).FirstOrDefault();
                 Response.Cookies.Append("account", JsonConvert.SerializeObject(account));
                 //return ve trang truoc do
+                string returnUrl = Request.Headers["Referer"].ToString();
                 return Redirect(Request.Headers["Referer"].ToString());
             }
         }

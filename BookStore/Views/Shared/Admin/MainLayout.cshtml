@@ -1,4 +1,18 @@
-﻿<!doctype html>
+﻿@using BookStore.DTO;
+@using Newtonsoft.Json;
+
+
+@{
+    var cookie = Context.Request.Cookies["account"];
+    AccountDTO account = new AccountDTO();
+    if (cookie != null)
+    {
+        account = JsonConvert.DeserializeObject<AccountDTO>(cookie);
+    }
+
+}
+
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -36,7 +50,7 @@
                         <span class="text-primary text-uppercase">NHASACHTV</span>
                     </div>
                 </a>
-                <div class="iq-menu-bt-sidebar">
+                <div class="iq-menu-bt-sidebar d-xl-none">
                     <div class="iq-menu-bt align-self-center">
                         <div class="wrapper-menu">
                             <div class="main-circle"><i class="las la-bars"></i></div>
@@ -52,28 +66,28 @@
                             <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-elementor iq-arrow-left"></i><span>Danh mục quản lý</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                             <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Người quản lý</span></a>
+                                    <a href="/admin/manager" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Người quản lý</span></a>
                                 </li>
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Nhân viên</span></a>
+                                    <a href="/admin/employee" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Nhân viên</span></a>
                                 </li>
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Sách</span></a>
+                                    <a href="/admin/book" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Sách</span></a>
                                 </li>
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Loại sách</span></a>
+                                    <a href="/admin/kindOfBook" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Loại sách</span></a>
                                 </li>
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Kệ sách</span></a>
+                                    <a href="/admin/bookshelf" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Kệ sách</span></a>
                                 </li>
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Nhà xuất bản</span></a>
+                                    <a href="/admin/publisher" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Nhà xuất bản</span></a>
                                 </li>
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Khách hàng</span></a>
+                                    <a href="/admin/customer" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Khách hàng</span></a>
                                 </li>
                                 <li class="elements">
-                                    <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>User</span></a>
+                                    <a href="/admin/user" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>User</span></a>
                                 </li>
                                 <li class="elements">
                                     <a href="#sub-menu" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span>Hoá đơn nhập</span></a>
@@ -83,7 +97,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="sign-in.html"><i class="ri-record-circle-line"></i>Đăng Xuất</a></li>
+                        <li><a href="/signout"><i class="ri-record-circle-line"></i>Đăng Xuất</a></li>
                     </ul>
                 </nav>
                 <div id="sidebar-bottom" class="p-3 position-relative">
@@ -123,12 +137,6 @@
                                 <li class="breadcrumb-item active" aria-current="page">@ViewBag.breadcrumb</li>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="iq-search-bar">
-                        <form action="#" class="searchbox">
-                            <input type="text" class="text search-input" placeholder="Tìm kiếm sản phẩm...">
-                            <a class="search-link" href="#"><i class="ri-search-line"></i></a>
-                        </form>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                         <i class="ri-menu-3-line"></i>
@@ -207,81 +215,13 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item nav-icon dropdown">
-                                <a href="#" class="search-toggle iq-waves-effect text-gray rounded">
-                                    <i class="ri-mail-line"></i>
-                                    <span class="bg-primary dots"></span>
-                                </a>
-                                <div class="iq-sub-dropdown">
-                                    <div class="iq-card shadow-none m-0">
-                                        <div class="iq-card-body p-0 ">
-                                            <div class="bg-primary p-3">
-                                                <h5 class="mb-0 text-white">Tin Nhắn<small class="badge  badge-light float-right pt-1">5</small></h5>
-                                            </div>
-                                            <a href="#" class="iq-sub-card">
-                                                <div class="media align-items-center">
-                                                    <div class="">
-                                                        <img class="avatar-40 rounded" src="images/user/01.jpg" alt="">
-                                                    </div>
-                                                    <div class="media-body ml-3">
-                                                        <h6 class="mb-0 ">QT Shop</h6>
-                                                        <small class="float-left font-size-12">13 Jun</small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="iq-sub-card">
-                                                <div class="media align-items-center">
-                                                    <div class="">
-                                                        <img class="avatar-40 rounded" src="images/user/02.jpg" alt="">
-                                                    </div>
-                                                    <div class="media-body ml-3">
-                                                        <h6 class="mb-0 ">Tran Thuan Store</h6>
-                                                        <small class="float-left font-size-12">20 Apr</small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="iq-sub-card">
-                                                <div class="media align-items-center">
-                                                    <div class="">
-                                                        <img class="avatar-40 rounded" src="images/user/03.jpg" alt="">
-                                                    </div>
-                                                    <div class="media-body ml-3">
-                                                        <h6 class="mb-0 ">Hoang Vu Book</h6>
-                                                        <small class="float-left font-size-12">30 Jun</small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="iq-sub-card">
-                                                <div class="media align-items-center">
-                                                    <div class="">
-                                                        <img class="avatar-40 rounded" src="images/user/04.jpg" alt="">
-                                                    </div>
-                                                    <div class="media-body ml-3">
-                                                        <h6 class="mb-0 ">Quang Minh Book</h6>
-                                                        <small class="float-left font-size-12">12 Sep</small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="iq-sub-card">
-                                                <div class="media align-items-center">
-                                                    <div class="">
-                                                        <img class="avatar-40 rounded" src="images/user/05.jpg" alt="">
-                                                    </div>
-                                                    <div class="media-body ml-3">
-                                                        <h6 class="mb-0 ">TV Team</h6>
-                                                        <small class="float-left font-size-12">5 Dec</small>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
                             <li class="line-height pt-3">
                                 <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
                                     <img src="images/user/1.jpg" class="img-fluid rounded-circle mr-3" alt="user">
                                     <div class="caption">
-                                        <h6 class="mb-1 line-height">Ông Trần Thuận</h6>
+                                        <h6 class="mb-1 line-height">
+                                            @account.fullname
+                                        </h6>
                                         <p class="mb-0 text-primary">Tài Khoản</p>
                                     </div>
                                 </a>
@@ -289,7 +229,7 @@
                                     <div class="iq-card shadow-none m-0">
                                         <div class="iq-card-body p-0 ">
                                             <div class="bg-primary p-3">
-                                                <h5 class="mb-0 text-white line-height">Xin Chào Ông Trần Thuận</h5>
+                                                <h5 class="mb-0 text-white line-height">Xin Chào @account.fullname</h5>
                                             </div>
                                             <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
                                                 <div class="media align-items-center">
@@ -298,16 +238,6 @@
                                                     </div>
                                                     <div class="media-body ml-3">
                                                         <h6 class="mb-0 ">Tài khoản của tôi</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-hover">
-                                                <div class="media align-items-center">
-                                                    <div class="rounded iq-card-icon iq-bg-primary">
-                                                        <i class="ri-profile-line"></i>
-                                                    </div>
-                                                    <div class="media-body ml-3">
-                                                        <h6 class="mb-0 ">Sổ địa chỉ</h6>
                                                     </div>
                                                 </div>
                                             </a>
@@ -321,18 +251,8 @@
                                                     </div>
                                                 </div>
                                             </a>
-                                            <a href="wishlist.html" class="iq-sub-card iq-bg-primary-hover">
-                                                <div class="media align-items-center">
-                                                    <div class="rounded iq-card-icon iq-bg-primary">
-                                                        <i class="ri-heart-line"></i>
-                                                    </div>
-                                                    <div class="media-body ml-3">
-                                                        <h6 class="mb-0 ">Yêu Thích</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
                                             <div class="d-inline-block w-100 text-center p-3">
-                                                <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
+                                                <a class="bg-primary iq-sign-btn" href="/signout" role="button">Đăng xuất<i class="ri-login-box-line ml-2"></i></a>
                                             </div>
                                         </div>
                                     </div>

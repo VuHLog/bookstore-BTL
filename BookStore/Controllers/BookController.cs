@@ -19,6 +19,7 @@ namespace BookStore.Controllers
         }
 
         // GET: Books
+        [Route("admin/book")]
         public async Task<IActionResult> Index()
         {
             var bookstoreContext = _context.Books.Include(b => b.KindOfBook);
