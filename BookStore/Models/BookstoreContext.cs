@@ -341,6 +341,8 @@ public partial class BookstoreContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("username");
+            entity.Property(e => e.avatarUrl)
+            .HasColumnName("avatarUrl");
         });
 
         modelBuilder.Entity<UsersRole>(entity =>

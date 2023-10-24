@@ -35,9 +35,9 @@ namespace BookStore.Controllers
         public IActionResult LoginPost([Bind("Password,Username")] User userRq, string urlprevious)
         {   
             //Validate
-            if(!ModelState.IsValid)
+            if(ModelState.IsValid)
             {
-                return View(new User());
+                return View("Login",new User());
             }
             else
             {

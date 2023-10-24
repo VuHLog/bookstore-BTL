@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="iq-card-body">
-                        <form asp-controller="User" asp-action="Edit" method="post">
+                        <form asp-controller="User" asp-action="EditPost" method="post" enctype="multipart/form-data">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <input type="hidden" asp-for="Id" />
                             <div class="form-group">
@@ -50,6 +50,12 @@
                                 <input asp-for="Enabled" type="text" class="form-control">
                                 <span asp-validation-for="Enabled" class="text-danger"></span>
                             </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label" asp-for="avatar"></label>
+                                <input class="form-control" type="file" id="formFile" asp-for="avatar">
+                                <span asp-validation-for="avatar" class="text-danger"></span>
+                            </div>
+                            <input type="hidden" asp-for="avatarUrl" />
                             <button type="submit" class="btn btn-primary">Lưu</button> |
                             <a asp-action="Index">Quay lại danh sách người dùng</a>
                         </form>

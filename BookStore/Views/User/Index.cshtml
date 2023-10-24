@@ -29,8 +29,9 @@
                                         <th style="width: 15%;">Email</th>
                                         <th style="width: 15%;">Tài khoản</th>
                                         <th style="width: 15%;">Mật khẩu</th>
-                                        <th style="width: 15%;">Enabled</th>
-                                        <th style="width: 15%;">Hoạt động</th>
+                                        <th style="width: 5%;">Enabled</th>
+                                        <th style="width: 10% ">Avatar</th>
+                                        <th style="width: 10%;">Hoạt động</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -47,6 +48,9 @@
                                             <td>@user.Username</td>
                                             <td>@user.Password</td>
                                             <td>@user.Enabled</td>
+                                            <td>
+                                                <img src="@user.avatarUrl" class="img-fluid" alt="avatar image">
+                                            </td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="/User/Edit/@user.Id"><i class="ri-pencil-line"></i></a>

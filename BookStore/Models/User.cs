@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookStore.Models;
 
@@ -21,4 +22,11 @@ public partial class User
 
     [Required(ErrorMessage ="Tên tài khoản bắt buộc phải được nhập")]
     public string? Username { get; set; }
+
+    [Display(Name="Chọn ảnh đại diện cho tài khoản")]
+    [Required]
+    [NotMapped]
+    public IFormFile avatar { get; set; }
+
+    public string? avatarUrl { get; set; }
 }

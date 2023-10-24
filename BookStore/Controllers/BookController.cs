@@ -66,7 +66,7 @@ namespace BookStore.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "KindOfBookId", book.KindOfBookId);
-            return View(book);
+            return View("create",book);
         }
 
         // GET: Books/Edit/5
@@ -114,7 +114,7 @@ namespace BookStore.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "KindOfBookId", book.KindOfBookId);
-            return View(book);
+            return View("edit",book);
         }
 
         // GET: Books/Delete/5

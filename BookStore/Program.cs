@@ -16,6 +16,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddDistributedMemoryCache(); // Sử dụng bộ nhớ cache mặc định cho session
+builder.Services.AddSession(); // Thêm dịch vụ Session
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,6 +32,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseSession(); // Sử dụng Session Middleware
 
 app.UseRouting();
 app.UseMiddleware<RoleMiddleware>(); // dua vao pipeline RoleMiddleware

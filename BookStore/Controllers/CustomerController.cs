@@ -63,7 +63,7 @@ namespace BookStore.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(customer);
+            return View("create", customer);
         }
 
         // GET: Customer/Edit/5
@@ -109,7 +109,7 @@ namespace BookStore.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(customer);
+            return View("edit",customer);
         }
 
         // GET: Customer/Delete/5

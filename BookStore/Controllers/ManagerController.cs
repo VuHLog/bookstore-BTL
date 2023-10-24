@@ -69,7 +69,7 @@ namespace BookStore.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["BookshelfId"] = new SelectList(_context.Bookshelves, "BookshelfId", "BookshelfId", manager.BookshelfId);
-            return View(manager);
+            return View("create", manager);
         }
 
         // GET: Manager/Edit/5
@@ -117,7 +117,7 @@ namespace BookStore.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["BookshelfId"] = new SelectList(_context.Bookshelves, "BookshelfId", "BookshelfId", manager.BookshelfId);
-            return View(manager);
+            return View("edit", manager);
         }
 
         // GET: Manager/Delete/5

@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\user\0" />
+    <Content Remove="wwwroot\images\user\60e65dd9-cd0d-4acf-96a8-bf81aa26ff11hypnosis-g8c6c584e9_1920.jpg" />
+    <Content Remove="wwwroot\images\user\d8f32f4a-dc1f-4327-8b75-91d6991c062c0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\js\site.js" />
   </ItemGroup>
 
@@ -23,6 +29,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\user\" />
   </ItemGroup>
 
 </Project>

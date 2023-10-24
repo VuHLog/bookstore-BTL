@@ -965,14 +965,6 @@
       "PackagePath": "staticwebassets\\images\\LoginPage\\login.jpg"
     },
     {
-      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\avt.jpg",
-      "PackagePath": "staticwebassets\\images\\avt.jpg"
-    },
-    {
-      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\bg-03.jpg",
-      "PackagePath": "staticwebassets\\images\\bg-03.jpg"
-    },
-    {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\.DS_Store",
       "PackagePath": "staticwebassets\\images\\book-dec\\.DS_Store"
     },
@@ -1665,12 +1657,12 @@
       "PackagePath": "staticwebassets\\images\\trendy-books\\06.jpg"
     },
     {
-      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\1.jpg",
-      "PackagePath": "staticwebassets\\images\\user\\1.jpg"
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg"
     },
     {
-      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\2.jpg",
-      "PackagePath": "staticwebassets\\images\\user\\2.jpg"
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg",
+      "PackagePath": "staticwebassets\\images\\user\\b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg"
     },
     {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\algoliasearchLite.min.js",

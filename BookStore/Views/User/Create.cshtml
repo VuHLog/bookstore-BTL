@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="iq-card-body">
-                        <form asp-controller="User" asp-action="CreatePost" method="post">
+                        <form asp-controller="User" asp-action="CreatePost" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label asp-for="Lastname">Họ:</label>
                                 <input asp-for="Lastname" type="text" class="form-control">
@@ -47,6 +47,11 @@
                                 <label asp-for="Enabled">Enabled:</label>
                                 <input asp-for="Enabled" type="text" class="form-control">
                                 <span asp-validation-for="Enabled" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label" asp-for="avatar"></label>
+                                <input class="form-control" type="file" id="formFile" asp-for="avatar">
+                                <span asp-validation-for="avatar" class="text-danger"></span>
                             </div>
                             <button type="submit" class="btn btn-primary">Tạo</button>
                             <button type="reset" class="btn btn-danger">Trở lại</button>

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BookStore.Models;
+using System.IO;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 
 namespace BookStore.Controllers
 {
@@ -13,9 +15,12 @@ namespace BookStore.Controllers
     {
         private readonly BookstoreContext _context;
 
-        public UserController(BookstoreContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public UserController(BookstoreContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: User
@@ -34,7 +39,6 @@ namespace BookStore.Controllers
             {
                 return NotFound();
             }
-
             var user = await _context.Users
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
@@ -56,15 +60,25 @@ namespace BookStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreatePost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username")] User user)
+        public async Task<IActionResult> CreatePost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username,avatar")] User user)
         {
+            // luu anh vao thu muc images/user
             if (ModelState.IsValid)
             {
+                if (user.avatar != null)
+                {
+                    string folder = "images\\user\\"+ Guid.NewGuid().ToString() + user.avatar.FileName;
+                    string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
+
+                    user.avatarUrl = "\\"+ folder;
+
+                    await user.avatar.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                }
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View("create",user);
         }
 
         // GET: User/Edit/5
@@ -88,10 +102,21 @@ namespace BookStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditPost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username")] User user)
+        public async Task<IActionResult> EditPost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username,avatar,avatarUrl")] User user)
         {
             if (ModelState.IsValid)
             {
+                if (user.avatar != null)
+                {
+                    string webRootPath = _webHostEnvironment.WebRootPath;
+
+                    string folder = "images/user/" + Guid.NewGuid().ToString() + user.avatar.FileName;
+                    string serverFolder = Path.Combine(webRootPath, folder);
+
+                    user.avatarUrl = "/" + folder;
+
+                    await user.avatar.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                }
                 try
                 {
                     _context.Update(user);
