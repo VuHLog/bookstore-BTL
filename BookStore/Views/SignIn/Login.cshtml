@@ -24,7 +24,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="login-wrap p-0">
                             <h3 class="mb-4 text-center">Đăng nhập</h3>
-                            <form asp-controller="Signin" asp-action="Login" method="post" class="signin-form">
+                            <form asp-controller="Signin" asp-action="LoginPost" method="post" class="signin-form">
                                 <span class="text-danger">@ViewBag.error</span>
                                 <div class="form-group">
                                     <input asp-for="Username" type="text" class="form-control" placeholder="Username">
@@ -50,6 +50,7 @@
                                         <a href="#" style="color: #fff">Quên mật khẩu</a>
                                     </div>
                                 </div>
+                                <input type="hidden" name="urlprevious" value="@ViewBag.urlPrevious" />
                             </form>
                             <p class="w-100 text-center">&mdash; Hoặc đăng nhập với &mdash;</p>
                             <div class="social d-flex text-center">

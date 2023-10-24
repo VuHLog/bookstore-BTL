@@ -25,13 +25,14 @@ namespace BookStore.Controllers
         public IActionResult Login()
         {
             User user = new User();
+            ViewBag.urlPrevious = Request.Headers["Referer"].ToString();
             return View(user);
         }
 
         //POST : login
         [HttpPost]
-        [Route("Login")]
-        public IActionResult Login([Bind("Password,Username")] User userRq)
+        [Route("LoginPost")]
+        public IActionResult LoginPost([Bind("Password,Username")] User userRq, string urlprevious)
         {   
             //Validate
             if(!ModelState.IsValid)
@@ -67,8 +68,7 @@ namespace BookStore.Controllers
                               }).FirstOrDefault();
                 Response.Cookies.Append("account", JsonConvert.SerializeObject(account));
                 //return ve trang truoc do
-                string returnUrl = Request.Headers["Referer"].ToString();
-                return Redirect(Request.Headers["Referer"].ToString());
+                return Redirect(urlprevious);
             }
         }
 

@@ -60,7 +60,7 @@ namespace BookStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Address,Name,Salary,BookshelfId")] Manager manager)
+        public async Task<IActionResult> CreatePost([Bind("Address,Name,Salary,BookshelfId")] Manager manager)
         {
             if (ModelState.IsValid)
             {
@@ -94,13 +94,8 @@ namespace BookStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ManagerId,Address,Name,Salary,BookshelfId")] Manager manager)
+        public async Task<IActionResult> EditPost([Bind("ManagerId,Address,Name,Salary,BookshelfId")] Manager manager)
         {
-            if (id != manager.ManagerId)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
                 try
