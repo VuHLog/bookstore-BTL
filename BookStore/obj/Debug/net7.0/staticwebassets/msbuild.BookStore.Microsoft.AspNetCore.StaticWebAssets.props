@@ -6624,12 +6624,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\trendy-books\06.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BookStore</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BookStore</BasePath>
-      <RelativePath>images/user/1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg</RelativePath>
+      <RelativePath>images/user/d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -6638,14 +6638,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\eca96aed-3f68-4826-9269-d55c0d423985pexels-hristo-fidanov-1252873.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BookStore</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BookStore</BasePath>
-      <RelativePath>images/user/b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg</RelativePath>
+      <RelativePath>images/user/eca96aed-3f68-4826-9269-d55c0d423985pexels-hristo-fidanov-1252873.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -6654,7 +6654,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\user\eca96aed-3f68-4826-9269-d55c0d423985pexels-hristo-fidanov-1252873.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\algoliasearchLite.min.js))">
       <SourceType>Package</SourceType>

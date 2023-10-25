@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using BookStore.Models;
 using System.IO;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
+using System.Drawing;
+using BookStore.Data;
 
 namespace BookStore.Controllers
 {
@@ -67,6 +69,7 @@ namespace BookStore.Controllers
             {
                 if (user.avatar != null)
                 {
+
                     string folder = "images\\user\\"+ Guid.NewGuid().ToString() + user.avatar.FileName;
                     string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
 
@@ -74,6 +77,9 @@ namespace BookStore.Controllers
 
                     await user.avatar.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
                 }
+                //encode password
+                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -109,11 +115,16 @@ namespace BookStore.Controllers
                 if (user.avatar != null)
                 {
                     string webRootPath = _webHostEnvironment.WebRootPath;
+                    //string oldFilePath = webRootPath + user.avatarUrl;
+                    //if (System.IO.File.Exists(oldFilePath))
+                    //{
+                    //    System.IO.File.Delete(oldFilePath); // Xóa tệp
+                    //}
 
-                    string folder = "images/user/" + Guid.NewGuid().ToString() + user.avatar.FileName;
+                    string folder = "images\\user\\" + Guid.NewGuid().ToString() + user.avatar.FileName;
                     string serverFolder = Path.Combine(webRootPath, folder);
 
-                    user.avatarUrl = "/" + folder;
+                    user.avatarUrl = "\\" + folder;
 
                     await user.avatar.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
                 }

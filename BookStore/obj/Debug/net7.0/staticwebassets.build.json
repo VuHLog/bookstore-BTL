@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H+mc7m+OmETdwgGFbLBm1HjwvgVUgzKcfBE5IXhrGCs=",
+  "Hash": "FYuOvyRyy94+FDoBjf5sCO2FuwBfHvd7tDukfc/5Rf8=",
   "Source": "BookStore",
   "BasePath": "_content/BookStore",
   "Mode": "Default",
@@ -7072,12 +7072,12 @@
       "OriginalItemSpec": "wwwroot\\images\\trendy-books\\06.jpg"
     },
     {
-      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg",
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg",
       "SourceId": "BookStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
       "BasePath": "_content/BookStore",
-      "RelativePath": "images/user/1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg",
+      "RelativePath": "images/user/d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7086,15 +7086,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\user\\1eb1eebf-7239-4f8d-a457-ae51fb2dba10pexels-eberhard-grossgasteiger-1287145.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\user\\d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg"
     },
     {
-      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg",
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\eca96aed-3f68-4826-9269-d55c0d423985pexels-hristo-fidanov-1252873.jpg",
       "SourceId": "BookStore",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
       "BasePath": "_content/BookStore",
-      "RelativePath": "images/user/b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg",
+      "RelativePath": "images/user/eca96aed-3f68-4826-9269-d55c0d423985pexels-hristo-fidanov-1252873.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7103,7 +7103,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\user\\b2d691b1-dca8-47bb-9d83-2b9f5f41c787pexels-tobi-675764.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\user\\eca96aed-3f68-4826-9269-d55c0d423985pexels-hristo-fidanov-1252873.jpg"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\algoliasearchLite.min.js",

@@ -1,5 +1,5 @@
-﻿using BookStore.Middleware;
-using BookStore.Models;
+﻿using BookStore.Data;
+using BookStore.Middleware;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

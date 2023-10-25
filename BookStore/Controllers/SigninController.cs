@@ -1,4 +1,5 @@
-﻿using BookStore.Models;
+﻿using BookStore.Data;
+using BookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore.Query;
@@ -68,7 +69,14 @@ namespace BookStore.Controllers
                               }).FirstOrDefault();
                 Response.Cookies.Append("account", JsonConvert.SerializeObject(account));
                 //return ve trang truoc do
-                return Redirect(urlprevious);
+                if(urlprevious != null)
+                {
+                   return Redirect(urlprevious);
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
             }
         }
 
