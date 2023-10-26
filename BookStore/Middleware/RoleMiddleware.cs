@@ -32,8 +32,16 @@ namespace BookStore.Middleware
 
                 if (actionName != null)
                 {
+                    Type? controllerType = null;
                     // Lấy MethodInfo của action bằng reflection
-                    Type? controllerType = Type.GetType($"BookStore.Controllers.{controllerName}Controller");
+                    if (routeData.Values.TryGetValue("area", out var area))
+                    {
+                        // area chứa giá trị của thuộc tính [Area]
+                        var areaValue = area.ToString();
+                        // Sử dụng areaValue theo nhu cầu của bạn
+                        controllerType = Type.GetType($"BookStore.{areaValue}.Controllers.{controllerName}Controller");
+                    }else controllerType = Type.GetType($"BookStore.Controllers.{controllerName}Controller");
+
                     MethodInfo? methodInfo = controllerType.GetMethod(actionName);
 
                     // Lấy danh sách các thuộc tính trên phương thức

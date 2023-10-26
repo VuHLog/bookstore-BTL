@@ -1,5 +1,6 @@
 ﻿using BookStore.Data;
 using BookStore.Middleware;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +40,7 @@ app.UseRouting();
 app.UseMiddleware<RoleMiddleware>(); // dua vao pipeline RoleMiddleware
 
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",
