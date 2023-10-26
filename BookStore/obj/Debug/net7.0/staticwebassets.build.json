@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FYuOvyRyy94+FDoBjf5sCO2FuwBfHvd7tDukfc/5Rf8=",
+  "Hash": "AFsa481obW6h1Sdsh7WBd2EDuBTIBEI7MQXBSgf9zrg=",
   "Source": "BookStore",
   "BasePath": "_content/BookStore",
   "Mode": "Default",
@@ -4114,23 +4114,6 @@
       "OriginalItemSpec": "wwwroot\\fullcalendar\\timegrid\\README.md"
     },
     {
-      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book\\book.pdf",
-      "SourceId": "BookStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
-      "BasePath": "_content/BookStore",
-      "RelativePath": "images/book/book.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\book\\book.pdf"
-    },
-    {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\book-dec\\.DS_Store",
       "SourceId": "BookStore",
       "SourceType": "Discovered",
@@ -4316,6 +4299,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\booking\\seat.svg"
+    },
+    {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\eda56c6a-c28e-41bf-81b3-83ce1fd8e50cbia-trong-ma-dao-to-su-tap-2-3.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/books/eda56c6a-c28e-41bf-81b3-83ce1fd8e50cbia-trong-ma-dao-to-su-tap-2-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\eda56c6a-c28e-41bf-81b3-83ce1fd8e50cbia-trong-ma-dao-to-su-tap-2-3.jpg"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\.DS_Store",
@@ -7070,6 +7070,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\trendy-books\\06.jpg"
+    },
+    {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\a958d269-f5d9-4047-9ca3-f9d8e8bfd8d5bia-trong-ma-dao-to-su-tap-2-3.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/user/a958d269-f5d9-4047-9ca3-f9d8e8bfd8d5bia-trong-ma-dao-to-su-tap-2-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user\\a958d269-f5d9-4047-9ca3-f9d8e8bfd8d5bia-trong-ma-dao-to-su-tap-2-3.jpg"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg",

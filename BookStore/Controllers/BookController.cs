@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BookStore.Models;
 using BookStore.Data;
+using Microsoft.AspNetCore.Hosting;
 
 namespace BookStore.Controllers
 {
@@ -14,9 +15,12 @@ namespace BookStore.Controllers
     {
         private readonly BookstoreContext _context;
 
-        public BookController(BookstoreContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public BookController(BookstoreContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Books
@@ -49,7 +53,7 @@ namespace BookStore.Controllers
         // GET: Books/Create
         public IActionResult Create()
         {
-            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "KindOfBookId");
+            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "Name");
             return View();
         }
 
@@ -58,15 +62,25 @@ namespace BookStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreatePost([Bind("BookId,Authors,Cost,Date,Name,Number,KindOfBookId,Content")] Book book)
+        public async Task<IActionResult> CreatePost([Bind("BookId,Authors,Cost,Date,Name,Number,KindOfBookId,Content,productImage")] Book book)
         {
             if (ModelState.IsValid)
             {
+                if (book.productImage != null)
+                {
+
+                    string folder = "images\\books\\" + Guid.NewGuid().ToString() + book.productImage.FileName;
+                    string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
+
+                    book.imageUrl = "\\" + folder;
+
+                    await book.productImage.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                }
                 _context.Add(book);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "KindOfBookId", book.KindOfBookId);
+            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "Name", book.KindOfBookId);
             return View("create",book);
         }
 
@@ -83,7 +97,7 @@ namespace BookStore.Controllers
             {
                 return NotFound();
             }
-            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "KindOfBookId", book.KindOfBookId);
+            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "Name", book.KindOfBookId);
             return View(book);
         }
 
@@ -92,10 +106,28 @@ namespace BookStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> EditPost( [Bind("BookId,Authors,Cost,Date,Name,Number,KindOfBookId,Content")] Book book)
+        public async Task<IActionResult> EditPost( [Bind("BookId,Authors,Cost,Date,Name,Number,KindOfBookId,Content,productImage,imageUrl")] Book book)
         {
             if (ModelState.IsValid)
             {
+
+                if (book.productImage != null)
+                {
+                    string webRootPath = _webHostEnvironment.WebRootPath;
+                    //string oldFilePath = webRootPath + user.avatarUrl;
+                    //if (System.IO.File.Exists(oldFilePath))
+                    //{
+                    //    System.IO.File.Delete(oldFilePath); // Xóa tệp
+                    //}
+
+                    string folder = "images\\user\\" + Guid.NewGuid().ToString() + book.productImage.FileName;
+                    string serverFolder = Path.Combine(webRootPath, folder);
+
+                    book.imageUrl = "\\" + folder;
+
+                    await book.productImage.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                }
+
                 try
                 {
                     _context.Update(book);
@@ -114,7 +146,7 @@ namespace BookStore.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "KindOfBookId", book.KindOfBookId);
+            ViewData["KindOfBookId"] = new SelectList(_context.KindOfBooks, "KindOfBookId", "Name", book.KindOfBookId);
             return View("edit",book);
         }
 

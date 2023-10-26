@@ -146,7 +146,7 @@ namespace BookStore.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(user);
+            return View("edit",user);
         }
 
         // GET: User/Delete/5

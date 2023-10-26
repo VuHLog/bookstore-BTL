@@ -24,9 +24,8 @@ public partial class User
     public string? Username { get; set; }
 
     [Display(Name="Chọn ảnh đại diện cho tài khoản")]
-    [Required]
     [NotMapped]
-    public IFormFile avatar { get; set; }
+    public IFormFile? avatar { get; set; }
 
     public string? avatarUrl { get; set; }
 }

@@ -25,11 +25,13 @@
                                     <tr>
                                         <th style="width: 3%;">STT</th>
                                         <th style="width: 12%;">Tên</th>
-                                        <th style="width: 15%;">Giá</th>
+                                        <th style="width: 25%">Nội dung</th>
+                                        <th style="width: 12%;">Giá</th>
                                         <th style="width: 10%;">Ngày phát hành</th>
                                         <th style="width: 3%;">Số lượng</th>
                                         <th style="width: 15%;">Tác giả</th>
                                         <th style="width: 15%;">Loại sách</th>
+                                        <th style="width: 10% ">Avatar</th>
                                         <th style="width: 15%;">Hoạt động</th>
                                     </tr>
                                 </thead>
@@ -42,11 +44,15 @@
                                         <tr>
                                             <td>@(++i)</td>
                                             <td>@book.Name</td>
+                                            <td>@book.Content</td>
                                             <td>@book.Cost</td>
                                             <td>@book.Date</td>
                                             <td>@book.Number</td>
                                             <td>@book.Authors</td>
-                                            <td>@book.KindOfBookId</td>
+                                            <td>@book.KindOfBook.Name</td>
+                                            <td>
+                                                <img src="@book.imageUrl" class="img-fluid" alt="avatar image">
+                                            </td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="/Book/Edit/@book.BookId"><i class="ri-pencil-line"></i></a>

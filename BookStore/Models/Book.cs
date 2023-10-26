@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace BookStore.Models;
 
@@ -22,4 +24,11 @@ public partial class Book
     public string? Content { get; set; }
 
     public virtual KindOfBook? KindOfBook { get; set; }
+
+    [Display(Name = "Chọn ảnh sách")]
+    [NotMapped]
+    public IFormFile? productImage { get; set; }
+
+
+    public string? imageUrl { get; set; }
 }

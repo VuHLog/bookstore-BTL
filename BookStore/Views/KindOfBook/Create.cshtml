@@ -1,0 +1,39 @@
+﻿@model BookStore.Models.KindOfBook
+
+@{
+    Layout = "~/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Loại sách";
+}
+
+<!-- Page Content  -->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Thêm loại sách</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <form asp-controller="KindOfBook" asp-action="CreatePost" method="post">
+                            <div class="form-group">
+                                <label asp-for="Name">Tên loại sách:</label>
+                                <input asp-for="Name" type="text" class="form-control">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Tạo</button>
+                            <button type="reset" class="btn btn-danger">Trở lại</button>
+                        </form>
+
+                        <div>
+                            <a asp-action="Index">Quay lại danh sách loại sách</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -63,7 +63,7 @@ public partial class BookstoreContext : DbContext
                 .HasMaxLength(255)
                 .HasColumnName("authors");
             entity.Property(e => e.Content)
-                .IsUnicode(false)
+                .IsUnicode(true)
                 .HasColumnName("content");
             entity.Property(e => e.Cost).HasColumnName("cost");
             entity.Property(e => e.Date)
@@ -78,6 +78,8 @@ public partial class BookstoreContext : DbContext
             entity.HasOne(d => d.KindOfBook).WithMany(p => p.Books)
                 .HasForeignKey(d => d.KindOfBookId)
                 .HasConstraintName("FK8vs1uih8ygwyd8lodf861q8ty");
+            entity.Property(e => e.imageUrl)
+            .HasColumnName("imageUrl");
         });
 
         modelBuilder.Entity<BookInvoicesIn>(entity =>

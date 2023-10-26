@@ -2,7 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/Admin/MainLayout.cshtml";
-    ViewBag.breadcrumb = "Book";
+    ViewBag.breadcrumb = "Sách";
 }
 
 <!-- Page Content  -->
@@ -17,11 +17,16 @@
                         </div>
                     </div>
                     <div class="iq-card-body">
-                        <form asp-controller="Book" asp-action="CreatePost" method="post">
+                        <form asp-controller="Book" asp-action="CreatePost" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label asp-for="Name">Tên sách:</label>
                                 <input asp-for="Name" type="text" class="form-control">
                                 <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Content">Nội dung:</label>
+                                <input asp-for="Content" type="text" class="form-control">
+                                <span asp-validation-for="Content" class="text-danger"></span>
                             </div>
                             <div class="form-group">
                                 <label asp-for="Cost">Giá:</label>
@@ -30,7 +35,7 @@
                             </div>
                             <div class="form-group">
                                 <label asp-for="Date">Ngày phát hành:</label>
-                                <input asp-for="Date" type="text" class="form-control">
+                                <input asp-for="Date" type="datetime-local" class="form-control">
                                 <span asp-validation-for="Date" class="text-danger"></span>
                             </div>
                             <div class="form-group">
@@ -45,10 +50,15 @@
                             </div>
                             <div class="form-group">
                                 <label asp-for="KindOfBookId">Loại sách:</label>
-                                <select asp-for="KindOfBookId" class="form-control" id="exampleFormControlSelect2" asp-items="ViewBag.BookshelfId">
+                                <select asp-for="KindOfBookId" class="form-control" id="exampleFormControlSelect2" asp-items="ViewBag.KindOfBookId">
                                     <option selected="" disabled="">Loại sách</option>
                                 </select>
                                 <span asp-validation-for="KindOfBookId" class="text-danger"></span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label" asp-for="productImage"></label>
+                                <input class="form-control" type="file" id="formFile" asp-for="productImage">
+                                <span asp-validation-for="productImage" class="text-danger"></span>
                             </div>
                             <button type="submit" class="btn btn-primary">Tạo</button>
                             <button type="reset" class="btn btn-danger">Trở lại</button>
