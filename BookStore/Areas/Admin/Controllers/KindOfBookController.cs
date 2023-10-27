@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BookStore.Data;
 using BookStore.Models;
+using BookStore.Util;
+using Microsoft.Data.SqlClient;
+using System.Drawing.Printing;
 
 namespace BookStore.Admin.Controllers
 {
@@ -22,11 +25,45 @@ namespace BookStore.Admin.Controllers
         }
 
         // GET: KindOfBook
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString, string currentFilter, int? pageNumber, int? pageSize)
         {
-            return _context.KindOfBooks != null ?
-                        View(await _context.KindOfBooks.ToListAsync()) :
-                        Problem("Entity set 'BookstoreContext.KindOfBooks'  is null.");
+            //sort
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+
+            //luu bo loc hien tai
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var kindOfBooks = from k in _context.KindOfBooks
+                           select k;
+
+            //filter
+            ViewBag.CurrentFilter = searchString;
+            ViewBag.pageSize = pageSize == null ? 5 : pageSize;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                kindOfBooks = kindOfBooks.Where(k => k.Name.Contains(searchString)
+                                       );
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    kindOfBooks = kindOfBooks.OrderByDescending(k => k.Name);
+                    break;
+                default:
+                    kindOfBooks = kindOfBooks.OrderBy(k => k.Name);
+                    break;
+            }
+            return View(await PaginatedList<KindOfBook>.CreateAsync(kindOfBooks.AsNoTracking(), pageNumber ?? 1, pageSize ?? 5));
         }
 
         // GET: KindOfBook/Details/5

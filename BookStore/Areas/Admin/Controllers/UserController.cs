@@ -10,6 +10,7 @@ using System.IO;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
 using System.Drawing;
 using BookStore.Data;
+using BookStore.Util;
 
 namespace BookStore.Admin.Controllers
 {
@@ -28,16 +29,88 @@ namespace BookStore.Admin.Controllers
         }
 
         // GET: User
-        [Route("admin/user")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString, string currentFilter, int? pageNumber, int? pageSize)
         {
-            return _context.Users != null ?
-                        View(await _context.Users.ToListAsync()) :
-                        Problem("Entity set 'BookstoreContext.Users'  is null.");
+            //sort
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.FirstNameSortParam = String.IsNullOrEmpty(sortOrder) ? "firstname_desc" : "";
+            ViewBag.LastNameSortParam = sortOrder == "LastName" ? "lastname_desc" : "LastName";
+            ViewBag.EmailSortParam = sortOrder == "Email" ? "email_desc" : "Email";
+            ViewBag.UsernameSortParam = sortOrder == "Username" ? "username_desc" : "Username";
+            ViewBag.PasswordSortParam = sortOrder == "Password" ? "password_desc" : "Password";
+            ViewBag.EnabledSortParam = sortOrder == "Enabled" ? "enabled_desc" : "Enabled";
+
+            //luu bo loc hien tai
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var users = from u in _context.Users
+                           select u;
+
+            //filter
+            ViewBag.CurrentFilter = searchString;
+            ViewBag.pageSize = pageSize == null ? 5 : pageSize;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(u => u.Firstname.Contains(searchString)
+                                       || u.Lastname.Contains(searchString)
+                                       || u.Email.Contains(searchString)
+                                       || u.Username.Contains(searchString)
+                                       || u.Enabled.ToString().Contains(searchString)
+                                       );
+            }
+
+            switch (sortOrder)
+            {
+                case "firstname_desc":
+                    users = users.OrderByDescending(u => u.Firstname);
+                    break;
+                case "LastName":
+                    users = users.OrderBy(u => u.Lastname);
+                    break;
+                case "LastName_desc":
+                    users = users.OrderByDescending(u => u.Lastname);
+                    break;
+                case "Email":
+                    users = users.OrderBy(u => u.Email);
+                    break;
+                case "email_desc":
+                    users = users.OrderByDescending(u => u.Email);
+                    break;
+                case "Username":
+                    users = users.OrderBy(u => u.Username);
+                    break;
+                case "username_desc":
+                    users = users.OrderByDescending(u => u.Username);
+                    break;
+                case "Password":
+                    users = users.OrderBy(u => u.Password);
+                    break;
+                case "password_desc":
+                    users = users.OrderByDescending(u => u.Password);
+                    break;
+                case "Enabled":
+                    users = users.OrderBy(u => u.Password);
+                    break;
+                case "enabled_desc":
+                    users = users.OrderByDescending(u => u.Enabled);
+                    break;
+                default:
+                    users = users.OrderBy(u => u.Firstname);
+                    break;
+            }
+            return View(await PaginatedList<User>.CreateAsync(users.AsNoTracking(), pageNumber ?? 1, pageSize ?? 5));
         }
 
         // GET: User/Details/5
-        [Route("Details/{id}")]
+        [Route("Details")]
         public async Task<IActionResult> Details(long? id)
         {
             if (id == null || _context.Users == null)
@@ -45,7 +118,7 @@ namespace BookStore.Admin.Controllers
                 return NotFound();
             }
             var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(u => u.Id == id);
             if (user == null)
             {
                 return NotFound();
@@ -163,7 +236,7 @@ namespace BookStore.Admin.Controllers
             }
 
             var user = await _context.Users
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(u => u.Id == id);
             if (user == null)
             {
                 return NotFound();

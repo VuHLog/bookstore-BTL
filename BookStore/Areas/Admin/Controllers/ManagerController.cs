@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using BookStore.Models;
 using BookStore.CustomAtrribute;
 using BookStore.Data;
+using BookStore.Util;
+using System.Drawing.Printing;
 
 namespace BookStore.Admin.Controllers
 {
@@ -25,10 +27,69 @@ namespace BookStore.Admin.Controllers
         // GET: Manager
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder,string searchString, string currentFilter, int? pageNumber,int? pageSize)
         {
-            var bookstoreContext = _context.Managers.Include(m => m.Bookshelf);
-            return View(await bookstoreContext.ToListAsync());
+            //sort
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.AddressSortParam = sortOrder == "Address" ? "address_desc" : "Address";
+            ViewBag.SalarySortParam = sortOrder == "Salary" ? "salary_desc" : "Salary";
+            ViewBag.BookshelfNameSortParam = sortOrder == "BookshelfName" ? "bookshelfname_desc" : "BookshelfName";
+
+            //luu bo loc hien tai
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var managers =from m in _context.Managers.Include(m => m.Bookshelf)
+                                  select m;
+
+            //filter
+            ViewBag.CurrentFilter = searchString;
+            ViewBag.pageSize = pageSize==null?5:pageSize;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                managers = managers.Where(m => m.Name.Contains(searchString)
+                                       || m.Address.Contains(searchString)
+                                       || m.Salary.ToString().Contains(searchString)
+                                       || m.Bookshelf.Name.Contains(searchString)
+                                       );
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    managers = managers.OrderByDescending(m => m.Name);
+                    break;
+                case "Address":
+                    managers = managers.OrderBy(m => m.Address);
+                    break;
+                case "address_desc":
+                    managers = managers.OrderByDescending(m => m.Address);
+                    break;
+                case "Salary":
+                    managers = managers.OrderBy(m => m.Salary);
+                    break;
+                case "salary_desc":
+                    managers = managers.OrderByDescending(m => m.Salary);
+                    break;
+                case "BookshelfName":
+                    managers = managers.OrderBy(m => m.Bookshelf.Name);
+                    break;
+                case "bookshelfname_desc":
+                    managers = managers.OrderByDescending(m => m.Bookshelf.Name);
+                    break;
+                default:
+                    managers = managers.OrderBy(m => m.Name);
+                    break;
+            }
+            return View(await PaginatedList<Manager>.CreateAsync(managers.AsNoTracking(), pageNumber ?? 1, pageSize ?? 5));
         }
 
         // GET: Manager/Details/5

@@ -9,6 +9,7 @@ using BookStore.Models;
 using BookStore.Data;
 using Microsoft.AspNetCore.Hosting;
 using BookStore.CustomAtrribute;
+using BookStore.Util;
 
 namespace BookStore.Admin.Controllers
 {
@@ -29,10 +30,95 @@ namespace BookStore.Admin.Controllers
         // GET: Books
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString, string currentFilter, int? pageNumber, int? pageSize)
         {
-            var bookstoreContext = _context.Books.Include(b => b.KindOfBook);
-            return View(await bookstoreContext.ToListAsync());
+            //sort
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.AuthorsSortParam = sortOrder == "Authors" ? "authors_desc" : "Authors";
+            ViewBag.CostSortParam = sortOrder == "Cost" ? "cost_desc" : "Cost";
+            ViewBag.DateSortParam = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewBag.NumberSortParam = sortOrder == "Number" ? "number_desc" : "Number";
+            ViewBag.ContentSortParam = sortOrder == "Content" ? "content_desc" : "Content";
+            ViewBag.KindOfBookNameSortParam = sortOrder == "KindOfBookName" ? "kindOfBookName_desc" : "KindOfBookName";
+
+            //luu filter hien tai
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+
+            var books = from b in _context.Books.Include(b => b.KindOfBook)
+                           select b;
+
+            //filter
+            ViewBag.CurrentFilter = searchString;
+            ViewBag.pageSize = pageSize;
+
+            //search
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                books = books.Where(b => b.Name.Contains(searchString)
+                                       || b.KindOfBook.Name.Contains(searchString)
+                                       || b.Cost.ToString().Contains(searchString)
+                                       || b.Date.ToString().Contains(searchString)
+                                       || b.Authors.Contains(searchString)
+                                       || b.Content.Contains(searchString)
+                                       || b.Number.ToString().Contains(searchString)
+                                       );
+            }
+            //xác định tên trường sort
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    books = books.OrderByDescending(b => b.Name);
+                    break;
+                case "Number":
+                    books = books.OrderBy(b => b.Number);
+                    break;
+                case "number_desc":
+                    books = books.OrderByDescending(b => b.Number);
+                    break;
+                case "Cost":
+                    books = books.OrderBy(b => b.Cost);
+                    break;
+                case "cost_desc":
+                    books = books.OrderByDescending(b => b.Cost);
+                    break;
+                case "Date":
+                    books = books.OrderBy(b => b.Date);
+                    break;
+                case "date_desc":
+                    books = books.OrderByDescending(b => b.Date);
+                    break;
+                case "Authors":
+                    books = books.OrderBy(b => b.Authors);
+                    break;
+                case "authors_desc":
+                    books = books.OrderByDescending(b => b.Cost);
+                    break;
+                case "Content":
+                    books = books.OrderBy(b => b.Content);
+                    break;
+                case "Content_desc":
+                    books = books.OrderByDescending(b => b.Cost);
+                    break;
+                case "KindOfBookName":
+                    books = books.OrderBy(b => b.KindOfBook.Name);
+                    break;
+                case "kindOfBookName_desc":
+                    books = books.OrderByDescending(b => b.KindOfBook.Name);
+                    break;
+                default:
+                    books = books.OrderBy(b => b.Name);
+                    break;
+            }
+            return View(await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 5));
         }
 
         // GET: Books/Details/5
@@ -48,7 +134,7 @@ namespace BookStore.Admin.Controllers
 
             var book = await _context.Books
                 .Include(b => b.KindOfBook)
-                .FirstOrDefaultAsync(m => m.BookId == id);
+                .FirstOrDefaultAsync(b => b.BookId == id);
             if (book == null)
             {
                 return NotFound();
@@ -134,9 +220,9 @@ namespace BookStore.Admin.Controllers
                 {
                     string webRootPath = _webHostEnvironment.WebRootPath;
                     //string oldFilePath = webRootPath + user.avatarUrl;
-                    //if (System.IO.File.Exists(oldFilePath))
+                    //if (Systeb.IO.File.Exists(oldFilePath))
                     //{
-                    //    System.IO.File.Delete(oldFilePath); // Xóa tệp
+                    //    Systeb.IO.File.Delete(oldFilePath); // Xóa tệp
                     //}
 
                     string folder = "images\\user\\" + Guid.NewGuid().ToString() + book.productImage.FileName;
@@ -182,7 +268,7 @@ namespace BookStore.Admin.Controllers
 
             var book = await _context.Books
                 .Include(b => b.KindOfBook)
-                .FirstOrDefaultAsync(m => m.BookId == id);
+                .FirstOrDefaultAsync(b => b.BookId == id);
             if (book == null)
             {
                 return NotFound();

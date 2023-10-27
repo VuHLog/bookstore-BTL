@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BookStore.Models;
 using BookStore.Data;
+using BookStore.Util;
 
 namespace BookStore.Admin.Controllers
 {
@@ -22,11 +23,53 @@ namespace BookStore.Admin.Controllers
         }
 
         // GET: Customer
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString, string currentFilter, int? pageNumber, int? pageSize)
         {
-            return _context.Customers != null ?
-                        View(await _context.Customers.ToListAsync()) :
-                        Problem("Entity set 'BookstoreContext.Customers'  is null.");
+            //sort
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.AddressSortParam = sortOrder == "Address" ? "address_desc" : "Address";
+
+            //luu bo loc hien tai
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            var customers = from c in _context.Customers
+                           select c;
+
+            //filter
+            ViewBag.CurrentFilter = searchString;
+            ViewBag.pageSize = pageSize;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                customers = customers.Where(c => c.Name.Contains(searchString)
+                                       || c.Address.Contains(searchString)
+                                       );
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    customers = customers.OrderByDescending(m => m.Name);
+                    break;
+                case "Address":
+                    customers = customers.OrderBy(m => m.Address);
+                    break;
+                case "address_desc":
+                    customers = customers.OrderByDescending(m => m.Address);
+                    break;
+                default:
+                    customers = customers.OrderBy(m => m.Name);
+                    break;
+            }
+            return View(await PaginatedList<Customer>.CreateAsync(customers.AsNoTracking(), pageNumber ?? 1, pageSize ?? 5));
         }
 
         // GET: Customer/Details/5
