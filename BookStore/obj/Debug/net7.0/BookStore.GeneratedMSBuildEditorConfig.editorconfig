@@ -16,6 +16,38 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\dai_hoc\nam_3_ki_1\lap_trinh_web\workspace\BookStore\BookStore
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesIn/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzSW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesIn/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzSW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesIn/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzSW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesIn/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzSW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesOut/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzT3V0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesOut/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzT3V0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesOut/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzT3V0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesOut/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzT3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/Book/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +86,42 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNJblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNJblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNJblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNJblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesOut/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNPdXRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesOut/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNPdXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesOut/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNPdXRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesOut/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNPdXRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesOut/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNPdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/KindOfBook/Create.cshtml]
@@ -128,8 +196,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Shared/Admin/MainLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluXE1haW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Shared/Client/HomeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENsaWVudFxIb21lTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Shared/Error.cshtml]

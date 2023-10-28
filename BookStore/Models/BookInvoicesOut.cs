@@ -9,7 +9,9 @@ public partial class BookInvoicesOut
 
     public int BookId { get; set; }
 
-    public virtual Book Book { get; set; } = null!;
+    public int Quantity { get; set; }
 
-    public virtual InvoicesOut InvoicesOut { get; set; } = null!;
+    public virtual Book? Book { get; set; } = null!;
+
+    public virtual InvoicesOut? InvoicesOut { get; set; } = null!;
 }

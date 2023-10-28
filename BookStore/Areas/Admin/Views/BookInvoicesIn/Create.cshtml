@@ -1,0 +1,53 @@
+﻿@model BookStore.Models.BookInvoicesIn
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Chi tiết hoá đơn nhập";
+}
+
+<!-- Page Content  -->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Thêm chi tiết hoá đơn nhập</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <form asp-controller="BookInvoicesIn" asp-action="CreatePost" method="post">
+                            <div class="form-group">
+                                <label asp-for="InvoicesInId">ID hoá đơn nhập:</label>
+                                <select asp-for="InvoicesInId" class="form-control" id="exampleFormControlSelect2" asp-items="ViewBag.InvoicesInId">
+                                    <option selected="" disabled="">ID hoá đơn</option>
+                                </select>
+                                <span asp-validation-for="InvoicesInId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="BookId">ID sách:</label>
+                                <select asp-for="BookId" class="form-control" id="exampleFormControlSelect2" asp-items="ViewBag.BookId">
+                                    <option selected="" disabled="">ID sách</option>
+                                </select>
+                                <span asp-validation-for="BookId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Quantity">Số lượng:</label>
+                                <input asp-for="Quantity" type="number" class="form-control">
+                                <span asp-validation-for="Quantity" class="text-danger"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Tạo</button>
+                            <button type="reset" class="btn btn-danger">Reset giá trị</button>
+                        </form>
+
+                        <div>
+                            <a asp-action="Index">Quay lại danh sách chi tiết hoá đơn nhập</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

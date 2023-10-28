@@ -60,6 +60,7 @@ public partial class BookstoreContext : DbContext
 
             entity.Property(e => e.BookId).HasColumnName("book_id");
             entity.Property(e => e.Authors)
+                .IsUnicode(true)
                 .HasMaxLength(255)
                 .HasColumnName("authors");
             entity.Property(e => e.Content)
@@ -100,6 +101,7 @@ public partial class BookstoreContext : DbContext
                 .HasForeignKey(d => d.InvoicesInId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FKp0dye1teu92637jyhl0hef28p");
+            entity.Property(e => e.Quantity).HasColumnName("quantity");
         });
 
         modelBuilder.Entity<BookInvoicesOut>(entity =>
@@ -120,6 +122,7 @@ public partial class BookstoreContext : DbContext
                 .HasForeignKey(d => d.InvoicesOutId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK1s9mfh8dgt9teassdpfgogiyj");
+            entity.Property(e => e.Quantity).HasColumnName("quantity");
         });
 
         modelBuilder.Entity<Bookshelf>(entity =>
@@ -260,7 +263,7 @@ public partial class BookstoreContext : DbContext
             entity.Property(e => e.BookshelfId).HasColumnName("bookshelf_id");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
-                .IsUnicode(false)
+                .IsUnicode(true)
                 .HasColumnName("name");
             entity.Property(e => e.Salary).HasColumnName("salary");
 
@@ -281,7 +284,7 @@ public partial class BookstoreContext : DbContext
                 .HasColumnName("address");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
-                .IsUnicode(false)
+                .IsUnicode(true)
                 .HasColumnName("name");
         });
 
@@ -314,7 +317,7 @@ public partial class BookstoreContext : DbContext
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
-                .IsUnicode(false)
+                .IsUnicode(true)
                 .HasColumnName("name");
         });
 

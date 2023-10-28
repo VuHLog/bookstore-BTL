@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+kYA/0maMmdN+0faR8IvVGp5DzQW2TxPypJg67uB1vRroEbpCSKhq7o5h6ZV9aQiPIIf2e1aMzUbQJNhCrUtZQ==",
+  "dgSpecHash": "WgqOwBsn3LFLZMTNDqc2V88KHFIOvrYGk+BGaiygRjMeuoYM117coSQfA9fCr8JYaihgBRmQbAMZi4SLFWZv0Q==",
   "success": true,
   "projectFilePath": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dddddd\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\dddddd\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\dddddd\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\dddddd\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\dddddd\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\dddddd\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dddddd\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

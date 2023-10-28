@@ -177,8 +177,9 @@ namespace BookStore.Admin.Controllers
         }
 
         // POST: KindOfBook/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("DeleteConfirmed")]
         public async Task<IActionResult> DeleteConfirmed([Bind("KindOfBookId")] KindOfBook kindOfBook)
         {
             if (_context.KindOfBooks == null)

@@ -11,6 +11,7 @@ using Microsoft.CodeAnalysis.Elfie.Serialization;
 using System.Drawing;
 using BookStore.Data;
 using BookStore.Util;
+using BookStore.CustomAtrribute;
 
 namespace BookStore.Admin.Controllers
 {
@@ -29,6 +30,8 @@ namespace BookStore.Admin.Controllers
         }
 
         // GET: User
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Index(string sortOrder, string searchString, string currentFilter, int? pageNumber, int? pageSize)
         {
             //sort
@@ -111,6 +114,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: User/Details/5
         [Route("Details")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Details(long? id)
         {
             if (id == null || _context.Users == null)
@@ -129,6 +134,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: User/Create
         [Route("Create")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public IActionResult Create()
         {
             return View();
@@ -140,6 +147,8 @@ namespace BookStore.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("CreatePost")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> CreatePost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username,avatar")] User user)
         {
             // luu anh vao thu muc images/user
@@ -167,6 +176,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: User/Edit/5
         [Route("Edit/{id}")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Edit(long? id)
         {
             if (id == null || _context.Users == null)
@@ -185,6 +196,8 @@ namespace BookStore.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("EditPost")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> EditPost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username,avatar,avatarUrl")] User user)
         {
             if (ModelState.IsValid)
@@ -228,6 +241,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: User/Delete/5
         [Route("Delete/{id}")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Delete(long? id)
         {
             if (id == null || _context.Users == null)
@@ -246,8 +261,10 @@ namespace BookStore.Admin.Controllers
         }
 
         // POST: User/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> DeleteConfirmed([Bind("UserId")] User user)
         {
             if (_context.Users == null)

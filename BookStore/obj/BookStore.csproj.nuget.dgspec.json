@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[1.6.0, )"
             },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.12, )"

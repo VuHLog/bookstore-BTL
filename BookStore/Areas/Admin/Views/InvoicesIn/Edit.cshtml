@@ -1,0 +1,56 @@
+﻿@model BookStore.Models.InvoicesIn
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Hoá đơn nhập";
+}
+
+<!-- Page Content  -->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Sửa hoá đơn nhập</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <form asp-controller="InvoicesIn" asp-action="EditPost" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="InvoicesInId" />
+                            <div class="form-group">
+                                <label asp-for="InvoicesInId">ID hoá đơn:</label>
+                                <input asp-for="InvoicesInId" type="text" class="form-control" disabled>
+                                <span asp-validation-for="InvoicesInId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Date">Ngày nhập:</label>
+                                <input asp-for="Date" type="datetime-local" class="form-control">
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PublisherId">Nhà xuất bản:</label>
+                                <select asp-for="PublisherId" class="form-control" id="exampleFormControlSelect2" asp-items="ViewBag.PublisherId">
+                                    <option selected="" disabled="">Nhà xuất bản</option>
+                                </select>
+                                <span asp-validation-for="PublisherId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="EmployeeId">Nhân viên:</label>
+                                <select asp-for="EmployeeId" class="form-control" id="exampleFormControlSelect2" asp-items="ViewBag.EmployeeId">
+                                    <option selected="" disabled="">Nhân viên</option>
+                                </select>
+                                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Lưu</button> |
+                            <a asp-action="Index">Quay lại danh sách hoá đơn nhập</a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

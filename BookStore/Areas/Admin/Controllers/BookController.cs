@@ -278,10 +278,11 @@ namespace BookStore.Admin.Controllers
         }
 
         // POST: Books/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
+        [Route("DeleteConfirmed")]
         public async Task<IActionResult> DeleteConfirmed([Bind("BookId")] Book book)
         {
             if (_context.Books == null)

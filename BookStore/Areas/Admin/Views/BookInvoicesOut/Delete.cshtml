@@ -1,0 +1,63 @@
+﻿@model BookStore.Models.BookInvoicesOut
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Chi tiết xuất hoá đơn";
+}
+
+
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-header d-flex justify-content-between">
+                        <div class="iq-header-title">
+                            <h4 class="card-title">Xoá</h4>
+                        </div>
+                    </div>
+                    <div class="iq-card-body">
+                        <h3>Bạn có chắc chắn muốn xoá không?</h3>
+                        <div>
+                            <h4>Chi tiết xuất hoá đơn</h4>
+                            <hr />
+                            <dl class="row">
+                                <dt class="col-sm-2">
+                                    ID hoá đơn
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.InvoicesOutId)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    ID sách
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.BookId)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tên sách
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Book.Name)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Số lượng
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Quantity)
+                                </dd>
+                            </dl>
+
+                            <form asp-action="DeleteConfirmed">
+                                <input type="hidden" asp-for="InvoicesOutId" />
+                                <input type="hidden" asp-for="BookId" />
+                                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                                <a asp-action="Index">Quay lại danh sách chi tiết xuất hoá đơn</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
