@@ -37,11 +37,13 @@
                             <table class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        
+                                        <th style="width: 10%;">
+                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.IDSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">ID</a>
+                                        </th>
                                         <th style="width: 17%;">
                                             <a asp-action="Index" asp-route-sortOrder="@ViewBag.NameSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Tên</a>
                                         </th>
-                                        <th style="width: 25%">
+                                        <th style="width: 20%">
                                             <a asp-action="Index" asp-route-sortOrder="@ViewBag.ContentSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Nội dung</a>
                                         </th>
                                         <th style="width: 12%;">
@@ -53,7 +55,7 @@
                                         <th style="width: 3%;">
                                             <a asp-action="Index" asp-route-sortOrder="@ViewBag.NumberSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Số lượng</a>
                                         </th>
-                                        <th style="width: 15%;">
+                                        <th style="width: 10%;">
                                             <a asp-action="Index" asp-route-sortOrder="@ViewBag.AuthorsSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Tác giả</a>
                                         </th>
                                         <th style="width: 10%;">
@@ -67,7 +69,7 @@
                                     @foreach (var book in Model)
                                     {
                                         <tr>
-                                            
+                                            <td>@book.BookId</td>
                                             <td>@book.Name</td>
                                             <td>
                                                 <p style="line-height: 25px;-webkit-line-clamp: 4;display: -webkit-box;-webkit-box-orient: vertical; overflow: hidden">@book.Content</p>

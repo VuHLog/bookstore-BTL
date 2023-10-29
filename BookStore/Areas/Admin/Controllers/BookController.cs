@@ -35,7 +35,8 @@ namespace BookStore.Admin.Controllers
         {
             //sort
             ViewBag.CurrentSort = sortOrder;
-            ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.IDSortParam = String.IsNullOrEmpty(sortOrder) ? "id_desc" : "";
+            ViewBag.NameSortParam = sortOrder == "Name" ? "name_desc" : "";
             ViewBag.AuthorsSortParam = sortOrder == "Authors" ? "authors_desc" : "Authors";
             ViewBag.CostSortParam = sortOrder == "Cost" ? "cost_desc" : "Cost";
             ViewBag.DateSortParam = sortOrder == "Date" ? "date_desc" : "Date";
@@ -65,7 +66,8 @@ namespace BookStore.Admin.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 
-                books = books.Where(b => b.Name.Contains(searchString)
+                books = books.Where(b =>b.BookId.ToString().Contains(searchString.ToString())
+                                       || b.Name.Contains(searchString)
                                        || b.KindOfBook.Name.Contains(searchString)
                                        || b.Cost.ToString().Contains(searchString.ToString())
                                        || b.Date.ToString().Contains(searchString.ToString())
@@ -77,8 +79,14 @@ namespace BookStore.Admin.Controllers
             //xác định tên trường sort
             switch (sortOrder)
             {
+                case "id_desc":
+                    books = books.OrderByDescending(b => b.BookId);
+                    break;
                 case "name_desc":
                     books = books.OrderByDescending(b => b.Name);
+                    break;
+                case "Name":
+                    books = books.OrderBy(b => b.Name);
                     break;
                 case "Number":
                     books = books.OrderBy(b => b.Number);
@@ -117,7 +125,7 @@ namespace BookStore.Admin.Controllers
                     books = books.OrderByDescending(b => b.KindOfBook.Name);
                     break;
                 default:
-                    books = books.OrderBy(b => b.Name);
+                    books = books.OrderBy(b => b.BookId);
                     break;
             }
             return View(await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 5));

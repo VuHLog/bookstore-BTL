@@ -1,0 +1,182 @@
+﻿@using System.Globalization;
+@model Book
+
+@{
+    Layout = "~/Views/Shared/Client/HomeLayout.cshtml";
+}
+<!-- Page Content  -->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Thông tin sách -->
+            <div class="col-sm-12">
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-header d-flex justify-content-between align-items-center">
+                        <h4 class="card-title mb-0">Thông tin</h4>
+                    </div>
+                    <div class="iq-card-body pb-0">
+                        <div class="description-contens align-items-top row">
+                            <div class="col-md-6">
+                                <div class="iq-card-transparent iq-card-block iq-card-stretch iq-card-height">
+                                    <div class="iq-card-body p-0">
+                                        <div class="row align-items-center">
+                                            <div class="col-12">
+                                                <ul id="description-slider-nav" class="list-inline p-0 m-0  d-flex align-items-center justify-content-center">
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="@Model.imageUrl" class="img-fluid rounded w-100" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="iq-card-transparent iq-card-block iq-card-stretch iq-card-height">
+                                    <div class="iq-card-body p-0">
+                                        <h3 class="mb-3">@Model.Name</h3>
+                                        @{
+                                            CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
+                                            string costFormat = double.Parse(Model.Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                                        }
+                                        <div class="price d-flex align-items-center font-weight-500 mb-2">
+                                            @* <span class="font-size-20 pr-2 old-price">350.000 ₫</span> *@
+                                            <span class="font-size-24 text-dark">@costFormat ₫</span>
+                                        </div>
+                                        @* <div class="mb-3 d-block">
+                                        <span class="font-size-20 text-warning">
+                                        <i class="fa fa-star mr-1"></i>
+                                        <i class="fa fa-star mr-1"></i>
+                                        <i class="fa fa-star mr-1"></i>
+                                        <i class="fa fa-star mr-1"></i>
+                                        <i class="fa fa-star"></i>
+                                        </span>
+                                        </div> *@
+                                        <span class="text-dark mb-4 pb-4 iq-border-bottom d-block">@Model.Content</span>
+                                        <div class="text-primary mb-4">Số lượng: <span class="text-body">@Model.Number sách có sẵn</span></div>
+                                        <div class="mb-4 d-flex align-items-center">
+                                            <a href="checkout.html" class="btn btn-primary view-more mr-2">Thêm vào giỏ hàng</a>
+                                            <a href="book-pdf.html" class="btn btn-primary view-more mr-2">Mua ngay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <table class="table">
+                                            <strong>Thông tin chi tiết</strong>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tác giả</td>
+                                                    <td>@Model.Authors</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ngày phát hành</td>
+                                                    <td>@Model.Date</td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td>Nhà xuất bản</td>
+                                                    <td>@(ViewBag.Publisher == null ? "" : ViewBag.Publisher.Name)</td>
+                                                </tr>
+                                                    <td>Thể loại</td>
+                                                    <td>@Model.KindOfBook.Name</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-header d-flex justify-content-between align-items-center position-relative">
+                        <div class="iq-header-title">
+                            <h4 class="card-title mb-0">Sách tương tự</h4>
+                        </div>
+                        <div class="iq-card-header-toolbar d-flex align-items-center">
+                            <a href="/category/@ViewBag.CategoryUrl" class="btn btn-sm btn-primary view-more">Xem thêm</a>
+                        </div>
+                    </div>
+                    <div class="iq-card-body single-similar-contens">
+                        <ul id="single-similar-slider" class="list-inline p-0 mb-0 row">
+                            @foreach (Book similarBook in ViewBag.SimilarBooks)
+                            {
+                                <li class="col-md-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-5">
+                                            <div class="position-relative image-overlap-shadow">
+                                                <a href="/book/@similarBook.BookId"><img class="img-fluid rounded w-100" src="@similarBook.imageUrl" alt=""></a>
+                                                <div class="view-book">
+                                                    <a href="/book/@similarBook.BookId" class="btn btn-sm btn-white">Xem sách</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 pl-0">
+                                            <h6 class="mb-2">@similarBook.Name</h6>
+                                            <p class="text-body">Tác giả : @similarBook.Authors</p>
+                                            <a href="/book/@similarBook.BookId" class="text-dark" tabindex="-1">Đọc ngay<i class="ri-arrow-right-s-line"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-header d-flex justify-content-between align-items-center position-relative mb-0 trendy-detail">
+                        <div class="iq-header-title">
+                            <h4 class="card-title mb-0">Thịnh hành</h4>
+                        </div>
+                        @* <div class="iq-card-header-toolbar d-flex align-items-center">
+                            <a href="category.html" class="btn btn-sm btn-primary view-more">Xem thêm</a>
+                        </div> *@
+                    </div>
+                    <div class="iq-card-body trendy-contens">
+                        <ul id="trendy-slider" class="list-inline p-0 mb-0 row" >
+                            @foreach (Book topSellingBook in ViewBag.TopSellingBooks)
+                            {
+                                <li class="col-md-3" style="height: 100%">
+                                    <div class=" row d-flex align-items-end">
+                                        <div class="col-5 p-0 position-relative image-overlap-shadow">
+                                            <a href="/book/@topSellingBook.BookId" class="d-flex"><img class="img-fluid rounded w-100" src="@topSellingBook.imageUrl" alt=""></a>
+                                            <div class="view-book">
+                                                <a href="/book/@topSellingBook.BookId" class="btn btn-sm btn-white">Xem sách</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="mb-2">
+                                                <h6 class="mb-1">@topSellingBook.Name</h6>
+                                                <p class="font-size-13 line-height mb-1">@topSellingBook.Authors</p>
+                                            </div>
+                                            @{
+                                                string costFormatPopular = double.Parse(topSellingBook.Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                                            }
+                                            <div class="price d-flex align-items-center">
+                                                <h6><b>@costFormatPopular ₫</b></h6>
+                                            </div>
+                                            <div class="iq-product-action">
+                                                <a href="javascript:void();"><i class="ri-shopping-cart-2-fill text-primary"></i></a>
+                                                <a href="javascript:void();" class="ml-2"><i class="ri-heart-fill text-danger"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

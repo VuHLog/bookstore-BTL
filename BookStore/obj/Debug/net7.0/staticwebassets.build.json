@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/mL+kbS8T37xRdY9t0WdSuY7wOYU4MRlbw94dA2qKhQ=",
+  "Hash": "NkWhQLgsqMjHDJJsL5tIdrGcNnpD+/dVYWI2rH9EmMo=",
   "Source": "BookStore",
   "BasePath": "_content/BookStore",
   "Mode": "Default",
@@ -7801,23 +7801,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\homePage\\slider-banner.js"
-    },
-    {
-      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\Index.cshtml",
-      "SourceId": "BookStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
-      "BasePath": "_content/BookStore",
-      "RelativePath": "js/Index.cshtml",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot\\js\\Index.cshtml"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\instantsearch.js",
