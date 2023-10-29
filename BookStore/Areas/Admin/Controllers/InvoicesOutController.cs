@@ -54,8 +54,8 @@ namespace BookStore.Admin.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                invoicesOuts = invoicesOuts.Where(i => i.InvoicesOutId.ToString().Contains(searchString)
-                                                || i.Date.Value.ToString().Contains(searchString)
+                invoicesOuts = invoicesOuts.Where(i => i.InvoicesOutId.ToString().Contains(searchString.ToString())
+                                                || i.Date.Value.ToString().Contains(searchString.ToString())
                                                 || i.Employee.Name.Contains(searchString)
                                                 || i.Customer.Name.Contains(searchString)
                                        );

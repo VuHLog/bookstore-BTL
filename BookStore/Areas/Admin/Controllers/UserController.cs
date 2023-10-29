@@ -66,7 +66,7 @@ namespace BookStore.Admin.Controllers
                                        || u.Lastname.Contains(searchString)
                                        || u.Email.Contains(searchString)
                                        || u.Username.Contains(searchString)
-                                       || u.Enabled.ToString().Contains(searchString)
+                                       || u.Enabled.ToString().Contains(searchString.ToString())
                                        );
             }
 

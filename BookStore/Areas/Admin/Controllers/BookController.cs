@@ -10,6 +10,7 @@ using BookStore.Data;
 using Microsoft.AspNetCore.Hosting;
 using BookStore.CustomAtrribute;
 using BookStore.Util;
+using System.Globalization;
 
 namespace BookStore.Admin.Controllers
 {
@@ -63,13 +64,14 @@ namespace BookStore.Admin.Controllers
             //search
             if (!String.IsNullOrEmpty(searchString))
             {
+                
                 books = books.Where(b => b.Name.Contains(searchString)
                                        || b.KindOfBook.Name.Contains(searchString)
-                                       || b.Cost.ToString().Contains(searchString)
-                                       || b.Date.ToString().Contains(searchString)
+                                       || b.Cost.ToString().Contains(searchString.ToString())
+                                       || b.Date.ToString().Contains(searchString.ToString())
                                        || b.Authors.Contains(searchString)
                                        || b.Content.Contains(searchString)
-                                       || b.Number.ToString().Contains(searchString)
+                                       || b.Number.ToString().Contains(searchString.ToString())
                                        );
             }
             //xác định tên trường sort

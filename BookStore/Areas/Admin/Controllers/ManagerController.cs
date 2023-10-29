@@ -57,7 +57,7 @@ namespace BookStore.Admin.Controllers
             {
                 managers = managers.Where(m => m.Name.Contains(searchString)
                                        || m.Address.Contains(searchString)
-                                       || m.Salary.ToString().Contains(searchString)
+                                       || m.Salary.ToString().Contains(searchString.ToString())
                                        || m.Bookshelf.Name.Contains(searchString)
                                        );
             }
