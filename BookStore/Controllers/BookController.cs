@@ -1,4 +1,6 @@
 ﻿using BookStore.Data;
+using BookStore.Models;
+using BookStore.Util;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -86,6 +88,34 @@ namespace BookStore.Controllers
             ViewBag.CategoryUrl = categoryUrl;
 
             return View(book);
+        }
+        [Route("/NavbarSearch")]
+        public async Task<IActionResult> SearchResults(string searchString, string currentFilter, int? pageNumber, int? pageSize)
+        {
+            //luu filter hien tai
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+
+            var books = from b in _context.Books.Include(b => b.KindOfBook)
+                        select b;
+
+            //filter
+            ViewBag.CurrentFilter = searchString;
+
+            //search
+            if (!String.IsNullOrEmpty(searchString))
+            {
+
+                books = books.Where(b => b.Name.Contains(searchString));
+            }
+            return View("SearchResults",await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 4));
         }
     }
 }

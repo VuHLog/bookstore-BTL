@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+    <!-- Required meta tags xyz-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>NHASACHTV - Nhà sách trực tuyến</title>
@@ -100,9 +100,11 @@
                     <div class="navbar-breadcrumb">
                         <h5 class="mb-0">Trang Chủ</h5>
                     </div>
+
+                    <!--   SEARCH  -->
                     <div class="iq-search-bar position-relative">
                         <form action="#" class="searchbox">
-                            <input type="text" class="text search-input" placeholder="Tìm kiếm sản phẩm...">
+                            <input type="text" class="text search-input" id="input-search" placeholder="Tìm kiếm sản phẩm...">
                             <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                         </form>
                         <div class="search-results position-absolute">
@@ -112,20 +114,8 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <h5 class="card-title">Kết quả tìm kiếm</h5>
-                                                <ul class="list-group">
-                                                    <li class="list-group-item pr-0">
-                                                        <a href="#" class="result-link">
-                                                            <div class="row">
-                                                                <div class="col-md-4 p-0 d-flex justify-content-center align-items-end ">
-                                                                    <img src="~/images/books/11b0fed0-6001-4035-99ad-546709505834bia-em-trai-hang-xom-buong-binh-qua-tap-4-1.jpg" alt="Hình ảnh sản phẩm" class="img-thumbnail">
-                                                                </div>
-                                                                <div class="col-md-6 p-0 ml-2 d-flex flex-column justify-content-end align-items-start">
-                                                                    <h5 class="product-name">Tên sản log vu haong hoang</h5>
-                                                                    <p class="product-price m-0">100.000 ₫</p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </li>
+                                                <ul class="list-group" id="searh-results">
+                                                    
                                                 </ul>
                                             </div>
                                         </div>
@@ -400,5 +390,42 @@
     <script src="~/js/chart-custom.js"></script>
     <!-- Custom JavaScript -->
     <script src="~/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var inputSearchValue = $("#input-search").val();
+
+            $(".search-results").hide();
+
+            $("#input-search").keyup(function () {
+                inputSearchValue = $(this).val();
+                console.log(inputSearchValue)
+                $.ajax({
+                    url: "/NavbarSearch",
+                    data: { searchString: inputSearchValue },
+                    dataType: 'html',
+                    success: function (response) {
+                        // console.log(response);
+                        // Tạo một jQuery object từ response để dễ dàng tìm thẻ table
+                        var responseHtml = $(response);
+
+                        // Lọc ra phần HTML chứa thẻ table
+                        responseHtml = responseHtml.find(".search-result-items");
+
+                        // Lấy nội dung HTML trong thẻ table
+                        var responseContent = responseHtml.html();
+
+                        console.log("response: " + responseContent)
+                        $(".search-results").show();
+                        $("#searh-results").html(responseContent);
+
+                    }
+                })
+            })
+            $(".search-input").blur(function () {
+                $(".search-results").hide();
+            });
+        });
+    </script>
 </body>
 </html>
