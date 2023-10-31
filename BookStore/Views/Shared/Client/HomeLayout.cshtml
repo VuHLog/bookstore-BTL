@@ -18,10 +18,10 @@
     }
 
     var CartCookie = Context.Request.Cookies["cart"];
-    List<Book> books = new List<Book>();
+    List<CartDTO> books = new List<CartDTO>();
     if (CartCookie != null)
     {
-        books = JsonConvert.DeserializeObject<List<Book>>(CartCookie);
+        books = JsonConvert.DeserializeObject<List<CartDTO>>(CartCookie);
     }
 }
 
@@ -182,33 +182,37 @@
                                                 <div class="bg-primary p-3">
                                                     <h5 class="mb-0 text-white">Giỏ Hàng<small class="badge  badge-light float-right pt-1">@books.Count()</small></h5>
                                                 </div>
-                                                @foreach (Book book in books)
+                                                int i = 0;
+                                                @foreach (CartDTO book in books)
                                                 {
-                                                    <a href="/book/@book.BookId" class="iq-sub-card">
-                                                        <div class="media align-items-center">
-                                                            <div class="">
-                                                                <img class="rounded" src="@book.imageUrl" alt="">
+                                                    i++;
+                                                    if (i <= 3)
+                                                    {
+                                                        <a href="/book/@book.BookId" class="iq-sub-card">
+                                                            <div class="media align-items-center">
+                                                                <div class="">
+                                                                    <img class="rounded" src="@book.imageUrl" alt="">
+                                                                </div>
+                                                                <div class="media-body ml-3">
+                                                                    <h6 class="mb-0 ">@book.Name</h6>
+                                                                    @{
+                                                                        CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
+                                                                        string costFormat = double.Parse(book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                                                                    }
+                                                                    <p class="mb-0">@costFormat</p>
+                                                                </div>
                                                             </div>
-                                                            <div class="media-body ml-3">
-                                                                <h6 class="mb-0 ">@book.Name</h6>
-                                                                @{
-                                                                    CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
-                                                                    string costFormat = double.Parse(book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
-                                                                }
-                                                                <p class="mb-0">@costFormat</p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
+                                                        </a>
+                                                    }
                                                 }
 
                                             }
                                             else
                                             {
-                                                <p class="text-secondary">Không có sản phẩm nào trong giỏ hàng</p>
+                                                <p class="text-secondary d-flex justify-content-center m-0 p-2">Không có sản phẩm nào trong giỏ hàng</p>
                                             }
-                                            <div class="d-flex align-items-center text-center p-3">
+                                            <div class="d-flex align-items-center justify-content-center p-3">
                                                 <a class="btn btn-primary mr-2 iq-sign-btn" href="/cart" role="button">Giỏ Hàng</a>
-                                                <a class="btn btn-primary iq-sign-btn" href="/checkout" role="button">Thanh Toán</a>
                                             </div>
                                         </div>
                                     </div>
@@ -397,5 +401,6 @@
         });
     </script>
     @RenderSection("AddCartAjax",required: false);
+    @RenderSection("CartPageJS",required: false);
 </body>
 </html>

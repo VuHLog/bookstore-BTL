@@ -57,8 +57,7 @@
                                         <span class="text-dark mb-4 pb-4 iq-border-bottom d-block">@Model.Content</span>
                                         <div class="text-primary mb-4">Số lượng: <span class="text-body">@Model.Number sách có sẵn</span></div>
                                         <div class="mb-4 d-flex align-items-center">
-                                            <a href="checkout.html" class="btn btn-primary view-more mr-2">Thêm vào giỏ hàng</a>
-                                            <a href="book-pdf.html" class="btn btn-primary view-more mr-2">Mua ngay</a>
+                                            <button class="cart-icon btn btn-primary view-more" style="cursor: pointer" date-href="/cart/addcart/@Model.BookId">Thêm vào giỏ hàng</button>
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +110,7 @@
                             @foreach (Book similarBook in ViewBag.SimilarBooks)
                             {
                                 <li class="col-md-3">
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-end" style="height: 100%">
                                         <div class="col-5">
                                             <div class="position-relative image-overlap-shadow">
                                                 <a href="/book/@similarBook.BookId"><img class="img-fluid rounded w-100" src="@similarBook.imageUrl" alt=""></a>
@@ -138,16 +137,13 @@
                         <div class="iq-header-title">
                             <h4 class="card-title mb-0">Thịnh hành</h4>
                         </div>
-                        @* <div class="iq-card-header-toolbar d-flex align-items-center">
-                            <a href="category.html" class="btn btn-sm btn-primary view-more">Xem thêm</a>
-                        </div> *@
                     </div>
                     <div class="iq-card-body trendy-contens">
                         <ul id="trendy-slider" class="list-inline p-0 mb-0 row" >
                             @foreach (Book topSellingBook in ViewBag.TopSellingBooks)
                             {
-                                <li class="col-md-3" style="height: 100%">
-                                    <div class=" row d-flex align-items-end">
+                                <li class="col-md-3" >
+                                    <div class=" row" style="height: 100%">
                                         <div class="col-5 p-0 position-relative image-overlap-shadow">
                                             <a href="/book/@topSellingBook.BookId" class="d-flex"><img class="img-fluid rounded w-100" src="@topSellingBook.imageUrl" alt=""></a>
                                             <div class="view-book">
@@ -165,8 +161,8 @@
                                             <div class="price d-flex align-items-center">
                                                 <h6><b>@costFormatPopular ₫</b></h6>
                                             </div>
-                                            <div class="iq-product-action">
-                                                <a href="javascript:void();"><i class="ri-shopping-cart-2-fill text-primary"></i></a>
+                                            <div class="iq-product-action d-flex">
+                                                <div class="cart-icon d-inline-block" style="cursor: pointer" date-href="/cart/addcart/@topSellingBook.BookId"><i class="ri-shopping-cart-2-fill text-primary"></i></div>
                                                 <a href="javascript:void();" class="ml-2"><i class="ri-heart-fill text-danger"></i></a>
                                             </div>
                                         </div>
@@ -180,3 +176,40 @@
         </div>
     </div>
 </div>
+
+@section AddCartAjax{
+    <script>
+        //handle cart
+        $(document).ready(function () {
+            $(".cart-icon").each(function () {
+                $(this).click(function () {
+                    const hrefValue = $(this).attr("date-href");
+                    console.log(hrefValue);
+                    $.ajax({
+                        url: hrefValue,
+                        dataType: 'html',
+                        success: function (response) {
+                            // Tạo một jQuery object từ response
+                            var responseHtml = $(response);
+
+                            // Lọc ra phần HTML
+                            responseHtml = responseHtml.find(".Cart-Navbar-Items");
+
+                            // Lấy nội dung HTML
+                            var responseContent = responseHtml.html();
+                            console.log("responseContent" + responseContent)
+                            $("#cart-navbar").html(responseContent);
+                            Swal.fire({
+                                position: 'bottom-end',
+                                icon: 'success',
+                                title: 'Thêm giỏ hàng thành công',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                    });
+                });
+            });
+        })
+    </script>
+}

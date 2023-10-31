@@ -33,9 +33,6 @@
                         <div class="iq-header-title">
                             <h4 class="card-title mb-0">Gợi ý ngẫu nhiên cho bạn</h4>
                         </div>
-                        <div class="iq-card-header-toolbar d-flex align-items-center">
-                            <a href="category.html" class="btn btn-sm btn-primary view-more">Xem Thêm</a>
-                        </div>
                     </div>
                     <div class="iq-card-body">
                         <div class="row">
@@ -48,22 +45,13 @@
                                                 <div class="col-6 p-0 position-relative image-overlap-shadow">
                                                     <a href="javascript:void();"><img class="img-fluid rounded w-100" src="@book.imageUrl" alt=""></a>
                                                     <div class="view-book">
-                                                        <a href="book-page.html" class="btn btn-sm btn-white">Mua Ngay</a>
+                                                        <a href="/book/@book.BookId" class="btn btn-sm btn-white">Xem chi tiết</a>
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
                                                     <div class="mb-2">
                                                         <h6 class="mb-1">@book.Name</h6>
                                                         <p class="font-size-13 line-height mb-1">@book.Authors</p>
-                                                        @* <div class="d-block line-height">
-                                                    <span class="font-size-11 text-warning">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    </span>
-                                                    </div> *@
                                                     </div>
                                                     <div class="price d-flex align-items-center">
                                                         <h6>
@@ -75,7 +63,7 @@
                                                         </h6>
                                                     </div>
                                                     <div class="iq-product-action">
-                                                        <div class="cart-icon d-inline-block" date-href="/addCart/@book.BookId"><i class="ri-shopping-cart-2-fill text-primary"></i></div>
+                                                        <div class="cart-icon d-inline-block" style="cursor: pointer" date-href="/cart/addcart/@book.BookId"><i class="ri-shopping-cart-2-fill text-primary"></i></div>
                                                         <a href="javascript:void();" class="ml-2"><i class="ri-heart-fill text-danger"></i></a>
                                                     </div>
                                                 </div>
@@ -163,7 +151,6 @@
                         url: hrefValue,
                         dataType: 'html',
                         success: function (response) {
-                            console.log(response)
                             // Tạo một jQuery object từ response
                             var responseHtml = $(response);
 
@@ -172,8 +159,15 @@
 
                             // Lấy nội dung HTML
                             var responseContent = responseHtml.html();
-                            $("#search-result-list").html(responseContent);
-
+                            console.log("responseContent" + responseContent)
+                            $("#cart-navbar").html(responseContent);
+                            Swal.fire({
+                                position: 'bottom-end',
+                                icon: 'success',
+                                title: 'Thêm giỏ hàng thành công',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
                         }
                     });
                 });

@@ -75,8 +75,8 @@
                                                         }
                                                         <h6><b>@costFormat</b></h6>
                                                     </div>
-                                                    <div class="iq-product-action">
-                                                        <a href="javascript:void();"><i class="ri-shopping-cart-2-fill text-primary"></i></a>
+                                                    <div class="iq-product-action d-flex">
+                                                        <div class="cart-icon d-inline-block" style="cursor: pointer" date-href="/cart/addcart/@book.BookId"><i class="ri-shopping-cart-2-fill text-primary"></i></div>
                                                         <a href="javascript:void();" class="ml-2"><i class="ri-heart-fill text-danger"></i></a>
                                                     </div>
                                                 </div>
@@ -129,3 +129,41 @@
         </div>
     </div>
 </div>
+
+
+@section AddCartAjax{
+    <script>
+        //handle cart
+        $(document).ready(function () {
+            $(".cart-icon").each(function () {
+                $(this).click(function () {
+                    const hrefValue = $(this).attr("date-href");
+                    console.log(hrefValue);
+                    $.ajax({
+                        url: hrefValue,
+                        dataType: 'html',
+                        success: function (response) {
+                            // Tạo một jQuery object từ response
+                            var responseHtml = $(response);
+
+                            // Lọc ra phần HTML
+                            responseHtml = responseHtml.find(".Cart-Navbar-Items");
+
+                            // Lấy nội dung HTML
+                            var responseContent = responseHtml.html();
+                            console.log("responseContent" + responseContent)
+                            $("#cart-navbar").html(responseContent);
+                            Swal.fire({
+                                position: 'bottom-end',
+                                icon: 'success',
+                                title: 'Thêm giỏ hàng thành công',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                    });
+                });
+            });
+        })
+    </script>
+}

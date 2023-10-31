@@ -16,6 +16,8 @@ namespace BookStore.DTO
 
         public string? imageUrl { get; set; }
 
+        public int quantity = 1;
+
         public void setCart(Book book)
         {
             BookId = book.BookId;
@@ -23,6 +25,16 @@ namespace BookStore.DTO
             Name = book.Name;
             Number = book.Number;
             imageUrl = book.imageUrl;
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is CartDTO dTO &&
+                   BookId == dTO.BookId &&
+                   Cost == dTO.Cost &&
+                   Name == dTO.Name &&
+                   Number == dTO.Number &&
+                   imageUrl == dTO.imageUrl;
         }
     }
 }
