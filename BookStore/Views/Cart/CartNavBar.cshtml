@@ -1,0 +1,45 @@
+﻿@using BookStore.DTO;
+@using Newtonsoft.Json;
+@using System.Globalization;
+@{
+    var CartCookie = Context.Request.Cookies["cart"];
+    List<CartDTO> books = new List<CartDTO>();
+    if (CartCookie != null)
+    {
+        books = JsonConvert.DeserializeObject<List<CartDTO>>(CartCookie);
+    }
+}
+<div>
+    <div class="Cart-Navbar-Items">
+        @if (CartCookie != null && books.Count() > 0)
+        {
+            <div class="bg-primary p-3">
+                <h5 class="mb-0 text-white">Giỏ Hàng<small class="badge  badge-light float-right pt-1">@books.Count()</small></h5>
+            </div>
+            @foreach (CartDTO book in books)
+            {
+                <a href="/book/@book.BookId" class="iq-sub-card">
+                    <div class="media align-items-center">
+                        <div class="">
+                            <img class="rounded" src="@book.imageUrl" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0 ">@book.Name</h6>
+                            @{
+                                CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
+                                string costFormat = double.Parse(book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                            }
+                            <p class="mb-0">@costFormat</p>
+                        </div>
+                        <div class="float-right font-size-24 text-danger"><i class="ri-close-fill"></i></div>
+                    </div>
+                </a>
+            }
+
+        }
+        else
+        {
+            <p class="text-secondary">Không có sản phẩm nào trong giỏ hàng</p>
+        }
+    </div>
+</div>

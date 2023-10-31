@@ -1,0 +1,237 @@
+﻿@using BookStore.Util;
+@model BookStore.DTO.ProfileDTO;
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags xyz-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Đăng ký</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="~/css/typography.css">
+    <!-- Slick-slider lib CSS -->
+    <link rel="stylesheet" type="text/css" href="~/lib/slick-slider/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/lib/slick-slider/slick/slick-theme.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/css/style.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/css/homePage/style-home-page.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css" />
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="~/lib/sweetalert2/dist/sweetalert2.min.css" />
+</head>
+<body>
+    <div id="content-page" class="content-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="iq-card">
+                        <div class="iq-card-body p-0">
+                            <div class="iq-edit-list">
+                                <ul class="iq-edit-profile d-flex nav nav-pills">
+                                    <li class="col-md-12 p-0">
+                                        <a class="nav-link active" data-toggle="pill" href="#personal-information">
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="iq-edit-list-data">
+                        <div class="tab-content">
+                            <div class="tab-pane fade active show" id="personal-information" role="tabpanel">
+                                <div class="iq-card">
+                                    <div class="iq-card-body">
+                                        <span class="text-danger">@ViewBag.UserExist</span>
+                                        <form asp-controller="SignUp" asp-action="createAccount" method="post" enctype="multipart/form-data">
+                                            <div class="form-group row align-items-center">
+                                                <div class="col-md-12">
+                                                    <div class="profile-img-edit">
+                                                        <label asp-for="avatar">Ảnh đại diện</label>
+                                                        <div class="p-image">
+                                                            <i class="ri-pencil-line upload-button"></i>
+                                                            <input asp-for="avatar" class="file-upload" type="file" accept="image/*" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" row align-items-center">
+                                                <div class="form-group col-sm-6">
+                                                    <label asp-for="Firstname">First Name:</label>
+                                                    <input type="text" asp-for="Firstname" class="form-control">
+                                                    <span asp-validation-for="Firstname" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label asp-for="Lastname">Last Name:</label>
+                                                    <input type="text" class="form-control" asp-for="Lastname">
+                                                    <span asp-validation-for="Lastname" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label asp-for="Username">Tên tài khoản:</label>
+                                                    <input type="text" class="form-control" asp-for="Username">
+                                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-sm-3">
+                                                    <label asp-for="Password">Mật khẩu:</label>
+                                                    <input type="Password" class="form-control" asp-for="Password">
+                                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-sm-3">
+                                                    <label for="vpass">Xác nhận lại mật khẩu:</label>
+                                                    <input type="Password" class="form-control" name="EnterPasswordAgain" id="vpass" value="">
+                                                    <span class="text-danger">@ViewBag.PassNoMatch</span>
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label asp-for="Email">Email:</label>
+                                                    <input class="form-control" asp-for="Email">
+                                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label asp-for="gender">Giới tính:</label>
+                                                    <select asp-for="gender" class="form-control" id="exampleFormControlSelect2">
+                                                        <option value="Nam">Nam</option>
+                                                        <option value="Nữ">Nữ</option>
+                                                    </select>
+                                                    <span asp-validation-for="gender" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label asp-for="dateOfBirth">Ngày sinh:</label>
+                                                    <input asp-for="dateOfBirth" type="datetime-local" class="form-control">
+                                                    <span asp-validation-for="dateOfBirth" class="text-danger"></span>
+                                                </div>
+                                                <div class="form-group col-sm-12">
+                                                    <label asp-for="address">Địa chỉ:</label>
+                                                    <textarea class="form-control" name="address" rows="5" style="line-height: 22px;" asp-for="address">
+                                                    <span asp-validation-for="address" class="text-danger"></span>
+                                                </textarea>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary mr-2">Tạo</button>
+                                            <button type="reset" class="btn iq-bg-danger">Hủy bỏ</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer END -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- sweet alert JavaScript -->
+    <script src="~/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <!-- Slick-slider JavaScript -->
+    <script src="~/lib/slick-slider/slick/slick.min.js"></script>
+    <!-- Slick-slider banner JavaScript -->
+    <script src="~/js/homePage/slider-banner.js"></script>
+    <!-- Appear JavaScript -->
+    <script src="~/js/jquery.appear.js"></script>
+    <!-- Countdown JavaScript -->
+    <script src="~/js/countdown.min.js"></script>
+    <!-- Counterup JavaScript -->
+    <script src="~/js/waypoints.min.js"></script>
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <!-- Wow JavaScript -->
+    <script src="~/js/wow.min.js"></script>
+    <!-- Apexcharts JavaScript -->
+    <script src="~/js/apexcharts.js"></script>
+    <!-- Slick JavaScript -->
+    <script src="~/js/slick.min.js"></script>
+    <!-- Select2 JavaScript -->
+    <script src="~/js/select2.min.js"></script>
+    <!-- Owl Carousel JavaScript -->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup JavaScript -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <!-- Smooth Scrollbar JavaScript -->
+    <script src="~/js/smooth-scrollbar.js"></script>
+    <!-- lottie JavaScript -->
+    <script src="~/js/lottie.js"></script>
+    <!-- am core JavaScript -->
+    <script src="~/js/core.js"></script>
+    <!-- am charts JavaScript -->
+    <script src="~/js/charts.js"></script>
+    <!-- am animated JavaScript -->
+    <script src="~/js/animated.js"></script>
+    <!-- am kelly JavaScript -->
+    <script src="~/js/kelly.js"></script>
+    <!-- am maps JavaScript -->
+    <script src="~/js/maps.js"></script>
+    <!-- am worldLow JavaScript -->
+    <script src="~/js/worldLow.js"></script>
+    <!-- Raphael-min JavaScript -->
+    <script src="~/js/raphael-min.js"></script>
+    <!-- Morris JavaScript -->
+    <script src="~/js/morris.js"></script>
+    <!-- Morris min JavaScript -->
+    <script src="~/js/morris.min.js"></script>
+    <!-- Flatpicker Js -->
+    <script src="~/js/flatpickr.js"></script>
+    <!-- Style Customizer -->
+    <script src="~/js/style-customizer.js"></script>
+    <!-- Chart Custom JavaScript -->
+    <script src="~/js/chart-custom.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="~/js/custom.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var inputSearchValue = $("#input-search").val();
+
+            $("#input-search").keyup(function () {
+                inputSearchValue = $(this).val();
+                $(".search-result-more").attr("href", "/SearchResultList?searchString=" + inputSearchValue);
+                $.ajax({
+                    url: "/NavbarSearch",
+                    data: { searchString: inputSearchValue },
+                    dataType: 'html',
+                    success: function (response) {
+                        // Tạo một jQuery object từ response
+                        var responseHtml = $(response);
+
+                        // Lọc ra phần HTML
+                        responseHtml = responseHtml.find(".search-result-items");
+
+                        // Lấy nội dung HTML
+                        var responseContent = responseHtml.html();
+
+                        $("#search-result-list").html(responseContent);
+                        $(".search-results").attr("style", "display: block");
+
+                    }
+                })
+            })
+
+            var body = document.getElementsByTagName("BODY")[0];
+            body.addEventListener('click', function (e) {
+                $(".search-results").attr("style", "display: none");
+            });
+
+            $("#input-search").focus(function () {
+                $(".search-results").attr("style", "display: block");
+            })
+
+            $(".iq-search-bar").click(function (e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+</body>
+</html>

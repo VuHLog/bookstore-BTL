@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 using System.Collections.Generic;
 using BookStore.Models;
 using Microsoft.EntityFrameworkCore;
@@ -159,9 +160,18 @@ public partial class BookstoreContext : DbContext
             entity.Property(e => e.Address)
                 .HasMaxLength(255)
                 .HasColumnName("address");
+            entity.Property(e => e.Gender)
+                .HasMaxLength(255)
+                .HasColumnName("gender");
+            entity.Property(e => e.DateOfBirth)
+                .HasColumnName("DateOfBirth");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
                 .HasColumnName("name");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+            entity.HasOne(d => d.User).WithOne(p => p.Customer)
+                .HasForeignKey<Customer>(d => d.UserId)
+                .HasConstraintName("customer_user_id_fk");
         });
 
         modelBuilder.Entity<Employee>(entity =>
@@ -323,11 +333,11 @@ public partial class BookstoreContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__users__3213E83FCC8B84A0");
+            entity.HasKey(e => e.UserId).HasName("PK__users__3213E83FCC8B84A0");
 
             entity.ToTable("users");
 
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
             entity.Property(e => e.Email)
                 .HasMaxLength(255)
                 .IsUnicode(false)

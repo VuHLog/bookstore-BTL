@@ -53,6 +53,15 @@
                                 <input class="form-control" type="file" id="formFile" asp-for="avatar">
                                 <span asp-validation-for="avatar" class="text-danger"></span>
                             </div>
+                            <div class="form-group">
+                                <select name="role" class="form-control" id="exampleFormControlSelect2">
+                                    <option selected="" disabled="">Role</option>
+                                    @foreach(Role role in ViewBag.Role)
+                                    {
+                                        <option value="@role.Id">@role.Name</option>
+                                    }
+                                </select>
+                            </div>
                             <button type="submit" class="btn btn-primary">Tạo</button>
                             <button type="reset" class="btn btn-danger">Reset giá trị</button>
                         </form>

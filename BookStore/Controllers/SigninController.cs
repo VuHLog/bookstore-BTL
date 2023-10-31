@@ -1,5 +1,6 @@
 ﻿using BookStore.Data;
 using BookStore.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore.Query;
@@ -26,7 +27,8 @@ namespace BookStore.Controllers
         public IActionResult Login()
         {
             User user = new User();
-            ViewBag.urlPrevious = Request.Headers["Referer"].ToString();
+            var urlPrevious = Request.Headers["Referer"].ToString();
+            ViewBag.urlPrevious = urlPrevious==""?"/home":urlPrevious;
             return View(user);
         }
 
@@ -58,24 +60,28 @@ namespace BookStore.Controllers
                     return View("Login");
                 }
                 var account = (from userRole in _context.UsersRoles
-                               join u in _context.Users on userRole.UserId equals u.Id
+                               join u in _context.Users on userRole.UserId equals u.UserId
                                join role in _context.Roles on userRole.RoleId equals role.Id
-                               where u.Id == user.Id
+                               where u.UserId == user.UserId
                                select new
                                {
                                    username = user.Username,
                                    fullname = user.Lastname + " " + user.Firstname,
                                    role = role.Name
                                }).FirstOrDefault();
-                Response.Cookies.Append("account", JsonConvert.SerializeObject(account));
+                Response.Cookies.Append("account", JsonConvert.SerializeObject(account),new CookieOptions { Expires = DateTime.Now.AddDays(7) });
                 //return ve trang truoc do
                 if (urlprevious != null)
                 {
+                    if(urlprevious == "https://localhost:7095/signup")
+                    {
+                        return Redirect("/home");
+                    }
                     return Redirect(urlprevious);
                 }
                 else
                 {
-                    return RedirectToAction("Index", "Home");
+                    return Redirect("/home");
                 }
             }
         }

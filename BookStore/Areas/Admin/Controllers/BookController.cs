@@ -235,7 +235,7 @@ namespace BookStore.Admin.Controllers
                     //    Systeb.IO.File.Delete(oldFilePath); // Xóa tệp
                     //}
 
-                    string folder = "images\\user\\" + Guid.NewGuid().ToString() + book.productImage.FileName;
+                    string folder = "images\\books\\" + Guid.NewGuid().ToString() + book.productImage.FileName;
                     string serverFolder = Path.Combine(webRootPath, folder);
 
                     book.imageUrl = "\\" + folder;

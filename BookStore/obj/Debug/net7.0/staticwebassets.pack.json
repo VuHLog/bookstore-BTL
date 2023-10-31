@@ -1765,6 +1765,10 @@
       "PackagePath": "staticwebassets\\images\\user\\eca96aed-3f68-4826-9269-d55c0d423985pexels-hristo-fidanov-1252873.jpg"
     },
     {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\user-default.png",
+      "PackagePath": "staticwebassets\\images\\user\\user-default.png"
+    },
+    {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\js\\algoliasearchLite.min.js",
       "PackagePath": "staticwebassets\\js\\algoliasearchLite.min.js"
     },
@@ -10715,6 +10719,322 @@
     {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\slick-slider\\slick\\slick.scss",
       "PackagePath": "staticwebassets\\lib\\slick-slider\\slick\\slick.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\README.md",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\README.md"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.all.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.min.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\package.json",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\package.json"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\SweetAlert.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\SweetAlert.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\buttons-handlers.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\buttons-handlers.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\constants.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\constants.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\globalState.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\globalState.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods\\_destroy.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods\\_destroy.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods\\close.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods\\close.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods\\enable-disable-elements.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods\\enable-disable-elements.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods\\getInput.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods\\getInput.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods\\hideLoading.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods\\hideLoading.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods\\update.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods\\update.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\instanceMethods\\validation-message.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\instanceMethods\\validation-message.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\keydown-handler.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\keydown-handler.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\popup-click-handler.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\popup-click-handler.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\privateMethods.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\privateMethods.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\privateProps.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\privateProps.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_animations.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_animations.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_body.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_body.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_core.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_icons.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_theming.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_theming.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_toasts-animations.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_toasts-animations.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_toasts-body.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_toasts-body.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods\\argsToParams.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods\\argsToParams.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods\\bindClickHandler.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods\\bindClickHandler.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods\\dom.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods\\dom.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods\\fire.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods\\fire.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods\\mixin.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods\\mixin.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods\\showLoading.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods\\showLoading.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\staticMethods\\timer.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\staticMethods\\timer.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\sweetalert2.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\sweetalert2.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\sweetalert2.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\types.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\types.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\DismissReason.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\DismissReason.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\Timer.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\Timer.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\aria.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\aria.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\classes.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\classes.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\defaultInputValidators.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\defaultInputValidators.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\animationEndEvent.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\animationEndEvent.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\domUtils.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\domUtils.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\getters.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\getters.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\index.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\index.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\init.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\init.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\inputUtils.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\inputUtils.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\parseHtmlToContainer.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\parseHtmlToContainer.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\render.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\render.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderActions.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderActions.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderCloseButton.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderCloseButton.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderContainer.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderContainer.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderContent.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderContent.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderFooter.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderFooter.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderIcon.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderIcon.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderImage.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderImage.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderInput.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderInput.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderPopup.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderPopup.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderProgressSteps.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderProgressSteps.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderTitle.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\dom\\renderers\\renderTitle.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\getTemplateParams.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\getTemplateParams.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\iosFix.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\iosFix.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\isNodeEnv.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\isNodeEnv.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\openPopup.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\openPopup.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\params.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\params.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\scrollbar.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\scrollbar.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\setParameters.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\setParameters.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\utils\\utils.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\utils\\utils.js"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\src\\variables.scss",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\src\\variables.scss"
+    },
+    {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\lib\\sweetalert2\\sweetalert2.d.ts",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\sweetalert2.d.ts"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BookStore.Microsoft.AspNetCore.StaticWebAssets.props",

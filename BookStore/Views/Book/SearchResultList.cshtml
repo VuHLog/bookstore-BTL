@@ -1,0 +1,131 @@
+﻿@using System.Globalization;
+@using BookStore.Util;
+@model PaginatedList<BookStore.Models.Book>
+@{
+    Layout = "~/Views/Shared/Client/HomeLayout.cshtml";
+}
+
+<!-- Page Content  -->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="iq-card-transparent mb-0">
+                    <div class="d-block text-center">
+                        <h2 class="mb-3">Danh sách kết quả tìm kiếm</h2>
+                        <div class="w-100 iq-search-filter">
+                            <ul class="list-inline p-0 m-0 row justify-content-center align-items-center search-menu-options">
+                                <li class="search-menu-opt d-flex align-items-center jusitfy-content-center" style="height:100%">
+                                    <div class="iq-dropdown">
+                                        <a asp-action="SearchResultList" asp-route-sortOrder="@ViewBag.PopularSortParam" class="btn @(ViewBag.CurrentSort==ViewBag.LastestSortParam?"btn-outline-secondary":"btn-primary")">Phổ biến</a>
+                                    </div>
+                                </li>
+                                <li class="search-menu-opt d-flex align-items-center jusitfy-content-center" style="height:100%">
+                                    <div class="iq-dropdown">
+                                        <a asp-action="SearchResultList" asp-route-sortOrder="@ViewBag.LastestSortParam" class="btn @(ViewBag.CurrentSort==ViewBag.LastestSortParam?"btn-primary":"btn-outline-secondary")">Mới nhất</a>
+                                    </div>
+                                </li>
+                                <div class="dropdown show">
+                                    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Giá @(ViewBag.CurrentCostSortParam == ViewBag.CostSortParam ? ": Từ thấp đến cao" : "") @(ViewBag.CurrentCostSortParam == ViewBag.CostDescSortParam ? ": Từ cao đến thấp" : "")
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a asp-action="SearchResultList" asp-route-costOrder="@ViewBag.CostSortParam" class="dropdown-item @(ViewBag.CurrentCostSortParam==ViewBag.CostSortParam?"text-primary":"")">Từ Thấp đến Cao</a>
+                                        <a asp-action="SearchResultList" asp-route-costOrder="@ViewBag.CostDescSortParam" class="dropdown-item @(ViewBag.CurrentCostSortParam==ViewBag.CostDescSortParam?"text-primary":"")">Từ Cao đến Thấp</a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="iq-card">
+                    <div class="iq-card-body">
+                        <div class="row">
+                            @foreach (var book in Model)
+                            {
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <div class="iq-card iq-card-block iq-card-stretch iq-card-height search-bookcontent justify-content-end">
+                                        <div class="iq-card-body p-0">
+                                            <div class="d-flex align-items-end">
+                                                <div class="col-6 p-0 position-relative image-overlap-shadow">
+                                                    <a href="/book/@book.BookId"><img class="img-fluid rounded w-100" src="@book.imageUrl" alt=""></a>
+                                                    <div class="view-book">
+                                                        <a href="/book/@book.BookId" class="btn btn-sm btn-white">Xem chi tiết</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1">@book.Name</h6>
+                                                        <p class="font-size-13 line-height mb-1">Gurt Mistrioty</p>
+                                                        @* <div class="d-block">
+                                                    <span class="font-size-13 text-warning">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    </span>
+                                                    </div> *@
+                                                    </div>
+                                                    <div class="price d-flex align-items-center">
+                                                        @{
+                                                            CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
+                                                            string costFormat = double.Parse(@book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                                                        }
+                                                        <h6><b>@costFormat</b></h6>
+                                                    </div>
+                                                    <div class="iq-product-action">
+                                                        <a href="javascript:void();"><i class="ri-shopping-cart-2-fill text-primary"></i></a>
+                                                        <a href="javascript:void();" class="ml-2"><i class="ri-heart-fill text-danger"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <nav aria-label="Page navigation example" class="d-flex justify-content-end">
+                            <ul class="pagination">
+                                @{
+                                    if (Model.HasPreviousPage)
+                                    {
+                                        <li class="page-item mr-2">
+                                            <a asp-action="Index"
+                                               asp-route-sortOrder="@ViewBag.CurrentSort"
+                                               asp-route-costOrder="@ViewBag.CurrentCostSortParam"
+                                               asp-route-pageNumber="@(Model.PageIndex - 1)"
+                                               class="btn btn-default page-link ">
+                                                <span aria-hidden="true">&laquo;</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                    }
+                                }
+                                <li class="page-item mr-2">
+                                    <button type="button" class="btn btn-info">@Model.PageIndex</button>
+                                </li>
+                                @{
+                                    if (Model.HasNextPage)
+                                    {
+                                        <li class="page-item">
+                                            <a asp-action="Index"
+                                               asp-route-sortOrder="@ViewBag.CurrentSort"
+                                               asp-route-costOrder="@ViewBag.CurrentCostSortParam"
+                                               asp-route-pageNumber="@(Model.PageIndex + 1)"
+                                               class="btn btn-default page-link ">
+                                                <span aria-hidden="true">&raquo;</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

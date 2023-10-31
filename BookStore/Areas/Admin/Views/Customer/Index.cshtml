@@ -38,11 +38,20 @@
                                 <thead>
                                     <tr>
                                         
-                                        <th style="width: 15%;">
-                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.AddressSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Địa chỉ</a>
                                         </th>
                                         <th style="width: 15%;">
-                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.SalarySortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Lương</a>
+                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.NameSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Tên</a>
+                                        </th>
+                                        <th style="width: 15%;">
+                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.AddressSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Địa chỉ</a>
+                                        <th style="width: 15%;">
+                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.GenderSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Giới tính</a>
+                                        </th>
+                                        <th style="width: 15%;">
+                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.DateOfBirthSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Ngày sinh</a>
+                                        </th>
+                                        <th style="width: 15%;">
+                                            <a asp-action="Index" asp-route-sortOrder="@ViewBag.UserIdSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">UserId</a>
                                         </th>
                                         <th style="width: 15%;">Hoạt động</th>
                                     </tr>
@@ -54,6 +63,9 @@
                                             
                                             <td>@customer.Name</td>
                                             <td>@customer.Address</td>
+                                            <td>@customer.Gender</td>
+                                            <td>@customer.DateOfBirth</td>
+                                            <td>@customer.UserId</td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="Customer/Edit/@customer.CustomerId"><i class="ri-pencil-line"></i></a>

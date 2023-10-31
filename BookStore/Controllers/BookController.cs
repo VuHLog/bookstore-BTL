@@ -117,5 +117,73 @@ namespace BookStore.Controllers
             }
             return View("SearchResults",await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 4));
         }
+
+        [Route("/SearchResultList")]
+        public async Task<IActionResult> SearchResultList(int? id,string searchString, string currentFilter, string sortOrder, string costOrder, int? pageNumber, int? pageSize)
+        {
+            //sort
+            ViewBag.CurrentSort = sortOrder;
+            ViewBag.PopularSortParam = "Popular";
+            ViewBag.LastestSortParam = "Lastest";
+            ViewBag.CostSortParam = "Cost";
+            ViewBag.CostDescSortParam = "cost_desc";
+            ViewBag.CurrentCostSortParam = costOrder;
+
+            var books = from b in _context.Books
+                        select b;
+
+            //luu filter hien tai
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
+
+            //xác định tên trường sort
+            switch (sortOrder)
+            {
+                case "Lastest":
+                    books = books.OrderByDescending(b => b.Date);
+                    break;
+                default:
+                    books = from b in _context.Books
+                            join bc in (
+                                from bi in _context.BookInvoicesOuts
+                                group bi by bi.BookId into g
+                                select new { BookId = g.Key, TongSoLuongBan = g.Sum(bi => bi.Quantity) }
+                                )
+                            on b.BookId equals bc.BookId into leftJoin
+                            from left in leftJoin.DefaultIfEmpty()
+                            orderby left.TongSoLuongBan descending
+                            select b;
+                    break;
+            }
+            if (costOrder == "Cost")
+            {
+                books = books.OrderBy(b => b.Cost);
+            }
+            else if (costOrder == "cost_desc")
+            {
+                books = books.OrderByDescending(b => b.Cost);
+            }
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+
+                books = books.Where(b =>b.Name.Contains(searchString)
+                                       );
+            }
+
+            if (books == null)
+            {
+                return NotFound();
+            }
+            return View(await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 12));
+        }
     }
 }

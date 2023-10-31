@@ -42,6 +42,7 @@ namespace BookStore.Admin.Controllers
             ViewBag.UsernameSortParam = sortOrder == "Username" ? "username_desc" : "Username";
             ViewBag.PasswordSortParam = sortOrder == "Password" ? "password_desc" : "Password";
             ViewBag.EnabledSortParam = sortOrder == "Enabled" ? "enabled_desc" : "Enabled";
+            ViewBag.RoleSortParam = sortOrder == "Role" ? "role_desc" : "Role";
 
             //luu bo loc hien tai
             if (searchString != null)
@@ -113,7 +114,7 @@ namespace BookStore.Admin.Controllers
         }
 
         // GET: User/Details/5
-        [Route("Details")]
+        [Route("Details/{id}")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Details(long? id)
@@ -123,7 +124,7 @@ namespace BookStore.Admin.Controllers
                 return NotFound();
             }
             var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Id == id);
+                .FirstOrDefaultAsync(u => u.UserId == id);
             if (user == null)
             {
                 return NotFound();
@@ -136,8 +137,9 @@ namespace BookStore.Admin.Controllers
         [Route("Create")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            ViewBag.Role = await _context.Roles.ToListAsync();
             return View();
         }
 
@@ -149,27 +151,45 @@ namespace BookStore.Admin.Controllers
         [Route("CreatePost")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> CreatePost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username,avatar")] User user)
+        public async Task<IActionResult> CreatePost([Bind("UserId,Email,Enabled,Firstname,Lastname,Password,Username,avatar")] User user, int role)
         {
             // luu anh vao thu muc images/user
             if (ModelState.IsValid)
             {
-                if (user.avatar != null)
+                
+                string username =await (from u in _context.Users
+                                  where u.Username == user.Username
+                                  select u.Username).FirstOrDefaultAsync();
+                if(username == null)
                 {
+                    if (user.avatar != null)
+                    {
 
-                    string folder = "images\\user\\" + Guid.NewGuid().ToString() + user.avatar.FileName;
-                    string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
+                        string folder = "images\\user\\" + Guid.NewGuid().ToString() + user.avatar.FileName;
+                        string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
 
-                    user.avatarUrl = "\\" + folder;
+                        user.avatarUrl = "\\" + folder;
 
-                    await user.avatar.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                        await user.avatar.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                    }
+                    else
+                    {
+                        user.avatarUrl = "\\images\\user\\user-default.png";
+                    }
+                    //encode password
+                    user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+
+                    _context.Add(user);
+                    await _context.SaveChangesAsync();
+
+
+                    using (_context)
+                    {
+                        var sql = "INSERT INTO users_roles (user_id, role_id) VALUES ({0},{1})";
+                        await _context.Database.ExecuteSqlRawAsync(sql, user.UserId, role);
+                    }
+                    return RedirectToAction(nameof(Index));
                 }
-                //encode password
-                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
             }
             return View("create", user);
         }
@@ -190,6 +210,12 @@ namespace BookStore.Admin.Controllers
             {
                 return NotFound();
             }
+            ViewBag.RoleCurr = await (from ur in _context.UsersRoles
+                                      join r in _context.Roles on ur.RoleId equals r.Id
+                                      where ur.UserId == id
+                                      select r
+                                      ).FirstOrDefaultAsync() ;
+            ViewBag.Role = await _context.Roles.ToListAsync();
             return View(user);
         }
 
@@ -198,7 +224,7 @@ namespace BookStore.Admin.Controllers
         [Route("EditPost")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> EditPost([Bind("Id,Email,Enabled,Firstname,Lastname,Password,Username,avatar,avatarUrl")] User user)
+        public async Task<IActionResult> EditPost([Bind("UserId,Email,Enabled,Firstname,Lastname,Password,Username,avatar,avatarUrl")] User user,int? role)
         {
             if (ModelState.IsValid)
             {
@@ -222,10 +248,18 @@ namespace BookStore.Admin.Controllers
                 {
                     _context.Update(user);
                     await _context.SaveChangesAsync();
+                    if (role != null)
+                    {
+                        using (_context)
+                        {
+                            var sql = "update users_roles set role_id = {0} where user_id={1}";
+                            await _context.Database.ExecuteSqlRawAsync(sql, role, user.UserId);
+                        }
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserExists(user.Id))
+                    if (!UserExists(user.UserId))
                     {
                         return NotFound();
                     }
@@ -251,7 +285,12 @@ namespace BookStore.Admin.Controllers
             }
 
             var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Id == id);
+                .FirstOrDefaultAsync(u => u.UserId == id);
+            ViewBag.RoleCurr = await (from ur in _context.UsersRoles
+                                      join r in _context.Roles on ur.RoleId equals r.Id
+                                      where ur.UserId == id
+                                      select r
+                                      ).FirstOrDefaultAsync();
             if (user == null)
             {
                 return NotFound();
@@ -265,7 +304,7 @@ namespace BookStore.Admin.Controllers
         [ValidateAntiForgeryToken]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> DeleteConfirmed([Bind("UserId")] User user)
+        public async Task<IActionResult> DeleteConfirmed([Bind("UserId")] User user,int? role)
         {
             if (_context.Users == null)
             {
@@ -273,7 +312,9 @@ namespace BookStore.Admin.Controllers
             }
             if (user != null)
             {
-                _context.Users.Remove(user);
+                    var sql = "Delete from users_roles where user_id = {0} and role_id = {1}";
+                    await _context.Database.ExecuteSqlRawAsync(sql, user.UserId, role);
+                    _context.Users.Remove(user);
             }
 
             await _context.SaveChangesAsync();
@@ -282,7 +323,7 @@ namespace BookStore.Admin.Controllers
 
         private bool UserExists(long id)
         {
-            return (_context.Users?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Users?.Any(e => e.UserId == id)).GetValueOrDefault();
         }
     }
 }

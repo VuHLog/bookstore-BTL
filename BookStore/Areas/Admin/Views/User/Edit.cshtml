@@ -19,7 +19,7 @@
                     <div class="iq-card-body">
                         <form asp-controller="User" asp-action="EditPost" method="post" enctype="multipart/form-data">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                            <input type="hidden" asp-for="Id" />
+                            <input type="hidden" asp-for="UserId" />
                             <div class="form-group">
                                 <label asp-for="Lastname">Họ:</label>
                                 <input asp-for="Lastname" type="text" class="form-control">
@@ -35,9 +35,10 @@
                                 <input asp-for="Email" type="text" class="form-control">
                                 <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
+                            <input type="hidden" asp-for="Username" />
                             <div class="form-group">
                                 <label asp-for="Username">Tài khoản:</label>
-                                <input asp-for="Username" type="text" class="form-control">
+                                <input asp-for="Username" type="text" class="form-control" disabled>
                                 <span asp-validation-for="Username" class="text-danger"></span>
                             </div>
                             <div class="form-group">
@@ -54,6 +55,15 @@
                                 <label for="formFile" class="form-label" asp-for="avatar"></label>
                                 <input class="form-control" type="file" id="formFile" asp-for="avatar">
                                 <span asp-validation-for="avatar" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <select name="role" class="form-control" id="exampleFormControlSelect2">
+                                    <option selected="" disabled="">@ViewBag.RoleCurr.Name</option>
+                                    @foreach (Role role in ViewBag.Role)
+                                    {
+                                        <option value="@role.Id">@role.Name</option>
+                                    }
+                                </select>
                             </div>
                             <input type="hidden" asp-for="avatarUrl" />
                             <button type="submit" class="btn btn-primary">Lưu</button> |

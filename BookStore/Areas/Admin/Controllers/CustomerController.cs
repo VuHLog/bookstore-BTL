@@ -9,6 +9,7 @@ using BookStore.Models;
 using BookStore.Data;
 using BookStore.Util;
 using BookStore.CustomAtrribute;
+using Humanizer.Localisation.TimeToClockNotation;
 
 namespace BookStore.Admin.Controllers
 {
@@ -32,6 +33,9 @@ namespace BookStore.Admin.Controllers
             ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParam = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewBag.AddressSortParam = sortOrder == "Address" ? "address_desc" : "Address";
+            ViewBag.GenderSortParam = sortOrder == "Gender" ? "gender_desc" : "Gender";
+            ViewBag.DateOfBirthSortParam = sortOrder == "DateOfBirth" ? "dateofbirth_desc" : "DateOfBirth";
+            ViewBag.UserIdSortParam = sortOrder == "UserId" ? "userid_desc" : "UserId";
 
             //luu bo loc hien tai
             if (searchString != null)
@@ -43,9 +47,8 @@ namespace BookStore.Admin.Controllers
                 searchString = currentFilter;
             }
 
-            var customers = from c in _context.Customers
-                           select c;
-
+            var customers = from c in _context.Customers.Include(c => c.User)
+                            select c;
             //filter
             ViewBag.CurrentFilter = searchString;
             ViewBag.pageSize = pageSize;
@@ -54,6 +57,9 @@ namespace BookStore.Admin.Controllers
             {
                 customers = customers.Where(c => c.Name.Contains(searchString)
                                        || c.Address.Contains(searchString)
+                                       || c.Gender.Contains(searchString)
+                                       || c.DateOfBirth.ToString().Contains(searchString.ToString())
+                                       || c.UserId.ToString().Contains(searchString.ToString())
                                        );
             }
 
@@ -67,6 +73,24 @@ namespace BookStore.Admin.Controllers
                     break;
                 case "address_desc":
                     customers = customers.OrderByDescending(m => m.Address);
+                    break;
+                case "Gender":
+                    customers = customers.OrderBy(m => m.Gender);
+                    break;
+                case "gender_desc":
+                    customers = customers.OrderByDescending(m => m.Gender);
+                    break;
+                case "DateOfBirth":
+                    customers = customers.OrderBy(m => m.DateOfBirth);
+                    break;
+                case "dateofbirth_desc":
+                    customers = customers.OrderByDescending(m => m.DateOfBirth);
+                    break;
+                case "UserId":
+                    customers = customers.OrderBy(m => m.UserId);
+                    break;
+                case "userid_desc":
+                    customers = customers.OrderByDescending(m => m.UserId);
                     break;
                 default:
                     customers = customers.OrderBy(m => m.Name);
@@ -102,6 +126,7 @@ namespace BookStore.Admin.Controllers
         [Role("ROLE_ADMIN")]
         public IActionResult Create()
         {
+            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "UserId");
             return View();
         }
 
@@ -113,7 +138,7 @@ namespace BookStore.Admin.Controllers
         [Route("CreatePost")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> CreatePost([Bind("CustomerId,Address,Name")] Customer customer)
+        public async Task<IActionResult> CreatePost([Bind("CustomerId,Address,Gender,DateOfBirth,Name,UserId")] Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -121,6 +146,7 @@ namespace BookStore.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.UserId = new SelectList(_context.Users, "UserId", "UserId", customer.UserId);
             return View("create", customer);
         }
 
@@ -140,6 +166,7 @@ namespace BookStore.Admin.Controllers
             {
                 return NotFound();
             }
+            ViewBag.UserId = new SelectList(_context.Users, "UserId", "UserId", customer.UserId);
             return View(customer);
         }
 
@@ -151,7 +178,7 @@ namespace BookStore.Admin.Controllers
         [Route("EditPost")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> EditPost([Bind("CustomerId,Address,Name")] Customer customer)
+        public async Task<IActionResult> EditPost([Bind("CustomerId,Address,Gender,DateOfBirth,Name,UserId")] Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -172,6 +199,7 @@ namespace BookStore.Admin.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
+                ViewBag.UserId = new SelectList(_context.Users, "UserId", "UserId", customer.UserId);
             }
             return View("edit", customer);
         }
@@ -188,6 +216,7 @@ namespace BookStore.Admin.Controllers
             }
 
             var customer = await _context.Customers
+                .Include(c => c.User)
                 .FirstOrDefaultAsync(m => m.CustomerId == id);
             if (customer == null)
             {

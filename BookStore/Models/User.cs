@@ -7,7 +7,7 @@ namespace BookStore.Models;
 
 public partial class User
 {
-    public long Id { get; set; }
+    public long UserId { get; set; }
 
     public string? Email { get; set; }
 
@@ -28,4 +28,6 @@ public partial class User
     public IFormFile? avatar { get; set; }
 
     public string? avatarUrl { get; set; }
+
+    public virtual Customer? Customer { get; set; }
 }

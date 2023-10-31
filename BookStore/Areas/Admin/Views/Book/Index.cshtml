@@ -141,54 +141,54 @@
 
 
 @section ScriptsAjax{
-<script>
-    $(document).ready(function () {
-        var selectedValue = $("select[name='pageSize']").val();
-        var inputSearchValue = $("#input-search").val();
-        //xử lý page size
-        $("select[name='pageSize']").on("change", function () {
-            // Lấy giá trị của tùy chọn được chọn
-            selectedValue = $(this).val();
-            $.ajax({
-                url: "",
-                dataType: 'html',
-                data: { searchString: inputSearchValue, pageSize: selectedValue },
-                success: function (response) {
-                    // Tạo một jQuery object từ response để dễ dàng tìm thẻ table
-                    var responseHtml = $(response);
+    <script>
+        $(document).ready(function () {
+            var selectedValue = $("select[name='pageSize']").val();
+            var inputSearchValue = $("#input-search").val();
+            //xử lý page size
+            $("select[name='pageSize']").on("change", function () {
+                // Lấy giá trị của tùy chọn được chọn
+                selectedValue = $(this).val();
+                $.ajax({
+                    url: "",
+                    dataType: 'html',
+                    data: { searchString: inputSearchValue, pageSize: selectedValue },
+                    success: function (response) {
+                        // Tạo một jQuery object từ response để dễ dàng tìm thẻ table
+                        var responseHtml = $(response);
 
-                    // Lọc ra phần HTML chứa thẻ table
-                    var tableHtml = responseHtml.find("table");
+                        // Lọc ra phần HTML chứa thẻ table
+                        var tableHtml = responseHtml.find("table");
 
-                    // Lấy nội dung HTML trong thẻ table
-                    var tableContent = tableHtml.html();
+                        // Lấy nội dung HTML trong thẻ table
+                        var tableContent = tableHtml.html();
 
-                    $("table").html(tableContent);
-                }
+                        $("table").html(tableContent);
+                    }
+                })
+            });
+
+
+            $("#input-search").keyup(function () {
+                inputSearchValue = $(this).val();
+                $.ajax({
+                    url: "",
+                    data: { searchString: inputSearchValue, pageSize: selectedValue },
+                    dataType: 'html',
+                    success: function (response) {
+                        // Tạo một jQuery object từ response để dễ dàng tìm thẻ table
+                        var responseHtml = $(response);
+
+                        // Lọc ra phần HTML chứa thẻ table
+                        var tableHtml = responseHtml.find("table");
+
+                        // Lấy nội dung HTML trong thẻ table
+                        var tableContent = tableHtml.html();
+
+                        $("table").html(tableContent);
+                    }
+                })
             })
         });
-
-
-        $("#input-search").keyup(function () {
-            inputSearchValue = $(this).val();
-            $.ajax({
-                url: "",
-                data: { searchString: inputSearchValue, pageSize: selectedValue },
-                dataType: 'html',
-                success: function (response) {
-                    // Tạo một jQuery object từ response để dễ dàng tìm thẻ table
-                    var responseHtml = $(response);
-
-                    // Lọc ra phần HTML chứa thẻ table
-                    var tableHtml = responseHtml.find("table");
-
-                    // Lấy nội dung HTML trong thẻ table
-                    var tableContent = tableHtml.html();
-
-                    $("table").html(tableContent);
-                }
-            })
-        })
-    });
-</script>
+    </script>
 }

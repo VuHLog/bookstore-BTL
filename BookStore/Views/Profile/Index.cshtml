@@ -1,0 +1,156 @@
+﻿@using BookStore.Util;
+@model BookStore.DTO.ProfileDTO;
+@{
+    Layout = "~/Views/Shared/Client/HomeLayout.cshtml";
+}
+
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="iq-card">
+                    <div class="iq-card-body p-0">
+                        <div class="iq-edit-list">
+                            <ul class="iq-edit-profile d-flex nav nav-pills">
+                                <li class="col-md-6 p-0">
+                                    <a class="nav-link active" data-toggle="pill" href="#personal-information">
+                                        Thông tin cá nhân
+                                    </a>
+                                </li>
+                                <li class="col-md-6 p-0">
+                                    <a class="nav-link" data-toggle="pill" href="#chang-pwd">
+                                        Đổi mật khẩu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="iq-edit-list-data">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="personal-information" role="tabpanel">
+                            <div class="iq-card">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Thông tin cá nhân</h4>
+                                    </div>
+                                </div>
+                                <div class="iq-card-body">
+                                    <form asp-controller="Profile" asp-action="saveInfo" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" asp-for="UserId" />
+                                        <input type="hidden" asp-for="avatarUrl" />
+                                        <input type="hidden" asp-for="Password" />
+                                        <div class="form-group row align-items-center">
+                                            <div class="col-md-12">
+                                                <div class="profile-img-edit">
+                                                    <img class="profile-pic" src="@(Model.avatarUrl)" alt="profile-pic">
+                                                    <div class="p-image">
+                                                        <i class="ri-pencil-line upload-button"></i>
+                                                        <input asp-for="avatar" class="file-upload" type="file" accept="image/*" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" row align-items-center">
+                                            <div class="form-group col-sm-6">
+                                                <label asp-for="Firstname">First Name:</label>
+                                                <input type="text" asp-for="Firstname" class="form-control">
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label asp-for="Lastname">Last Name:</label>
+                                                <input type="text" class="form-control" asp-for="Lastname">
+                                            </div>
+                                            <input type="hidden" asp-for="Username" />
+                                            <div class="form-group col-sm-6">
+                                                <label asp-for="Username">Tên tài khoản:</label>
+                                                <input type="text" class="form-control" asp-for="Username" disabled>
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label asp-for="Email">Email:</label>
+                                                <input class="form-control" asp-for="Email">
+                                            </div>
+                                            <input type="hidden" asp-for="CustomerId"/>
+                                            <div class="form-group col-sm-6">
+                                                <label asp-for="gender">Giới tính:</label>
+                                                <select asp-for="gender" class="form-control" id="exampleFormControlSelect2">
+                                                    <option selected="" disabled="">@Model.gender</option>
+                                                    <option value="Nam">Nam</option>
+                                                    <option value="Nữ">Nữ</option>
+                                                </select>
+                                                <span asp-validation-for="gender" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group col-sm-6">
+                                                <label asp-for="dateOfBirth">Ngày sinh:</label>
+                                                <input asp-for="dateOfBirth" type="datetime-local" class="form-control">
+                                                <span asp-validation-for="dateOfBirth" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group col-sm-12">
+                                                <label asp-for="address">Địa chỉ:</label>
+                                                <textarea class="form-control" name="address" rows="5" style="line-height: 22px;" asp-for="address">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mr-2">Gửi</button>
+                                        <button type="reset" class="btn iq-bg-danger">Hủy bỏ</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="chang-pwd" role="tabpanel">
+                            <div class="iq-card">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Đổi mật khẩu</h4>
+                                    </div>
+                                </div>
+                                <div class="iq-card-body">
+                                    <form asp-controller="Profile" asp-action="changePassword" method="post">
+                                        <input type="hidden" name="userId" value="@Model.UserId" />
+                                        <div class="form-group">
+                                            <label for="cpass">Mật khẩu hiện tại:</label>
+                                            <a href="javascripe:void();" class="float-right">Quên mật khẩu</a>
+                                            <input type="Password" class="form-control" id="cpass" name="password" value="">
+                                            <span class="text-danger">@ViewBag.PassError</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="npass">Mật khẩu mới:</label>
+                                            <input type="Password" class="form-control" name="newPassword" id="npass" value="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="vpass">Xác nhận lại mật khẩu:</label>
+                                            <input type="Password" class="form-control" name="EnterPasswordAgain" id="vpass" value="">
+                                            <span class="text-danger">@ViewBag.PassNoMatch</span>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mr-2">Gửi</button>
+                                        <button type="reset" class="btn iq-bg-danger">Hủy bỏ</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* @section changePassword{
+    <script>
+        $(document).ready(function () {
+            function alertChangePasswordSuccess() {
+                console.log(1);
+                if ($("#ChangePasswordSuccess").val() === "Thay đổi mật khẩu thành công!") {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Thay đổi mật khẩu thành công!',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                }
+            }
+        });
+    </script>
+} *@

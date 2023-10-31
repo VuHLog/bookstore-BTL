@@ -29,6 +29,30 @@
                                 <input asp-for="Address" type="text" class="form-control">
                                 <span asp-validation-for="Address" class="text-danger"></span>
                             </div>
+                            <div class="form-group col-sm-6">
+                                <label class="d-block">Giới tính:</label>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" asp-for="Gender" name="customRadio1" class="custom-control-input" checked="">
+                                    <label class="custom-control-label" asp-for="Gender"> Nam </label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" asp-for="Gender" name="customRadio1" class="custom-control-input">
+                                    <label class="custom-control-label" asp-for="Gender"> Nữ </label>
+                                </div>
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DateOfBirth">Ngày sinh:</label>
+                                <input asp-for="DateOfBirth" type="datetime-local" class="form-control">
+                                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="UserId">User ID:</label>
+                                <select asp-for="UserId" class="form-control" id="exampleFormControlSelect2" asp-items="ViewBag.UserId">
+                                    <option selected="" disabled="">UserID</option>
+                                </select>
+                                <span asp-validation-for="UserId" class="text-danger"></span>
+                            </div>
                             <button type="submit" class="btn btn-primary">Tạo</button>
                             <button type="reset" class="btn btn-danger">Reset giá trị</button>
                             
