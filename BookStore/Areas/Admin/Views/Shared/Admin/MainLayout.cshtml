@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="~/css/typography.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="~/css/style.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="~/css/responsive.css">
 
@@ -49,7 +51,7 @@
         <!-- Sidebar  -->
         <div class="iq-sidebar">
             <div class="iq-sidebar-logo d-flex justify-content-between">
-                <a href="admin-dashboard.html" class="header-logo">
+                <a href="/home" class="header-logo">
                     <img src="" class="img-fluid rounded-normal" alt="">
                     <div class="logo-title">
                         <span class="text-primary text-uppercase">NHASACHTV</span>
@@ -66,7 +68,6 @@
             <div id="sidebar-scrollbar">
                 <nav class="iq-sidebar-menu">
                     <ul id="iq-sidebar-toggle" class="iq-menu">
-                        <li><a href="admin-dashboard.html"><i class="las la-home iq-arrow-left"></i>Bảng Điều Khiển</a></li>
                         <li>
                             <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-elementor iq-arrow-left"></i><span>Danh mục quản lý</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                             <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
@@ -180,7 +181,7 @@
                                             <div class="bg-primary p-3">
                                                 <h5 class="mb-0 text-white line-height">Xin Chào @account.fullname</h5>
                                             </div>
-                                            <a href="user/details/@user.UserId" class="iq-sub-card iq-bg-primary-hover">
+                                            <a href="/admin/user/details/@user.UserId" class="iq-sub-card iq-bg-primary-hover">
                                                 <div class="media align-items-center">
                                                     <div class="rounded iq-card-icon iq-bg-primary">
                                                         <i class="ri-file-user-line"></i>

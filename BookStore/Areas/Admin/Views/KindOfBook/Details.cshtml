@@ -1,24 +1,39 @@
 ﻿@model BookStore.Models.KindOfBook
 
 @{
-    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Loại sách";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>KindOfBook</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.KindOfBookId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-body">
+                        <div>
+                            <h4>Loại sách</h4>
+                            <hr />
+                            <dl class="row">
+                                <dt class="col-sm-2">
+                                    ID loại sách
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.KindOfBookId)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tên
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Name)
+                                </dd>
+                            </dl>
+                            <a asp-action="Index">Quay lại danh sách loại sách</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

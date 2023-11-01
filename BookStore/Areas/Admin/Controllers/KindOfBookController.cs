@@ -188,6 +188,11 @@ namespace BookStore.Admin.Controllers
             }
             if (kindOfBook != null)
             {
+                var sql = "";
+                sql = "update bookshelf set kind_of_book_id=NULL where kind_of_book_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, kindOfBook.KindOfBookId);
+                sql = "update book set kind_of_book_id=NULL where kind_of_book_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, kindOfBook.KindOfBookId);
                 _context.KindOfBooks.Remove(kindOfBook);
             }
 

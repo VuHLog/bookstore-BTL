@@ -13,7 +13,7 @@
                 <div class="iq-card">
                     <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                            <h4 class="card-title">Danh sách hoá đơn xuất</h4>
+                            <h4 class="card-title">Danh sách xuất hoá đơn</h4>
                         </div>
                         <div class="iq-card-header-toolbar d-flex align-items-center">
                             <a href="InvoicesOut/Create" class="btn btn-primary">Thêm xuất hoá đơn</a>
@@ -59,10 +59,11 @@
 
                                             <td>@invoicesOut.InvoicesOutId</td>
                                             <td>@invoicesOut.Date</td>
-                                            <td>@invoicesOut.Customer.Name</td>
-                                            <td>@invoicesOut.Employee.Name</td>
+                                            <td>@(invoicesOut.Customer != null ? invoicesOut.Customer.Name : "NULL")</td>
+                                            <td>@(invoicesOut.Employee != null ? invoicesOut.Employee.Name : "NULL")</td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chi tiết" href="InvoicesOut/Details/@invoicesOut.InvoicesOutId"><i class="fa-solid fa-info"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa" href="InvoicesOut/Edit/@invoicesOut.InvoicesOutId"><i class="ri-pencil-line"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá" href="InvoicesOut/Delete/@invoicesOut.InvoicesOutId"><i class="ri-delete-bin-line"></i></a>
                                                 </div>

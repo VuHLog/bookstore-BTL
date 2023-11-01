@@ -23,22 +23,22 @@
                         <div class="bg-primary p-3">
                             <h5 class="mb-0 text-white">Giỏ Hàng<small class="badge  badge-light float-right pt-1">@books.Count()</small></h5>
                         </div>
-                        int i = 0;
-                        @foreach (CartDTO book in books)
+                        int count = 0;
+                        @for (int i=books.Count()-1;i>=0;i--)
                         {
-                            i++;
-                            if (i <= 3)
+                            count++;
+                            if (count <= 3)
                             {
-                                <a href="/book/@book.BookId" class="iq-sub-card">
+                                <a href="/book/@books[i].BookId" class="iq-sub-card">
                                     <div class="media align-items-center">
                                         <div class="">
-                                            <img class="rounded" src="@book.imageUrl" alt="">
+                                            <img class="rounded" src="@books[i].imageUrl" alt="">
                                         </div>
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-0 ">@book.Name</h6>
+                                            <h6 class="mb-0 ">@books[i].Name</h6>
                                             @{
                                                 CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
-                                                string costFormat = double.Parse(book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                                                string costFormat = double.Parse(books[i].Cost.ToString()).ToString("#,###", cul.NumberFormat);
                                             }
                                             <p class="mb-0">@costFormat</p>
                                         </div>

@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using BookStore.Models;
 using Microsoft.EntityFrameworkCore;
@@ -212,6 +211,7 @@ public partial class BookstoreContext : DbContext
                 .HasColumnName("date");
             entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
             entity.Property(e => e.PublisherId).HasColumnName("publisher_id");
+            entity.Property(e => e.TotalMoney).HasColumnName("totalmoney");
 
             entity.HasOne(d => d.Employee).WithMany(p => p.InvoicesIns)
                 .HasForeignKey(d => d.EmployeeId)
@@ -234,6 +234,7 @@ public partial class BookstoreContext : DbContext
                 .HasPrecision(6)
                 .HasColumnName("date");
             entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.TotalMoney).HasColumnName("totalmoney");
 
             entity.HasOne(d => d.Customer).WithMany(p => p.InvoicesOuts)
                 .HasForeignKey(d => d.CustomerId)

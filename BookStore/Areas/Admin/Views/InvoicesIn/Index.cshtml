@@ -59,10 +59,11 @@
 
                                             <td>@invoicesIn.InvoicesInId</td>
                                             <td>@invoicesIn.Date</td>
-                                            <td>@invoicesIn.Publisher.Name</td>
-                                            <td>@invoicesIn.Employee.Name</td>
+                                            <td>@(invoicesIn.Publisher != null ? invoicesIn.Publisher.Name:"NULL")</td>
+                                            <td>@(invoicesIn.Employee != null ? invoicesIn.Employee.Name : "NULL")</td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chi tiết" href="InvoicesIn/Details/@invoicesIn.InvoicesInId"><i class="fa-solid fa-info"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa" href="InvoicesIn/Edit/@invoicesIn.InvoicesInId"><i class="ri-pencil-line"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá" href="InvoicesIn/Delete/@invoicesIn.InvoicesInId"><i class="ri-delete-bin-line"></i></a>
                                                 </div>

@@ -88,26 +88,24 @@ namespace BookStore.Admin.Controllers
         }
 
 
-        [Route("Details")]
+        [Route("Details/{invoicesOutId}/{bookId}")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? invoicesOutId, int? bookId)
         {
-            if (id == null || _context.BookInvoicesOuts == null)
+            if (invoicesOutId == null || bookId == null || _context.BookInvoicesOuts == null)
+            {
+                return NotFound();
+            }
+            var BookInvoicesOut = await (from bi in _context.BookInvoicesOuts
+                                        where bi.BookId == bookId && bi.InvoicesOutId == invoicesOutId
+                                        select bi).FirstOrDefaultAsync();
+            if (BookInvoicesOut == null)
             {
                 return NotFound();
             }
 
-            var bookInvoicesOuts = await _context.BookInvoicesOuts
-                .Include(i => i.Book)
-                .Include(i => i.InvoicesOut)
-                .FirstOrDefaultAsync(m => m.InvoicesOutId == id);
-            if (bookInvoicesOuts == null)
-            {
-                return NotFound();
-            }
-
-            return View(bookInvoicesOuts);
+            return View(BookInvoicesOut);
         }
 
 

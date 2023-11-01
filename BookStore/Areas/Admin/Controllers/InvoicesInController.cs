@@ -92,7 +92,7 @@ namespace BookStore.Admin.Controllers
         }
 
 
-        [Route("Details")]
+        [Route("Details/{id}")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Details(int? id)
@@ -241,6 +241,9 @@ namespace BookStore.Admin.Controllers
             }
             if (invoicesIn != null)
             {
+                var sql = "";
+                sql = "delete from book_invoices_in where invoices_in_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, invoicesIn.InvoicesInId);
                 _context.InvoicesIns.Remove(invoicesIn);
             }
 

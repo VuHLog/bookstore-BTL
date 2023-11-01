@@ -6,7 +6,7 @@ namespace BookStore.DTO
 {
     public class ProfileDTO
     {
-        public long UserId { get; set; }
+        public int UserId { get; set; }
 
         public int CustomerId { get; set; }
 

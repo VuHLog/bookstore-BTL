@@ -314,7 +314,9 @@ namespace BookStore.Admin.Controllers
             {
                     var sql = "Delete from users_roles where user_id = {0} and role_id = {1}";
                     await _context.Database.ExecuteSqlRawAsync(sql, user.UserId, role);
-                    _context.Users.Remove(user);
+                    sql = "update customer set user_id=NULL where user_id = {0}";
+                    await _context.Database.ExecuteSqlRawAsync(sql, user.UserId);
+                _context.Users.Remove(user);
             }
 
             await _context.SaveChangesAsync();

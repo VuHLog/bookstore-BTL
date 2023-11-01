@@ -132,7 +132,7 @@ namespace BookStore.Controllers
         [Role("ROLE_ADMIN")]
         [HttpPost]
         [Route("changePassword")]
-        public async Task<IActionResult> changePassword(long userId, string password,string newPassword,string EnterPasswordAgain)
+        public async Task<IActionResult> changePassword(int userId, string password,string newPassword,string EnterPasswordAgain)
         {
             User user = await (from u in _context.Users
                         where u.UserId == userId
@@ -157,7 +157,7 @@ namespace BookStore.Controllers
             return Redirect("/profile/" + user.Username);
         }
 
-        private bool UserExists(long id)
+        private bool UserExists(int id)
         {
             return (_context.Users?.Any(e => e.UserId == id)).GetValueOrDefault();
         }

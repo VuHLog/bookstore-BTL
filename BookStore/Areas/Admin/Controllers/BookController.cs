@@ -60,6 +60,7 @@ namespace BookStore.Admin.Controllers
 
             //filter
             ViewBag.CurrentFilter = searchString;
+            if (pageSize == null) pageSize = 5;
             ViewBag.pageSize = pageSize;
 
             //search
@@ -301,6 +302,14 @@ namespace BookStore.Admin.Controllers
             }
             if (book != null)
             {
+                var sql = "";
+                sql = "update publisher_book set book_id=NULL where book_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, book.BookId);
+                sql = "update book_invoices_in set book_id=NULL where book_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, book.BookId);
+                sql = "update book_invoices_in set book_id=NULL where book_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, book.BookId);
+
                 _context.Books.Remove(book);
             }
 

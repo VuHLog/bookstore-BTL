@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzSW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesIn/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzSW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesIn/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzSW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesOut/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzT3V0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesOut/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQm9va0ludm9pY2VzT3V0XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/BookInvoicesOut/Edit.cshtml]
@@ -88,12 +96,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNJblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNJblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSW52b2ljZXNJblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Areas/Admin/Views/InvoicesIn/Edit.cshtml]
@@ -226,6 +242,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/dai_hoc/nam_3_ki_1/lap_trinh_web/workspace/BookStore/BookStore/Views/Profile/Index.cshtml]

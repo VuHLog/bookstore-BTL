@@ -30,16 +30,12 @@
                                 <input asp-for="Address" type="text" class="form-control">
                                 <span asp-validation-for="Address" class="text-danger"></span>
                             </div>
-                            <div class="form-group col-sm-6">
-                                <label class="d-block">Giới tính:</label>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" asp-for="Gender" name="customRadio1" class="custom-control-input" checked="">
-                                    <label class="custom-control-label" asp-for="Gender"> Nam </label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" asp-for="Gender" name="customRadio1" class="custom-control-input">
-                                    <label class="custom-control-label" asp-for="Gender"> Nữ </label>
-                                </div>
+                            <div class="form-group">
+                                <label asp-for="Gender">Giới tính:</label>
+                                <select asp-for="Gender" class="form-control" id="exampleFormControlSelect2">
+                                    <option value="Nam">Nam</option>
+                                    <option value="Nữ">Nữ</option>
+                                </select>
                                 <span asp-validation-for="Gender" class="text-danger"></span>
                             </div>
                             <div class="form-group">

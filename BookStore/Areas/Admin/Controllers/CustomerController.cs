@@ -51,7 +51,7 @@ namespace BookStore.Admin.Controllers
                             select c;
             //filter
             ViewBag.CurrentFilter = searchString;
-            ViewBag.pageSize = pageSize;
+            ViewBag.pageSize = pageSize == null ? 5 : pageSize;
 
             if (!String.IsNullOrEmpty(searchString))
             {
@@ -240,6 +240,9 @@ namespace BookStore.Admin.Controllers
             }
             if (customer != null)
             {
+                var sql = "";
+                sql = "update invoices_out set customer_id=NULL where customer_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, customer.CustomerId);
                 _context.Customers.Remove(customer);
             }
 
@@ -247,7 +250,7 @@ namespace BookStore.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CustomerExists(int id)
+        private bool CustomerExists(long id)
         {
             return (_context.Customers?.Any(e => e.CustomerId == id)).GetValueOrDefault();
         }

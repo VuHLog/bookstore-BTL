@@ -1,60 +1,82 @@
 ﻿@model BookStore.Models.Book
 
 @{
-    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Sách";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>Book</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Authors)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Authors)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cost)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cost)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Number)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Number)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Content)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.KindOfBook)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.KindOfBook.KindOfBookId)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.BookId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="iq-card">
+                    <div class="iq-card-body">
+                        <div>
+                            <h4>Sách</h4>
+                            <hr />
+                            <dl class="row">
+                                <dt class="col-sm-2">
+                                    ID
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.BookId)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tên sách
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Name)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Giới thiệu nội dung
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Content)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Giá bán
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Cost)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Ngày phát hành
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Date)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Số lượng
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Number)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Tác giả
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Authors)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Loại sách
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.KindOfBook)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Ảnh
+                                </dt>
+                                <dd class="col-sm-10">
+                                    <img style="width: 70px;" src="@(Model!=null?Model.imageUrl:"")" class="img-fluid rounded-circle mr-3" alt="book">
+                                </dd>
+
+                            </dl>
+                            <a asp-action="Index">Quay lại danh sách sách</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -94,6 +94,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: Manager/Details/5
         [Route("Details")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Managers == null)
@@ -114,6 +116,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: Manager/Create
         [Route("create")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public IActionResult Create()
         {
             ViewData["BookshelfId"] = new SelectList(_context.Bookshelves, "BookshelfId", "BookshelfId");
@@ -126,6 +130,8 @@ namespace BookStore.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("CreatePost")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> CreatePost([Bind("Address,Name,Salary,BookshelfId")] Manager manager)
         {
             if (ModelState.IsValid)
@@ -140,6 +146,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: Manager/Edit/5
         [Route("Edit/{id}")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Managers == null)
@@ -162,6 +170,8 @@ namespace BookStore.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("EditPost")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> EditPost([Bind("ManagerId,Address,Name,Salary,BookshelfId")] Manager manager)
         {
             if (ModelState.IsValid)
@@ -190,6 +200,8 @@ namespace BookStore.Admin.Controllers
 
         // GET: Manager/Delete/5
         [Route("Delete/{id}")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Managers == null)
@@ -212,6 +224,8 @@ namespace BookStore.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("DeleteConfirmed")]
+        [Role("ROLE_MANAGER")]
+        [Role("ROLE_ADMIN")]
         public async Task<IActionResult> DeleteConfirmed([Bind("ManagerId")] Manager manager)
         {
             if (_context.Managers == null)
@@ -220,6 +234,9 @@ namespace BookStore.Admin.Controllers
             }
             if (manager != null)
             {
+                var sql = "";
+                sql = "update employee set manager_id=NULL where manager_id = {0}";
+                await _context.Database.ExecuteSqlRawAsync(sql, manager.ManagerId);
                 _context.Managers.Remove(manager);
             }
 

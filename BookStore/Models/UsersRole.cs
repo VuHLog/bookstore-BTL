@@ -5,7 +5,7 @@ namespace BookStore.Models;
 
 public partial class UsersRole
 {
-    public long UserId { get; set; }
+    public int UserId { get; set; }
 
     public long RoleId { get; set; }
 

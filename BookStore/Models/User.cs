@@ -7,14 +7,18 @@ namespace BookStore.Models;
 
 public partial class User
 {
-    public long UserId { get; set; }
+    public int UserId { get; set; }
 
+    [EmailAddress(ErrorMessage ="Email không hợp lệ!")]
+    [Required(ErrorMessage = "Email bắt buộc phải được nhập")]
     public string? Email { get; set; }
 
     public bool? Enabled { get; set; }
 
+    [Required(ErrorMessage = "Phải nhập tên")]
     public string? Firstname { get; set; }
 
+    [Required(ErrorMessage = "Phải nhập họ")]
     public string? Lastname { get; set; }
 
     [Required(ErrorMessage = "Mật khẩu bắt buộc phải được nhập")]

@@ -1,4 +1,5 @@
 ﻿using BookStore.Data;
+using BookStore.DTO;
 using BookStore.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,7 @@ namespace BookStore.Controllers
         [Route("Login")]
         public IActionResult Login()
         {
-            User user = new User();
+            LoginDTO user = new LoginDTO();
             var urlPrevious = Request.Headers["Referer"].ToString();
             ViewBag.urlPrevious = urlPrevious==""?"/home":urlPrevious;
             return View(user);
@@ -35,12 +36,13 @@ namespace BookStore.Controllers
         //POST : login
         [HttpPost]
         [Route("LoginPost")]
-        public IActionResult LoginPost([Bind("Password,Username")] User userRq, string urlprevious)
+        public IActionResult LoginPost([Bind("Password,Username")] LoginDTO userRq, string urlprevious)
         {
             //Validate
             if (!ModelState.IsValid)
             {
-                return View("Login", new User());
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
+                return View("Login", userRq);
             }
             else
             {

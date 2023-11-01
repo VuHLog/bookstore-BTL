@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace BookStore.Admin.Controllers
 {
@@ -85,26 +86,24 @@ namespace BookStore.Admin.Controllers
             return View(await PaginatedList<BookInvoicesIn>.CreateAsync(bookInvoicesIns.AsNoTracking(), pageNumber ?? 1, pageSize ?? 5));
         }
 
-        [Route("Details")]
+        [Route("Details/{invoicesInId}/{bookId}")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? invoicesInId, int? bookId)
         {
-            if (id == null || _context.BookInvoicesIns == null)
+            if (invoicesInId == null || bookId == null || _context.BookInvoicesIns == null)
+            {
+                return NotFound();
+            }
+            var bookInvoicesIn = await (from bi in _context.BookInvoicesIns
+                                        where bi.BookId == bookId && bi.InvoicesInId == invoicesInId
+                                        select bi).FirstOrDefaultAsync();
+            if (bookInvoicesIn == null)
             {
                 return NotFound();
             }
 
-            var bookInvoicesIns = await _context.BookInvoicesIns
-                .Include(i => i.Book)
-                .Include(i => i.InvoicesIn)
-                .FirstOrDefaultAsync(m => m.InvoicesInId == id);
-            if (bookInvoicesIns == null)
-            {
-                return NotFound();
-            }
-
-            return View(bookInvoicesIns);
+            return View(bookInvoicesIn);
         }
         
 

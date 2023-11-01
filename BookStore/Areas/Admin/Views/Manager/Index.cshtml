@@ -61,9 +61,10 @@
                                             <td>@manager.Name</td>
                                             <td>@manager.Address</td>
                                             <td>@manager.Salary</td>
-                                            <td>@manager.BookshelfId</td>
+                                            <td>@(manager.Bookshelf != null ? manager.Bookshelf.Name : "NULL")</td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chi tiết" href="Manager/Details/@manager.ManagerId"><i class="fa-solid fa-info"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chỉnh sửa" href="Manager/Edit/@manager.ManagerId"><i class="ri-pencil-line"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá" href="Manager/Delete/@manager.ManagerId"><i class="ri-delete-bin-line"></i></a>
                                                 </div>

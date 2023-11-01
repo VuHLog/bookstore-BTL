@@ -138,7 +138,7 @@
                             <input type="text" name="searchString" class="text search-input" id="input-search" placeholder="Tìm kiếm sản phẩm...">
                             <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                         </form>
-                        <div class="search-results position-absolute" style="display: none">
+                        <div class="search-results position-absolute shadow bg-white" style="display: none">
                             <div class="container mt-3">
                                 <div class="row">
                                     <div class="col-md-12">
@@ -245,7 +245,7 @@
                                                             </div>
                                                         </div>
                                                     </a>
-                                                    <a href="#" class="iq-sub-card iq-bg-primary-hover">
+                                                    <a href="/order" class="iq-sub-card iq-bg-primary-hover">
                                                         <div class="media align-items-center">
                                                             <div class="rounded iq-card-icon iq-bg-primary">
                                                                 <i class="ri-account-box-line"></i>
@@ -358,6 +358,7 @@
     <script src="~/js/custom.js"></script>
 
     @RenderSection("changePassword",required: false);
+    @RenderSection("ScriptsAjax",required: false);
     <script>
         $(document).ready(function () {
             //handle search

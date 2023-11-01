@@ -65,9 +65,10 @@
                                             <td>@customer.Address</td>
                                             <td>@customer.Gender</td>
                                             <td>@customer.DateOfBirth</td>
-                                            <td>@customer.UserId</td>
+                                            <td>@(customer.UserId != null ? customer.UserId:"NULL")</td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
+                                                    <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chi tiết" href="Customer/Details/@customer.CustomerId"><i class="fa-solid fa-info"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="Customer/Edit/@customer.CustomerId"><i class="ri-pencil-line"></i></a>
                                                     <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xoá" href="Customer/Delete/@customer.CustomerId"><i class="ri-delete-bin-line"></i></a>
                                                 </div>

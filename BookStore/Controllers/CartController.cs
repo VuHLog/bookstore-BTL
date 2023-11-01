@@ -81,7 +81,7 @@ namespace BookStore.Controllers
             {
                 Expires = DateTime.Now.AddDays(7)
             };
-            Response.Cookies.Append("cart", JsonConvert.SerializeObject(cartList));
+            Response.Cookies.Append("cart", JsonConvert.SerializeObject(cartList), cookieOptions);
 
             return View("CartNavBar");
         }
