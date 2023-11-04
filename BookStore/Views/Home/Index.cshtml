@@ -160,6 +160,7 @@
                             // Lấy nội dung HTML
                             var responseContent = responseHtml.html();
                             console.log("responseContent" + responseContent)
+                            console.log($("#cart-navbar"));
                             $("#cart-navbar").html(responseContent);
                             Swal.fire({
                                 position: 'bottom-end',

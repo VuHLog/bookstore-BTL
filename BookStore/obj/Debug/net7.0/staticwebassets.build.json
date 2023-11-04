@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tHM2sIPv4THmXlrE/p6MwvX5ciLKu5sE1Hp+jRZ7lk4=",
+  "Hash": "s8BC7b8pVrHJfC/H+E8iqHq7XY5k31PPoHjhYlkELg4=",
   "Source": "BookStore",
   "BasePath": "_content/BookStore",
   "Mode": "Default",
@@ -4556,6 +4556,23 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\85d64960-53bc-4a24-885b-d35d95eca752b-a-s-ch-1-2-2.jpg"
     },
     {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\88f04b4f-4349-49fc-bb7b-268a30ddcd30db600k-ngh-d-ng-c-a-ch-ng-qu-t-c-n-h-a-2b-a-3.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/books/88f04b4f-4349-49fc-bb7b-268a30ddcd30db600k-ngh-d-ng-c-a-ch-ng-qu-t-c-n-h-a-2b-a-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\88f04b4f-4349-49fc-bb7b-268a30ddcd30db600k-ngh-d-ng-c-a-ch-ng-qu-t-c-n-h-a-2b-a-3.jpg"
+    },
+    {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\97229afe-f26b-4dce-8a9a-5057c138d4aflsjj997j.jpg",
       "SourceId": "BookStore",
       "SourceType": "Discovered",
@@ -4588,6 +4605,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\books\\9c1086b2-7a4f-410f-8c7c-4f15cfc291c4z4279744592480-3e4b617066f68bf91f9afdde901f3ea2-1.jpg"
+    },
+    {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\a840cfe4-4085-49c3-a89e-cd70bf7ab681180523-5.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/books/a840cfe4-4085-49c3-a89e-cd70bf7ab681180523-5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\a840cfe4-4085-49c3-a89e-cd70bf7ab681180523-5.jpg"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\ac1ec642-f99b-4e8b-8357-d63af87c6c87bia-sakurako-tap-10-ban-pho-thong.jpg",
@@ -4673,6 +4707,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\books\\e38df5f6-f1a6-4594-8f66-c403db539baabia-mem-ban-trai-2.jpg"
+    },
+    {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\e72f7862-fc11-47fb-83d1-6dc71130ebce341849576-3028550100787484-4504582023315877509-n.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/books/e72f7862-fc11-47fb-83d1-6dc71130ebce341849576-3028550100787484-4504582023315877509-n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\e72f7862-fc11-47fb-83d1-6dc71130ebce341849576-3028550100787484-4504582023315877509-n.jpg"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\eda56c6a-c28e-41bf-81b3-83ce1fd8e50cbia-trong-ma-dao-to-su-tap-2-3.jpg",

@@ -86,6 +86,52 @@ namespace BookStore.Controllers
             return View("CartNavBar");
         }
 
+        [Route("/cart/{change}/{id}")]
+        public async Task<IActionResult> changeQuantity(string change,int id)
+        {
+            var existingCart = Request.Cookies["cart"];
+
+            List<CartDTO>? cartList;
+            if (!string.IsNullOrEmpty(existingCart))
+            {
+                try
+                {
+                    cartList = JsonConvert.DeserializeObject<List<CartDTO>?>(existingCart);
+                }
+                catch (JsonException ex)
+                {
+                    // Xử lý khi dữ liệu trong cookie không đúng định dạng
+                    cartList = new List<CartDTO>();
+                }
+            }
+            else
+            {
+                // Cookie "cart" chưa tồn tại, tạo danh sách sách mới
+                cartList = new List<CartDTO>();
+            }
+
+            foreach(CartDTO cart in cartList)
+            {
+                if(cart.BookId == id)
+                {
+                    if(change == "plus")
+                    {
+                        cart.quantity++;
+                    }else if(change == "minus")
+                    {
+                        cart.quantity--;
+                    }
+                }
+            }
+
+            var cookieOptions = new CookieOptions
+            {
+                Expires = DateTime.Now.AddDays(7)
+            };
+            Response.Cookies.Append("cart", JsonConvert.SerializeObject(cartList));
+            return new EmptyResult();
+        }
+
         [Route("/cart/delete/{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {

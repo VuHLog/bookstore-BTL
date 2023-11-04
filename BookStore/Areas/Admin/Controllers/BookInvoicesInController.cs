@@ -51,6 +51,7 @@ namespace BookStore.Admin.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 bookInvoicesIns = bookInvoicesIns.Where(i => i.InvoicesInId.ToString().Contains(searchString.ToString())
+                                                || i.BookId.ToString().Contains(searchString.ToString())
                                                 || i.Book.Name.Contains(searchString)
                                                 || i.Quantity.ToString().Contains(searchString.ToString())
                                        );
