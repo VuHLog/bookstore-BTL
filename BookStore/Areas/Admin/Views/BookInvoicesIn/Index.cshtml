@@ -25,7 +25,7 @@
                                 <div style="color: #212529;">
                                     Hiển thị
                                     <select name="pageSize" value="@ViewBag.pageSize" class="form-select">
-
+                                        <option selected="" disabled="">@ViewBag.pageSize</option>
                                         <option value="5" class="selectPageSize">5</option>
                                         <option value="10" class="selectPageSize">10</option>
                                         <option value="20" class="selectPageSize">20</option>
@@ -80,6 +80,7 @@
                                         {
                                             <li class="page-item mr-2">
                                                 <a asp-action="Index"
+                                                   asp-route-pageSize="@ViewBag.pageSize"
                                                    asp-route-sortOrder="@ViewBag.CurrentSort"
                                                    asp-route-pageNumber="@(Model.PageIndex - 1)"
                                                    asp-route-currentFilter="@ViewBag.CurrentFilter"
@@ -98,6 +99,7 @@
                                         {
                                             <li class="page-item">
                                                 <a asp-action="Index"
+                                                   asp-route-pageSize="@ViewBag.pageSize"
                                                    asp-route-sortOrder="@ViewBag.CurrentSort"
                                                    asp-route-pageNumber="@(Model.PageIndex + 1)"
                                                    asp-route-currentFilter="@ViewBag.CurrentFilter"
@@ -128,7 +130,7 @@
                 // Lấy giá trị của tùy chọn được chọn
                 selectedValue = $(this).val();
                 $.ajax({
-                    url: "",
+                    url: "/admin/BookInvoicesIn",
                     dataType: 'html',
                     data: { searchString: inputSearchValue, pageSize: selectedValue },
                     success: function (response) {
@@ -142,6 +144,10 @@
                         var tableContent = tableHtml.html();
 
                         $("table").html(tableContent);
+
+                        let paginationHtml = responseHtml.find(".pagination");
+                        let paginationContent = paginationHtml.html();
+                        $(".pagination").html(paginationContent);
                     }
                 })
             });
@@ -150,7 +156,7 @@
             $("#input-search").keyup(function () {
                 inputSearchValue = $(this).val();
                 $.ajax({
-                    url: "",
+                    url: "/admin/BookInvoicesIn",
                     data: { searchString: inputSearchValue, pageSize: selectedValue },
                     dataType: 'html',
                     success: function (response) {
@@ -164,6 +170,10 @@
                         var tableContent = tableHtml.html();
 
                         $("table").html(tableContent);
+
+                        let paginationHtml = responseHtml.find(".pagination");
+                        let paginationContent = paginationHtml.html();
+                        $(".pagination").html(paginationContent);
                     }
                 })
             })

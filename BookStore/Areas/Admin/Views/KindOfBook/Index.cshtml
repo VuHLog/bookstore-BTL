@@ -25,7 +25,7 @@
                                 <div style="color: #212529;">
                                     Hiển thị
                                     <select name="pageSize" value="@ViewBag.pageSize" class="form-select">
-                                        
+                                        <option selected="" disabled="">@ViewBag.pageSize</option>
                                         <option value="5" class="selectPageSize">5</option>
                                         <option value="10" class="selectPageSize">10</option>
                                         <option value="20" class="selectPageSize">20</option>
@@ -37,7 +37,7 @@
                             <table class="table table-striped table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        
+
                                         <th style="width: 12%;">
                                             <a asp-action="Index" asp-route-sortOrder="@ViewBag.NameSortParam" asp-route-currentFilter="@ViewBag.CurrentFilter">Tên</a>
                                         </th>
@@ -48,7 +48,7 @@
                                     @foreach (var kindOfBook in Model)
                                     {
                                         <tr>
-                                            
+
                                             <td>@kindOfBook.Name</td>
                                             <td>
                                                 <div class="flex align-items-center list-user-action">
@@ -69,6 +69,7 @@
                                         {
                                             <li class="page-item mr-2">
                                                 <a asp-action="Index"
+                                                   asp-route-pageSize="@ViewBag.pageSize"
                                                    asp-route-sortOrder="@ViewBag.CurrentSort"
                                                    asp-route-pageNumber="@(Model.PageIndex - 1)"
                                                    asp-route-currentFilter="@ViewBag.CurrentFilter"
@@ -87,6 +88,7 @@
                                         {
                                             <li class="page-item">
                                                 <a asp-action="Index"
+                                                   asp-route-pageSize="@ViewBag.pageSize"
                                                    asp-route-sortOrder="@ViewBag.CurrentSort"
                                                    asp-route-pageNumber="@(Model.PageIndex + 1)"
                                                    asp-route-currentFilter="@ViewBag.CurrentFilter"
@@ -108,7 +110,7 @@
 </div>
 
 
-                                                    @section ScriptsAjax{
+@section ScriptsAjax{
     <script>
         $(document).ready(function () {
             var selectedValue = $("select[name='pageSize']").val();
@@ -118,9 +120,9 @@
                 // Lấy giá trị của tùy chọn được chọn
                 selectedValue = $(this).val();
                 $.ajax({
-                    url: "",
+                    url: "/admin/kindofbook",
                     dataType: 'html',
-                    data: { searchString: inputSearchValue, pageSize : selectedValue },
+                    data: { searchString: inputSearchValue, pageSize: selectedValue },
                     success: function (response) {
                         // Tạo một jQuery object từ response để dễ dàng tìm thẻ table
                         var responseHtml = $(response);
@@ -132,6 +134,10 @@
                         var tableContent = tableHtml.html();
 
                         $("table").html(tableContent);
+
+                        let paginationHtml = responseHtml.find(".pagination");
+                        let paginationContent = paginationHtml.html();
+                        $(".pagination").html(paginationContent);
                     }
                 })
             });
@@ -140,8 +146,8 @@
             $("#input-search").keyup(function () {
                 inputSearchValue = $(this).val();
                 $.ajax({
-                    url: "",
-                    data: { searchString : inputSearchValue, pageSize : selectedValue },
+                    url: "/admin/kindofbook",
+                    data: { searchString: inputSearchValue, pageSize: selectedValue },
                     dataType: 'html',
                     success: function (response) {
                         // Tạo một jQuery object từ response để dễ dàng tìm thẻ table
@@ -154,6 +160,10 @@
                         var tableContent = tableHtml.html();
 
                         $("table").html(tableContent);
+
+                        let paginationHtml = responseHtml.find(".pagination");
+                        let paginationContent = paginationHtml.html();
+                        $(".pagination").html(paginationContent);
                     }
                 })
             })
