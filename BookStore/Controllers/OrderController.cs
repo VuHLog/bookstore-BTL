@@ -149,7 +149,7 @@ namespace BookStore.Controllers
             _context.Add(invoicesOut);
             await _context.SaveChangesAsync();
 
-            long invoicesId = invoicesOut.InvoicesOutId;
+            int invoicesId = invoicesOut.InvoicesOutId;
             var sql = "insert into book_invoices_out([invoices_out_id], [book_id], [quantity]) values({0}, {1}, {2})";
             foreach (CartDTO book in cartList)
             {
