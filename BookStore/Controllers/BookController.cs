@@ -113,7 +113,7 @@ namespace BookStore.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
 
-                books = books.Where(b => b.Name.Contains(searchString));
+                books = books.Where(b => b.Name.Contains(searchString)).Take(2);
             }
             return View("SearchResults",await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 4));
         }
@@ -183,7 +183,7 @@ namespace BookStore.Controllers
             {
                 return NotFound();
             }
-            return View(await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 12));
+            return View(await PaginatedList<Book>.CreateAsync(books.AsNoTracking(), pageNumber ?? 1, pageSize ?? 3));
         }
     }
 }
