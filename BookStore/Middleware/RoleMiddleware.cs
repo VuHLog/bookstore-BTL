@@ -39,7 +39,7 @@ namespace BookStore.Middleware
                         // area chứa giá trị của thuộc tính [Area]
                         var areaValue = area.ToString();
                         // Sử dụng areaValue theo nhu cầu của bạn
-                        controllerType = Type.GetType($"BookStore.{areaValue}.Controllers.{controllerName}Controller");
+                        controllerType = Type.GetType($"BookStore.Areas.{areaValue}.Controllers.{controllerName}Controller");
                     }else controllerType = Type.GetType($"BookStore.Controllers.{controllerName}Controller");
 
                     MethodInfo? methodInfo = controllerType.GetMethod(actionName);

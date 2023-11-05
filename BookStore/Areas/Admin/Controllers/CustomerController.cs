@@ -11,7 +11,7 @@ using BookStore.Util;
 using BookStore.CustomAtrribute;
 using Humanizer.Localisation.TimeToClockNotation;
 
-namespace BookStore.Admin.Controllers
+namespace BookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Customer")]

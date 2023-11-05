@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s8BC7b8pVrHJfC/H+E8iqHq7XY5k31PPoHjhYlkELg4=",
+  "Hash": "JNLv/AuYvnHxcM3HE9xpsPM8BawlbuxFHGFN6gd8F9A=",
   "Source": "BookStore",
   "BasePath": "_content/BookStore",
   "Mode": "Default",
@@ -7531,6 +7531,23 @@
       "OriginalItemSpec": "wwwroot\\images\\trendy-books\\06.jpg"
     },
     {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\5d20ae0b-bcef-4f7e-bdea-3a0503c84979pexels-pixabay-147411.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/user/5d20ae0b-bcef-4f7e-bdea-3a0503c84979pexels-pixabay-147411.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user\\5d20ae0b-bcef-4f7e-bdea-3a0503c84979pexels-pixabay-147411.jpg"
+    },
+    {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\a958d269-f5d9-4047-9ca3-f9d8e8bfd8d5bia-trong-ma-dao-to-su-tap-2-3.jpg",
       "SourceId": "BookStore",
       "SourceType": "Discovered",
@@ -7546,6 +7563,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\user\\a958d269-f5d9-4047-9ca3-f9d8e8bfd8d5bia-trong-ma-dao-to-su-tap-2-3.jpg"
+    },
+    {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\ba0f3125-04e3-49b7-9702-abcf29e839c2pexels-tobi-675764.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/user/ba0f3125-04e3-49b7-9702-abcf29e839c2pexels-tobi-675764.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user\\ba0f3125-04e3-49b7-9702-abcf29e839c2pexels-tobi-675764.jpg"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\user\\d103f903-018e-4f60-b9f9-a278e2cbd0e2pexels-eberhard-grossgasteiger-1287145.jpg",

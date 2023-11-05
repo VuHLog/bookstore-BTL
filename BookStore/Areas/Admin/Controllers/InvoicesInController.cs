@@ -10,7 +10,7 @@ using BookStore.Models;
 using BookStore.CustomAtrribute;
 using BookStore.Util;
 
-namespace BookStore.Admin.Controllers
+namespace BookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/InvoicesIn")]

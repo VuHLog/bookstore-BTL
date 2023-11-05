@@ -11,7 +11,7 @@ using BookStore.Util;
 using Microsoft.Data.SqlClient;
 using System.Drawing.Printing;
 
-namespace BookStore.Admin.Controllers
+namespace BookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/KindOfBook")]

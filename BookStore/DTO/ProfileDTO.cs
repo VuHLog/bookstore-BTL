@@ -60,6 +60,7 @@ namespace BookStore.DTO
             user.Password = Password;
             user.Username = Username;
             user.avatarUrl = avatarUrl;
+            user.avatar = avatar;
             return user;
         }
 

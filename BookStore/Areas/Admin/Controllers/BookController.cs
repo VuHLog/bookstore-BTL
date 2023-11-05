@@ -12,7 +12,7 @@ using BookStore.CustomAtrribute;
 using BookStore.Util;
 using System.Globalization;
 
-namespace BookStore.Admin.Controllers
+namespace BookStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("Admin/Book")]
