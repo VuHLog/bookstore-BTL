@@ -30,62 +30,62 @@
                                 @{
                                     if (CartCookie != null && books.Count() > 0)
                                     {
-                                                <ul class="list-inline p-0 m-0">
-                                                    @foreach (CartDTO book in books)
+                                            <ul class="list-inline p-0 m-0">
+                                                @foreach (CartDTO book in books)
                                             {
-                                                        <li class="checkout-product">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-sm-2">
-                                                                    <span class="checkout-product-img">
-                                                                        <a href="/book/@book.BookId"><img class="img-fluid rounded" src="@book.imageUrl" alt=""></a>
-                                                                    </span>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <div class="checkout-product-details">
-                                                                        <h5>@book.Name</h5>
-                                                                        <p class="text-success">@(book.Number > 0 ? "Còn hàng" : "Hết hàng")</p>
-                                                                        <div class="price">
-                                                                            @{
+                                                    <li class="checkout-product">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-2">
+                                                                <span class="checkout-product-img">
+                                                                    <a href="/book/@book.BookId"><img class="img-fluid rounded" src="@book.imageUrl" alt=""></a>
+                                                                </span>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <div class="checkout-product-details">
+                                                                    <h5>@book.Name</h5>
+                                                                    <p class="text-success">@(book.Number > 0 ? "Còn hàng" : "Hết hàng")</p>
+                                                                    <div class="price">
+                                                                        @{
                                                                         CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
                                                                         string costFormat = double.Parse(book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
-                                                                            }
-                                                                            <h5 class="price-one-book" data-cost="@costFormat">@costFormat ₫</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-10">
-                                                                            <div class="row align-items-center mt-2">
-                                                                                <div class="col-sm-7 col-md-6">
-                                                                                    <button type="button" data-id="@book.BookId" class="fa fa-minus qty-btn btn-minus"></button>
-                                                                                    <input type="text" class="quantity-product" style="display: inline-block; width: 30px;height: 28px;border: 1px solid var(--iq-border);text-align: center;}" value="@book.quantity">
-                                                                                    <button type="button" data-id="@book.BookId" class="fa fa-plus qty-btn btn-plus"></button>
-                                                                                </div>
-                                                                                <div class="col-sm-5 col-md-6">
-                                                                                    <span class="product-price">@(double.Parse((book.Cost * book.quantity).ToString()).ToString("#,###", cul.NumberFormat)) ₫</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-2 delete-product" data-id="@book.BookId" style="cursor: pointer">
-                                                                            <i class="ri-delete-bin-7-fill"></i>
-                                                                        </div>
+                                                                        }
+                                                                        <h5 class="price-one-book" data-cost="@costFormat">@costFormat ₫</h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </li>
+                                                            <div class="col-sm-6">
+                                                                <div class="row">
+                                                                    <div class="col-sm-10">
+                                                                        <div class="row align-items-center mt-2">
+                                                                            <div class="col-sm-7 col-md-6">
+                                                                                <button type="button" data-id="@book.BookId" class="fa fa-minus qty-btn btn-minus"></button>
+                                                                                <input type="text" class="quantity-product" style="display: inline-block; width: 30px;height: 28px;border: 1px solid var(--iq-border);text-align: center;}" value="@book.quantity">
+                                                                                <button type="button" data-id="@book.BookId" class="fa fa-plus qty-btn btn-plus"></button>
+                                                                            </div>
+                                                                            <div class="col-sm-5 col-md-6">
+                                                                                <span class="product-price">@(double.Parse((book.Cost * book.quantity).ToString()).ToString("#,###", cul.NumberFormat)) ₫</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-2 delete-product" data-id="@book.BookId" style="cursor: pointer">
+                                                                        <i class="ri-delete-bin-7-fill"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                             }
-                                                </ul>
+                                            </ul>
                                     }
                                     else
                                     {
-                                                <ul class="list-inline p-0 m-0">
-                                                    <li class="checkout-product">
-                                                        <div class="row align-items-center justify-content-center">
-                                                            <h3 class="text-secondary">Không có sản phẩm nào trong giỏ hàng</h3>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                            <ul class="list-inline p-0 m-0">
+                                                <li class="checkout-product">
+                                                    <div class="row align-items-center justify-content-center">
+                                                        <h3 class="text-secondary">Không có sản phẩm nào trong giỏ hàng</h3>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                     }
                                 }
                             </div>
@@ -223,7 +223,7 @@
 
 
         @* handle xoa san pham *@
-                            const deleteIcon = document.querySelectorAll(".delete-product");
+                    const deleteIcon = document.querySelectorAll(".delete-product");
             deleteIcon.forEach((item) => {
                 $(item).click(function () {
                     Swal.fire({
@@ -274,11 +274,19 @@
                         confirmButtonText: 'Yes'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            if ($.cookie('account') !== null) {
+                            if (($.cookie('account'))) {
                                 $.ajax({
                                     url: "/cart/order",
                                     dataType: 'html',
                                     success: function (response) {
+                                        let content = $(".checkout-content .iq-card-body:first");
+                                        content.empty();
+                                        content.html(() => {
+                                            return '<ul class="list-inline p-0 m-0"><li class="checkout-product"><div class="row align-items-center justify-content-center"><h3 class="text-secondary">Không có sản phẩm nào trong giỏ hàng</h3></div></li></ul>'
+                                        });
+                                        totalMoneyDOM.text("0 ₫");
+                                        VAT.text("0 ₫");
+                                        totalMoneyResultDOM.text("0 ₫")
                                         Swal.fire(
                                             'Đặt hàng thành công!',
                                             'Sản phẩm đã được thêm vào đơn hàng của bạn.',
