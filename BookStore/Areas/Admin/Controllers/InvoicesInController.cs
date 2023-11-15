@@ -141,7 +141,7 @@ namespace BookStore.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PublisherId"] = new SelectList(_context.Customers, "PublisherId", "Name", invoicesIn.PublisherId);
+            ViewData["PublisherId"] = new SelectList(_context.Publishers, "PublisherId", "Name", invoicesIn.PublisherId);
             ViewData["EmployeeId"] = new SelectList(_context.Employees, "EmployeeId", "Name", invoicesIn.EmployeeId);
             return View("create", invoicesIn);
         }
@@ -197,8 +197,6 @@ namespace BookStore.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PublisherId"] = new SelectList(_context.Publishers, "CustomerId", "Name", invoicesIn.PublisherId);
-            ViewData["EmployeeId"] = new SelectList(_context.Employees, "EmployeeId", "Name", invoicesIn.EmployeeId);
             ViewData["PublisherId"] = new SelectList(_context.Customers, "PublisherId", "Name", invoicesIn.PublisherId);
             ViewData["EmployeeId"] = new SelectList(_context.Employees, "EmployeeId", "Name", invoicesIn.EmployeeId);
             return View("edit", invoicesIn);

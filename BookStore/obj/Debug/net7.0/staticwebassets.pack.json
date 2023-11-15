@@ -1121,6 +1121,10 @@
       "PackagePath": "staticwebassets\\images\\books\\fddc10d3-266f-409c-899b-333ab44ce536z3627850566435-14d50fb1b311b0f0f641049481c466ab.jpg"
     },
     {
+      "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\ff516c59-1de2-4132-bb42-6fe7e703c172WIN_20231108_22_15_59_Pro.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\ff516c59-1de2-4132-bb42-6fe7e703c172WIN_20231108_22_15_59_Pro.jpg"
+    },
+    {
       "Id": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\.DS_Store",
       "PackagePath": "staticwebassets\\images\\browse-books\\.DS_Store"
     },

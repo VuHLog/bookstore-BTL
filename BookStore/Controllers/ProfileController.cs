@@ -85,6 +85,17 @@ namespace BookStore.Controllers
                     await user.avatar.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
                 }
 
+                string email = profile.Email;
+                User emailExist = await (from u in _context.Users
+                              where u.Email == email
+                              select u).FirstOrDefaultAsync();
+                if(emailExist != null)
+                {
+                    ViewBag.EmailExist = "Email đã tồn tại!";
+                    return View("index", profile);
+                }
+                
+
                 try
                 {
                     _context.Update(user);

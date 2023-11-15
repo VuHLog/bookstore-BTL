@@ -57,19 +57,24 @@
                                             <div class="form-group col-sm-6">
                                                 <label asp-for="Firstname">First Name:</label>
                                                 <input type="text" asp-for="Firstname" class="form-control">
+                                                <span asp-validation-for="Firstname" class="text-danger"></span>
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label asp-for="Lastname">Last Name:</label>
                                                 <input type="text" class="form-control" asp-for="Lastname">
+                                                <span asp-validation-for="Lastname" class="text-danger"></span>
                                             </div>
                                             <input type="hidden" asp-for="Username" />
                                             <div class="form-group col-sm-6">
                                                 <label asp-for="Username">Tên tài khoản:</label>
                                                 <input type="text" class="form-control" asp-for="Username" disabled>
+                                                <span asp-validation-for="Username" class="text-danger"></span>
                                             </div>
                                             <div class="form-group col-sm-6">
                                                 <label asp-for="Email">Email:</label>
-                                                <input class="form-control" asp-for="Email">
+                                                <input class="form-control" asp-for="Email" type="text">
+                                                <span asp-validation-for="Email" class="text-danger"></span>
+                                                <span class="text-danger">@ViewBag.EmailExist</span>
                                             </div>
                                             <input type="hidden" asp-for="CustomerId"/>
                                             <div class="form-group col-sm-6">
@@ -90,6 +95,7 @@
                                                 <label asp-for="address">Địa chỉ:</label>
                                                 <textarea class="form-control" name="address" rows="5" style="line-height: 22px;" asp-for="address">
                                                 </textarea>
+                                                <span asp-validation-for="address" class="text-danger"></span>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary mr-2">Gửi</button>

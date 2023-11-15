@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JNLv/AuYvnHxcM3HE9xpsPM8BawlbuxFHGFN6gd8F9A=",
+  "Hash": "ZoxZYOhZJkTa4FvItnnQDsy5DsCZwnwuTt4j2Drm7hk=",
   "Source": "BookStore",
   "BasePath": "_content/BookStore",
   "Mode": "Default",
@@ -4775,6 +4775,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\books\\fddc10d3-266f-409c-899b-333ab44ce536z3627850566435-14d50fb1b311b0f0f641049481c466ab.jpg"
+    },
+    {
+      "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\books\\ff516c59-1de2-4132-bb42-6fe7e703c172WIN_20231108_22_15_59_Pro.jpg",
+      "SourceId": "BookStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\",
+      "BasePath": "_content/BookStore",
+      "RelativePath": "images/books/ff516c59-1de2-4132-bb42-6fe7e703c172WIN_20231108_22_15_59_Pro.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\ff516c59-1de2-4132-bb42-6fe7e703c172WIN_20231108_22_15_59_Pro.jpg"
     },
     {
       "Identity": "D:\\dai_hoc\\nam_3_ki_1\\lap_trinh_web\\workspace\\BookStore\\BookStore\\wwwroot\\images\\browse-books\\.DS_Store",

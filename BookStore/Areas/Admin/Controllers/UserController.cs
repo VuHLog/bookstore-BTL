@@ -198,7 +198,7 @@ namespace BookStore.Areas.Admin.Controllers
         [Route("Edit/{id}")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> Edit(long? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Users == null)
             {
@@ -277,7 +277,7 @@ namespace BookStore.Areas.Admin.Controllers
         [Route("Delete/{id}")]
         [Role("ROLE_MANAGER")]
         [Role("ROLE_ADMIN")]
-        public async Task<IActionResult> Delete(long? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Users == null)
             {

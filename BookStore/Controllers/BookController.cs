@@ -42,6 +42,8 @@ namespace BookStore.Controllers
                                 where b.KindOfBookId == book.KindOfBookId && b.BookId != id
                                 select b).OrderBy(x => Guid.NewGuid()).Take(6);
             ViewBag.SimilarBooks = await similarBooks.ToListAsync();
+            //category
+            ViewBag.KindOfBookId = book.KindOfBook.KindOfBookId;
 
             //Thịnh hành
             var topSellingBooks = from b in _context.Books
@@ -53,39 +55,6 @@ namespace BookStore.Controllers
                                   ).Take(3) on b.BookId equals bc.BookId
                                   select b;
             ViewBag.TopSellingBooks = await topSellingBooks.ToListAsync();
-            string categoryUrl;
-            //category
-            switch (book.KindOfBook.Name)
-            {
-                case "Ngôn tình":
-                    categoryUrl = "ngontinh";
-                    break;
-                case "Bách Hợp":
-                    categoryUrl = "bachhop";
-                    break;
-                case "Light Novel":
-                    categoryUrl = "lightnovel";
-                    break;
-                case "Sách thiếu nhi":
-                    categoryUrl = "sachthieunhi";
-                    break;
-                case "Đam mỹ":
-                    categoryUrl = "dammy";
-                    break;
-                case "Sách Văn Học Trong Nước":
-                    categoryUrl = "sachvanhoctrongnuoc";
-                    break;
-                case "Truyện Tranh - Comic":
-                    categoryUrl = "truyentranhcomic";
-                    break;
-                case "Truyện Tranh BL":
-                    categoryUrl = "truyentranhbl";
-                    break;
-                default:
-                    categoryUrl = "vanhocnuocngoai";
-                    break;
-            }
-            ViewBag.CategoryUrl = categoryUrl;
 
             return View(book);
         }

@@ -1,5 +1,51 @@
 ﻿@{
     Layout = "~/Areas/Admin/Views/Shared/Admin/MainLayout.cshtml";
+    ViewBag.breadcrumb = "Admin";
 }
 
-abc
+<!-- Page Content  -->
+<div id="content-page" class="content-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle iq-card-icon bg-primary"><i class="ri-user-line"></i></div>
+                            <div class="text-left ml-3">
+                                <h2 class="mb-0"><span class="counter">@ViewBag.UserCount</span></h2>
+                                <h5 class="">Người dùng</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle iq-card-icon bg-danger"><i class="ri-book-line"></i></div>
+                            <div class="text-left ml-3">
+                                <h2 class="mb-0"><span class="counter">@ViewBag.BookCount</span></h2>
+                                <h5 class="">Sách</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-body">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle iq-card-icon bg-warning"><i class="ri-shopping-cart-2-line"></i></div>
+                            <div class="text-left ml-3">
+                                <h2 class="mb-0"><span class="counter">@ViewBag.InvoiceOutCount</span></h2>
+                                <h5 class="">Đơn Hàng</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

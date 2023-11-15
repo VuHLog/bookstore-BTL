@@ -1,44 +1,38 @@
 ﻿@using BookStore.DTO;
 @using Newtonsoft.Json;
 @using System.Globalization;
-@{
-    var CartCookie = Context.Request.Cookies["cart"];
-    List<CartDTO> books = new List<CartDTO>();
-    if (CartCookie != null)
-    {
-        books = JsonConvert.DeserializeObject<List<CartDTO>>(CartCookie);
-    }
-}
+
+@model List<CartDTO>
 <div>
     <div class="Cart-Navbar-Items">
         <a href="#" class="search-toggle iq-waves-effect text-gray rounded">
             <i class="ri-shopping-cart-2-line"></i>
-            <span class="badge badge-danger count-cart rounded-circle">@(CartCookie != null && books.Count() > 0 ? books.Count() : "0")</span>
+            <span class="badge badge-danger count-cart rounded-circle">@(Model.Count() > 0 ? Model.Count() : "0")</span>
         </a>
         <div class="iq-sub-dropdown">
             <div class="iq-card shadow-none m-0">
                 <div class="iq-card-body p-0 toggle-cart-info">
-                    @if (CartCookie != null && books.Count() > 0)
+                    @if (Model.Count() > 0)
                     {
                         <div class="bg-primary p-3">
-                            <h5 class="mb-0 text-white">Giỏ Hàng<small class="badge  badge-light float-right pt-1">@books.Count()</small></h5>
+                            <h5 class="mb-0 text-white">Giỏ Hàng<small class="badge  badge-light float-right pt-1">@Model.Count()</small></h5>
                         </div>
                         int count = 0;
-                        @for (int i=books.Count()-1;i>=0;i--)
+                        @for (int i=Model.Count()-1;i>=0;i--)
                         {
                             count++;
                             if (count <= 3)
                             {
-                                <a href="/book/@books[i].BookId" class="iq-sub-card">
+                                <a href="/book/@Model[i].BookId" class="iq-sub-card">
                                     <div class="media align-items-center">
                                         <div class="">
-                                            <img class="rounded" src="@books[i].imageUrl" alt="">
+                                            <img class="rounded" src="@Model[i].imageUrl" alt="">
                                         </div>
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-0 ">@books[i].Name</h6>
+                                            <h6 class="mb-0 ">@Model[i].Name</h6>
                                             @{
                                                 CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");   // try with "en-US"
-                                                string costFormat = double.Parse(books[i].Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                                                string costFormat = double.Parse(@Model[i].Cost.ToString()).ToString("#,###", cul.NumberFormat);
                                             }
                                             <p class="mb-0">@costFormat</p>
                                         </div>
@@ -54,7 +48,6 @@
                     }
                     <div class="d-flex align-items-center justify-content-center p-3">
                         <a class="btn btn-primary mr-2 iq-sign-btn" href="/cart" role="button">Giỏ Hàng</a>
-                        <a class="btn btn-primary iq-sign-btn" href="/checkout" role="button">Thanh Toán</a>
                     </div>
                 </div>
             </div>

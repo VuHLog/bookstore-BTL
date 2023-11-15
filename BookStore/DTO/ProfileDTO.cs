@@ -10,12 +10,15 @@ namespace BookStore.DTO
 
         public int CustomerId { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Email bắt buộc phải được nhập")]
+        [EmailAddress(ErrorMessage ="Email không chính xác!")]
         public string? Email { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Tên bắt buộc phải được nhập")]
         public string? Firstname { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Họ bắt buộc phải được nhập")]
         public string? Lastname { get; set; }
-
         public string? Password { get; set; }
 
         public string? Username { get; set; }
@@ -24,11 +27,13 @@ namespace BookStore.DTO
         public IFormFile? avatar { get; set; }
 
         public string? avatarUrl { get; set; }
-
+        [Required(AllowEmptyStrings =false,ErrorMessage = "Tên tài khoản bắt buộc phải được nhập")]
         public string? address { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Ngày sinh bắt buộc phải được nhập")]
         public DateTime? dateOfBirth { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Giới tính bắt buộc phải được nhập")]
         public string gender { get; set; }
 
         public void setUser(User user)

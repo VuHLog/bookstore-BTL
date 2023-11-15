@@ -223,7 +223,7 @@
 
 
         @* handle xoa san pham *@
-                    const deleteIcon = document.querySelectorAll(".delete-product");
+        const deleteIcon = document.querySelectorAll(".delete-product");
             deleteIcon.forEach((item) => {
                 $(item).click(function () {
                     Swal.fire({
@@ -250,6 +250,20 @@
                                     totalMoneyResult = totalMoney + VATtax;
                                     totalMoneyResultDOM.text(new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(totalMoneyResult))
                                     $(item).parents(".checkout-product").remove();
+                                    if (!$("#cart").find(".checkout-product").length) {
+                                        $("#cart .iq-card-body:first").html('<h3 class="text-secondary text-center">Không có sản phẩm nào trong giỏ hàng</h3>');
+                                    }
+                                    // Tạo một jQuery object từ response
+                                    var responseHtml = $(response);
+
+                                    // Lọc ra phần HTML
+                                    responseHtml = responseHtml.find(".Cart-Navbar-Items");
+
+                                    // Lấy nội dung HTML
+                                    var responseContent = responseHtml.html();
+                                    console.log("responseContent" + responseContent)
+                                    console.log($("#cart-navbar"));
+                                    $("#cart-navbar").html(responseContent);
                                     Swal.fire(
                                         'Đã xoá!',
                                         'Sản phẩm đã được xoá khỏi giỏ hàng.',

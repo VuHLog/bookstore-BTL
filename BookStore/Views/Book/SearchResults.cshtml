@@ -4,25 +4,32 @@
 
 <div>
     <ul class="search-result-items">
+        @{
+            int i = 0;
+        }
         @foreach (Book book in Model)
         {
-            <li class="list-group-item pr-0">
-                <a href="/book/@book.BookId" class="result-link">
-                    <div class="row">
-                        <div class="col-md-4 p-0 d-flex justify-content-center align-items-end ">
-                            <img src="@book.imageUrl" alt="Hình ảnh sản phẩm" class="img-thumbnail">
+            i++;
+            if (i <= 2)
+            {
+                <li class="list-group-item pr-0">
+                    <a href="/book/@book.BookId" class="result-link">
+                        <div class="row">
+                            <div class="col-md-4 p-0 d-flex justify-content-center align-items-end ">
+                                <img src="@book.imageUrl" alt="Hình ảnh sản phẩm" class="img-thumbnail">
+                            </div>
+                            <div class="col-md-6 p-0 ml-2 d-flex flex-column justify-content-end align-items-start">
+                                <h5 class="product-name">@book.Name</h5>
+                                @{
+                                    CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
+                                    string costFormat = double.Parse(@book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
+                                }
+                                <p class="product-price m-0">@costFormat ₫</p>
+                            </div>
                         </div>
-                        <div class="col-md-6 p-0 ml-2 d-flex flex-column justify-content-end align-items-start">
-                            <h5 class="product-name">@book.Name</h5>
-                            @{
-                                CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
-                                string costFormat = double.Parse(@book.Cost.ToString()).ToString("#,###", cul.NumberFormat);
-                            }
-                            <p class="product-price m-0">@costFormat ₫</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
+                    </a>
+                </li>
+            }
         }
     </ul>
 </div>

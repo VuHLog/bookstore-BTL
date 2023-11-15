@@ -63,7 +63,7 @@
                                                         </h6>
                                                     </div>
                                                     <div class="iq-product-action">
-                                                        <div class="cart-icon d-inline-block" style="cursor: pointer" date-href="/cart/addcart/@book.BookId"><i class="ri-shopping-cart-2-fill text-primary"></i></div>
+                                                        <div class="cart-icon d-inline-block" style="cursor: pointer" data-href="/cart/addcart/@book.BookId"><i class="ri-shopping-cart-2-fill text-primary"></i></div>
                                                         <a href="javascript:void();" class="ml-2"><i class="ri-heart-fill text-danger"></i></a>
                                                     </div>
                                                 </div>
@@ -145,7 +145,7 @@
         $(document).ready(function () {
             $(".cart-icon").each(function () {
                 $(this).click(function () {
-                    const hrefValue = $(this).attr("date-href");
+                    const hrefValue = $(this).attr("data-href");
                     console.log(hrefValue);
                     $.ajax({
                         url: hrefValue,

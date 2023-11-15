@@ -6,10 +6,9 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 //builder.Configuration 
-// .SetBasePath(Directory.GetCurrentDirectory()).Add JsonFile("Secrets.json"); 
-//Đăng ký SchoolContext là một DbContext của ứng dụng 
+// .SetBasePath(Directory.GetCurrentDirectory()).Add JsonFile("Secrets.json");
 builder.Services.AddDbContext<BookstoreContext>(options => options
-.UseSqlServer(builder.Configuration.GetConnectionString("SchoolContext")));
+.UseSqlServer());
 
 
 // Add services to the container.

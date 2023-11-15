@@ -83,7 +83,7 @@ namespace BookStore.Controllers
             };
             Response.Cookies.Append("cart", JsonConvert.SerializeObject(cartList), cookieOptions);
 
-            return View("CartNavBar");
+            return View("CartNavBar",cartList);
         }
 
         [Route("/cart/{change}/{id}")]
@@ -175,7 +175,7 @@ namespace BookStore.Controllers
                 Expires = DateTime.Now.AddDays(7)
             };
             Response.Cookies.Append("cart", JsonConvert.SerializeObject(cartList));
-            return new EmptyResult();
+            return PartialView("CartNavBar", cartList);
         }
     }
 }
